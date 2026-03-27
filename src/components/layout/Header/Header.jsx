@@ -39,7 +39,7 @@ const DropDownItem = ({ item }) => {
 }
 
 const NavItem = ({ item }) => {
-  const [showDropDown, setShowDropDown] = useState(true);
+  const [showDropDown, setShowDropDown] = useState(false);
 
   if (item.dropdown) {
     return (
