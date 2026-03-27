@@ -53,11 +53,12 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>World Wings | Home</title>
       </Head>
-      <Analytics />
-      <SpeedInsights />
+
       <main className={FONTS.font2}>
         {isHome && loading && <LoadingScreen />}
         <Layout>
+          <Analytics />
+          <SpeedInsights />
           <Component {...pageProps} />
           <ToastContainer position="bottom-right" />
         </Layout>
