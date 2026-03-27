@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
-    "@vercel/speed-insights": "^2.0.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "eslint": "8.38.0",

@@ -6,12 +6,12 @@ import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 import Router, { useRouter } from "next/router";
 import Head from "next/head";
+import { Analytics } from "@vercel/analytics/next";
 
 import { ToastContainer } from "react-toastify";
 import Layout from "@/components/layout/layout";
 import { FONTS } from "@/styles/fonts";
 import LoadingScreen from "@/components/ui/loading_screen/loading_screen";
-import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function App({ Component, pageProps }) {
@@ -57,13 +57,13 @@ export default function App({ Component, pageProps }) {
       <main className={FONTS.font2}>
         {isHome && loading && <LoadingScreen />}
         <Layout>
-          <Analytics />
           <SpeedInsights />
           <Component {...pageProps} />
           <ToastContainer position="bottom-right" />
         </Layout>
 
       </main>
+      <Analytics />
     </>
   );
 }
