@@ -1,0 +1,220 @@
+.galleryPage {
+  min-height: 100vh;
+  background-color: #fcfcfc;
+  padding-bottom: 100px;
+}
+
+/* ================================
+   FILTER BUTTONS
+   ================================ */
+.filterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  .filterBtn {
+    background-color: transparent;
+    color: $color_text_grey;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: rgba($color_1, 0.05);
+      border-color: $color_1;
+      color: $color_1;
+    }
+
+    &.active {
+      background-color: $color_1;
+      border-color: $color_1;
+      color: white;
+      box-shadow: 0 4px 15px rgba($color_1, 0.3);
+    }
+  }
+}
+
+/* ================================
+   GALLERY GRID
+   ================================ */
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+
+  @include respond-below(md) {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .galleryItem {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.05) 0px 8px 24px;
+    background-color: white;
+
+    .imageWrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+
+      .image {
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba($color_2, 0.8) 0%, rgba($color_2, 0) 100%);
+        opacity: 0;
+        transition: all 0.4s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+
+        .overlayContent {
+          transform: translateY(20px);
+          transition: transform 0.4s ease;
+          width: 100%;
+          text-align: center;
+
+          .icon {
+            font-size: 36px;
+            color: $color_1;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+          }
+
+          h4 {
+            color: white;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+          }
+        }
+      }
+
+      &:hover {
+        .image {
+          transform: scale(1.1);
+        }
+
+        .overlay {
+          opacity: 1;
+
+          .overlayContent {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ================================
+   LIGHTBOX
+   ================================ */
+.lightboxOverlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  cursor: zoom-out;
+
+  .closeBtn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 10001;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1) rotate(90deg);
+      color: $color_1;
+    }
+  }
+
+  .navBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.0);
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 32px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10001;
+    transition: all 0.3s ease;
+
+    // &:hover {
+    //   background: $color_1;
+    //   border-color: $color_1;
+    //   transform: translateY(-50%) scale(1.1);
+    // }
+
+    &.prevBtn {
+      left: 30px;
+    }
+
+    &.nextBtn {
+      right: 30px;
+    }
+  }
+
+  .lightboxContent {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 85vh;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: default;
+    background-color: transparent;
+
+    .lightboxImage {
+      object-fit: contain;
+    }
+
+    .lightboxCaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 30px 20px;
+      text-align: center;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+      color: white;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+  }
+}

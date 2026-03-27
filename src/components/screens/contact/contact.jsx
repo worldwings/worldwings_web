@@ -51,7 +51,7 @@ const ContactScreen = () => {
                     <div className={styles.formSection}>
                         <div className={styles.formContainer}>
                             <h2>Your info</h2>
-                            
+
                             <form className={styles.contactForm}>
                                 <div className={styles.formLayout}>
                                     <div className={styles.leftCol}>
@@ -72,7 +72,7 @@ const ContactScreen = () => {
                                             <input type="url" placeholder="Your website" />
                                         </div>
                                     </div>
-                                    
+
                                     <div className={styles.rightCol}>
                                         <div className={styles.inputGroup}>
                                             <label>Your Enquiry*</label>
@@ -116,13 +116,13 @@ const ContactScreen = () => {
 
                     {/* MAP SECTION */}
                     <div className={styles.mapSection}>
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d2483.288961634382!2d-0.12210538422998492!3d51.50330057963467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2suk!4v1680101968560!5m2!1sen!2suk" 
-                            width="100%" 
-                            height="450" 
-                            style={{ border: 0 }} 
-                            allowFullScreen="" 
-                            loading="lazy" 
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d2483.288961634382!2d-0.12210538422998492!3d51.50330057963467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2suk!4v1680101968560!5m2!1sen!2suk"
+                            width="100%"
+                            height="450"
+                            style={{ border: 0 }}
+                            allowFullScreen=""
+                            loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
                             title="Google Maps London Eye"
                         ></iframe>
@@ -131,9 +131,9 @@ const ContactScreen = () => {
                     {/* FAQ SECTION */}
                     <div className={styles.faqSection}>
                         <div className={styles.faqImageWrap}>
-                            <Image 
-                                src="/blog/blog-1.jpg" 
-                                alt="Have questions" 
+                            <Image
+                                src="/images/couple.webp"
+                                alt="Have questions"
                                 fill
                                 className={styles.faqImage}
                             />
@@ -144,8 +144,8 @@ const ContactScreen = () => {
                                 {faqs.map((faq, index) => {
                                     const isOpen = openFaq === index;
                                     return (
-                                        <div 
-                                            key={index} 
+                                        <div
+                                            key={index}
                                             className={`${styles.accordionItem} ${isOpen ? styles.open : ''}`}
                                             onClick={() => toggleFaq(index)}
                                         >
