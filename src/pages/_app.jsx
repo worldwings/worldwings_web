@@ -57,12 +57,12 @@ export default function App({ Component, pageProps }) {
       <main className={FONTS.font2}>
         {isHome && loading && <LoadingScreen />}
         <Layout>
-          <SpeedInsights />
           <Component {...pageProps} />
           <ToastContainer position="bottom-right" />
         </Layout>
 
       </main>
+      <SpeedInsights />
       <Analytics />
     </>
   );
