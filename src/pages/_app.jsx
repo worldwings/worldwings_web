@@ -11,6 +11,8 @@ import { ToastContainer } from "react-toastify";
 import Layout from "@/components/layout/layout";
 import { FONTS } from "@/styles/fonts";
 import LoadingScreen from "@/components/ui/loading_screen/loading_screen";
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -51,6 +53,8 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>World Wings | Home</title>
       </Head>
+      <Analytics />
+      <SpeedInsights />
       <main className={FONTS.font2}>
         {isHome && loading && <LoadingScreen />}
         <Layout>
