@@ -1,0 +1,56 @@
+.ToursSection {
+  padding: 80px 0;
+
+  .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px;
+
+    .tour {
+      height: 450px;
+      background-size: cover;
+      border-radius: 10px;
+      padding: 20px;
+
+      color: white;
+      position: relative;
+      display: flex;
+
+      flex-direction: column;
+      justify-content: flex-end;
+      * {
+        position: relative;
+        z-index: 10;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-radius: inherit;
+        // background-color: rgba(0, 0, 0, 0.382);
+        // background: linear-gradient(rgba($color_2, 0.5), transparent);
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+      }
+
+      h3 {
+        font-size: 30px;
+        margin: 8px 0;
+        color: $color_1;
+      }
+    }
+  }
+
+  @include respond-below(md) {
+    .wrap {
+      grid-template-columns: 1fr;
+
+      .tour {
+        height: 320px;
+      }
+    }
+  }
+}

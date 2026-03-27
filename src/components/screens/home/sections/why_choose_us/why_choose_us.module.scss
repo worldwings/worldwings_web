@@ -1,0 +1,115 @@
+.WhyChooseUsSection {
+  padding: 80px 0;
+
+  .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+
+    .left {
+      min-height: 500px;
+      position: relative;
+
+      .mainImg {
+        width: 75%;
+        height: 100%;
+        background-color: red;
+        border-radius: 16px;
+        background-image: url("/images/chose.webp");
+
+        background-size: cover;
+      }
+
+      .subImg {
+        position: absolute;
+        background-color: blue;
+        border-radius: 16px;
+        width: 50%;
+        height: 75%;
+        bottom: -30px;
+        right: 0;
+        background-image: url("/images/couple.webp");
+
+        background-size: cover;
+      }
+    }
+
+    .right {
+      .cards {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        .card {
+          border: 1px solid $color_1;
+          padding: 20px;
+          border-radius: 10px;
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          flex-direction: column;
+
+          svg {
+            font-size: 30px;
+            color: $color_1;
+          }
+
+          > div {
+            text-align: center;
+
+            h3 {
+              font-size: 20px;
+              font-weight: 600;
+              color: $color_2;
+            }
+
+            p {
+              color: $color_text_grey;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .counts {
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+
+    .count {
+      border: 1px solid $color_2;
+      padding: 20px;
+      background-color: rgba($color_1, 0.1);
+      border-radius: 12px;
+      h3 {
+        font-size: 50px;
+        font-weight: bold;
+        color: $color_2;
+      }
+
+      p {
+        color: $color_text_grey;
+      }
+    }
+  }
+
+  @include respond-below(md) {
+    .wrap {
+      grid-template-columns: 1fr;
+
+      .right {
+        .cards {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+
+    .counts {
+      margin-top: 80px;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+  }
+}

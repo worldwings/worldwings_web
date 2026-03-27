@@ -1,0 +1,89 @@
+.RightMenu {
+  display: flex;
+  align-items: center;
+  // gap: 10px;
+
+  .MenuButton {
+    display: none;
+
+    svg {
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+
+      &:hover {
+        color: $color_2;
+      }
+    }
+  }
+
+  .callBtn {
+    background-color: $color_2;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    margin-right: 15px;
+    cursor: pointer;
+
+  }
+
+  @include respond-below(md) {
+    .MenuButton {
+      display: block;
+    }
+
+    .callBtn {
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+.navSm {
+  ul {
+    padding: 0;
+    margin: 0;
+
+    a,
+    p {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 600;
+      color: $color_2;
+      // border-bottom: 1px solid $color_2;
+      padding: 5px 0;
+      margin-bottom: 14px;
+
+      &:hover {
+        color: $color_1 !important;
+      }
+    }
+
+
+    .dropdown {
+      overflow: hidden;
+      animation: openDropDown 0.25s;
+
+      a {
+        margin-left: 20px;
+        border: none;
+        padding: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@keyframes openDropDown {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: fit-content;
+  }
+}

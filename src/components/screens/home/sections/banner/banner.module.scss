@@ -1,0 +1,81 @@
+.BannerSection {
+  .Banner {
+    position: relative;
+    height: 100vh;
+
+    .bgWrap {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: zoomBg 20s infinite alternate;
+    }
+  }
+
+  .cont {
+    position: relative;
+    z-index: 10;
+    // background-color: rgba(0, 0, 0, 0.4);
+    background: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.55));
+    height: 100%;
+    @include flexCenter;
+    flex-direction: column;
+
+    p {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      color: white;
+      font-size: 98px;
+      font-weight: 600;
+      letter-spacing: -2px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      span {
+        display: block;
+        margin-right: 20px;
+        &.w3 {
+          color: $color_2;
+        }
+        &.w4 {
+          color: $color_1;
+        }
+      }
+      // span {
+      //   color: $color_1;
+      //   span {
+      //     color: $color_2 !important;
+      //   }
+      // }
+    }
+  }
+
+  @include respond-below(md) {
+    .Banner {
+      .cont {
+        h1 {
+          font-size: 70px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@keyframes zoomBg {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
