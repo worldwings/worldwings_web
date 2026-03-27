@@ -1,0 +1,317 @@
+.contactPage {
+  min-height: 100vh;
+  background-color: #fcfcfc;
+  padding-bottom: 100px;
+}
+
+$card-bg: white;
+$border-color: rgba(0, 0, 0, 0.08);
+
+/* ================================
+   FORM SECTION 
+   ================================ */
+.formSection {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  .formContainer {
+    background-color: $card-bg;
+    border-radius: 12px;
+    padding: 50px 60px;
+    box-shadow: rgba(149, 157, 165, 0.05) 0px 8px 24px;
+
+    h2 {
+      font-size: 32px;
+      color: $color_1;
+      margin-bottom: 40px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .formLayout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+
+      @include respond-below(md) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .inputGroup {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 24px;
+
+      label {
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #333;
+        font-size: 15px;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+        padding: 16px 20px;
+        font-size: 15px;
+        color: #555;
+        transition: all 0.3s ease;
+        outline: none;
+
+        &::placeholder {
+          color: #a9a9a9;
+        }
+
+        &:focus {
+          border-color: $color_2;
+          box-shadow: 0 0 0 4px rgba($color_2, 0.1);
+        }
+      }
+
+      textarea {
+        height: 100%;
+        min-height: 300px;
+        resize: none;
+      }
+    }
+
+    .rightCol {
+      display: flex;
+      flex-direction: column;
+
+      .inputGroup {
+        flex-grow: 1;
+      }
+    }
+
+    .submitWrap {
+      display: flex;
+      justify-content: flex-start;
+
+      .submitBtn {
+        background-color: $color_2;
+        color: white;
+        border: none;
+        padding: 16px 35px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: darken($color_2, 8%);
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba($color_2, 0.25);
+        }
+      }
+    }
+  }
+}
+
+/* ================================
+   INFO CARDS SECTION
+   ================================ */
+.infoCardsSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+
+  @include respond-below(md) {
+    grid-template-columns: 1fr;
+  }
+
+  .infoCard {
+    background-color: $card-bg;
+    padding: 45px 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+    box-shadow: rgba(149, 157, 165, 0.05) 0px 8px 24px;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .iconWrap {
+      margin-bottom: 25px;
+      
+      svg {
+        font-size: 32px;
+        color: $color_2;
+        stroke-width: 0.5px;
+      }
+    }
+
+    h3 {
+      font-size: 24px;
+      color: $color_1;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    p {
+      color: $color_text_grey;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+      max-width: 90%;
+    }
+
+    a {
+      color: $color_2;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: darken($color_2, 10%);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* ================================
+   MAP SECTION 
+   ================================ */
+.mapSection {
+  margin-bottom: 80px;
+
+  iframe {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* ================================
+   FAQ SECTION 
+   ================================ */
+.faqSection {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  background-color: $card-bg;
+  padding: 80px 60px;
+  border-radius: 16px;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.05) 0px 8px 24px;
+
+  @include respond-below(lg) {
+    grid-template-columns: 1fr;
+    padding: 40px 30px;
+  }
+
+  .faqImageWrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1.1;
+    border-radius: 16px;
+    overflow: hidden;
+
+    .faqImage {
+      object-fit: cover;
+    }
+  }
+
+  .faqContent {
+    h2 {
+      font-size: 42px;
+      color: $color_1;
+      margin-bottom: 40px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+  }
+
+  .accordion {
+    .accordionItem {
+      border-bottom: 1px solid rgba(#000, 0.08);
+
+      &:first-child {
+        border-top: 1px solid rgba(#000, 0.08);
+      }
+
+      .accordionHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        h4 {
+          font-size: 20px;
+          color: $color_1;
+          margin: 0;
+          font-weight: 600;
+          padding-right: 20px;
+          transition: color 0.3s ease;
+        }
+
+        .iconCircle {
+          min-width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          border: 1.5px solid $color_2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $color_2;
+          transition: all 0.3s ease;
+
+          .arrowIcon {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+          }
+        }
+      }
+
+      .accordionBody {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, padding 0.4s ease;
+        opacity: 0;
+
+        p {
+          color: $color_text_grey;
+          font-size: 16px;
+          line-height: 1.7;
+          margin: 0;
+        }
+      }
+
+      &.open {
+        .accordionHeader {
+          h4 {
+            color: $color_2;
+          }
+
+          .iconCircle {
+            background-color: $color_2;
+            color: white;
+
+            .arrowIcon {
+              transform: rotate(90deg);
+            }
+          }
+        }
+
+        .accordionBody {
+          max-height: 500px;
+          padding-bottom: 24px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

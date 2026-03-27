@@ -1,0 +1,229 @@
+.notFound {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+        margin-bottom: 20px;
+        color: #444;
+    }
+}
+
+.btn {
+    display: inline-block;
+    background-color: $color_2;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.detailsPage {
+    min-height: 100vh;
+    background-color: #fcfcfc;
+    padding-bottom: 80px;
+}
+
+.contentWrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    @media (max-width: 991px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.mainInfo {
+    h2 {
+        font-size: 36px;
+        color: $color_1;
+        margin-bottom: 24px;
+        font-weight: 700;
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #555;
+        margin-bottom: 40px;
+    }
+
+    .highlights {
+        background-color: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: $color_1;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                font-size: 16px;
+                color: #444;
+                margin-bottom: 12px;
+
+                svg {
+                    color: $color_2;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .htmlContentSection {
+        margin-top: 50px;
+        background-color: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: rgba(149, 157, 165, 0.08) 0px 8px 24px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h3 {
+            font-size: 28px;
+            color: $color_1;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .htmlContent {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #444;
+
+            p {
+                margin-bottom: 16px;
+            }
+
+            ul,
+            ol {
+                margin-bottom: 20px;
+                padding-left: 20px;
+
+                li {
+                    margin-bottom: 8px;
+                }
+            }
+
+            strong,
+            b {
+                color: $color_1;
+                font-weight: 600;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                color: $color_1;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.bookingCard {
+    background-color: $color_1;
+    color: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    height: max-content;
+    position: sticky;
+    top: 120px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+
+    h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 30px;
+        opacity: 0.9;
+        line-height: 1.6;
+    }
+
+    .bookBtn {
+        display: inline-block;
+        width: 100%;
+        background-color: $color_2;
+        color: white;
+        padding: 16px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darken($color_2, 8%);
+        }
+    }
+}
+
+.gallerySection {
+    margin-top: 60px;
+
+    h2 {
+        font-size: 32px;
+        color: $color_1;
+        margin-bottom: 40px;
+        text-align: center;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: $color_2;
+            border-radius: 2px;
+        }
+    }
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+
+    .galleryImageWrap {
+        position: relative;
+        width: 100%;
+        padding-top: 70%;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+
+        .galleryImage {
+            object-fit: cover;
+            transition: transform 0.4s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}

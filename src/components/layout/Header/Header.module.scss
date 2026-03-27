@@ -31,6 +31,7 @@
               font-size: 18px;
               cursor: pointer;
 
+
               &:hover {
                 color: $color_2;
               }
@@ -48,7 +49,7 @@
                 border-radius: 10px;
                 display: flex;
                 flex-direction: column;
-                gap: 16px;
+                // gap: 16px;
                 // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
@@ -80,7 +81,7 @@
                       border-radius: 10px;
                       display: flex;
                       flex-direction: column;
-                      gap: 16px;
+                      // gap: 16px;
                       // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
                       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
@@ -97,6 +98,9 @@
                   font-weight: normal;
                   display: block;
                   cursor: pointer;
+                  // border: 1px solid red;
+                  padding: 8px 0;
+
                   // margin-bottom: 10px;
 
                   &:hover {
