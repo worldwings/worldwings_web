@@ -15,8 +15,9 @@ const NavItem = ({ item, setShowDrawer }) => {
           onClick={() => {
             setShowDropDown((prev) => !prev);
           }}
+          className={showDropDown ? styles.activeDropdownParent : ''}
         >
-          {item.title} <ChevronDown />
+          {item.title} <ChevronDown style={{ transform: showDropDown ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }} />
         </p>
 
         {showDropDown && (
@@ -71,12 +72,13 @@ const RightMenu = ({ pages, setShowModal }) => {
             setShowDrawer(false);
           }}
           placement="end"
+          className={styles.drawer}
         >
-          <Offcanvas.Header closeButton>
+          <Offcanvas.Header closeButton className={styles.drawerHeader}>
             <Logo isWhite={false} />
           </Offcanvas.Header>
 
-          <Offcanvas.Body>
+          <Offcanvas.Body className={styles.drawerBody}>
             <div>
               <nav className={styles.navSm}>
                 <ul>

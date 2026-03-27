@@ -81,24 +81,23 @@ const NavItem = ({ item }) => {
 const Header = ({ setShowModal }) => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [scrolled, setScrolled] = useState(false);
 
 
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
+      if (window.scrollY < 100) {
+        setShowHeader(true)
       } else {
-        setScrolled(false);
+        if (window.scrollY > lastScrollY) {
+          // scrolling down
+          setShowHeader(false);
+        } else {
+          // scrolling up
+          setShowHeader(true);
+        }
       }
-      if (window.scrollY > lastScrollY) {
-        // scrolling down
-        setShowHeader(false);
-      } else {
-        // scrolling up
-        setShowHeader(true);
-      }
+
       setLastScrollY(window.scrollY);
     };
 
@@ -109,7 +108,6 @@ const Header = ({ setShowModal }) => {
   return (
     <header
       className={`${styles.Header} ${showHeader ? styles.show : styles.hide}
-      ${scrolled ? styles.scrolled : ""}
       `}
     >
       <CustomContainer lg>
