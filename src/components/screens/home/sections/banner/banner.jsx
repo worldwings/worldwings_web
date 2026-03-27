@@ -37,34 +37,39 @@ const BannerSection = () => {
                   <p
                     className={FONTS.font2}
                     data-aos="fade-up"
-                    data-aos-delay="500"
+                    data-aos-delay={1500 + 500}
                   >
                     Travel Smarter, Travel Better
                   </p>
 
                   <div className={FONTS.font2}>
                     <h1>
-                      <span className={styles.w1} data-aos="fade-up">
+                      <span className={styles.w1} data-aos="fade-up"
+                        data-aos-delay={1500 + 0}
+
+                      >
                         Find
                       </span>
                       <span
                         className={styles.w2}
                         data-aos="fade-up"
-                        data-aos-delay="100"
+                        data-aos-delay={1500 + 100}
                       >
                         Your
                       </span>
                       <span
                         className={styles.w3}
                         data-aos="fade-up"
-                        data-aos-delay="200"
+                        data-aos-delay={1500 + 200}
+
                       >
                         Next
                       </span>
                       <span
                         className={styles.w4}
                         data-aos="fade-up"
-                        data-aos-delay="300"
+                        data-aos-delay={1500 + 300}
+
                       >
                         Stay
                       </span>

@@ -4,6 +4,7 @@ import styles from './Footer.module.scss';
 import Link from 'next/link';
 import { TelephoneFill, Facebook, Linkedin, Youtube, CaretRightFill } from 'react-bootstrap-icons';
 import { PAGES, POPULAR_DESTINATIONS } from '@/constants/constants';
+import { CONTACT_DETAILS } from '@/constants/conatct';
 
 const XIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -29,8 +30,8 @@ const Footer = () => {
                                 </div>
                                 <div className={styles.contactDetails}>
                                     <span className={styles.contactLabel}>Call Us 24/7</span>
-                                    <a href="tel:+919444175678" className={styles.contactNumber}>
-                                        +91 94441 75678
+                                    <a href={`tel:+${CONTACT_DETAILS.whatsapp1.number}`} className={styles.contactNumber}>
+                                        {CONTACT_DETAILS.phone1.text}
                                     </a>
                                 </div>
                             </div>
@@ -65,7 +66,7 @@ const Footer = () => {
                         <ul className={styles.linkList}>
                             {
                                 POPULAR_DESTINATIONS.map((pd) => {
-                                    return <li key={pd.name}><Link href="#"><CaretRightFill className={styles.bulletIcon} /> {pd.name}</Link></li>
+                                    return <li key={pd.name}><Link href={pd.href || "#"}><CaretRightFill className={styles.bulletIcon} /> {pd.name}</Link></li>
                                 })
                             }
                         </ul>

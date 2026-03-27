@@ -1,173 +1,192 @@
-import React, { useState } from 'react';
-import Head from 'next/head';
-import Image from 'next/image';
-import { GeoAlt, Envelope, Telephone, ArrowRight } from 'react-bootstrap-icons';
-import CustomContainer from '@/components/ui/custom_container/custom_container';
-import PageBanner from '@/components/common/page_banner/page_banner';
-import styles from './contact.module.scss';
+import React, { useState } from "react";
+import Head from "next/head";
+import Image from "next/image";
+import { GeoAlt, Envelope, Telephone, ArrowRight } from "react-bootstrap-icons";
+import CustomContainer from "@/components/ui/custom_container/custom_container";
+import PageBanner from "@/components/common/page_banner/page_banner";
+import styles from "./contact.module.scss";
+import { CONTACT_DETAILS } from "@/constants/conatct";
 
 const faqs = [
-    {
-        question: "Do I need any kayaking experience?",
-        answer: "Our studio provides a wide range of creative services, including design, branding, web development, graphic design, and video production."
-    },
-    {
-        question: "Is kayaking safe for non-swimmers?",
-        answer: "Yes, we provide all necessary safety equipment including life jackets, and our guides are fully trained in water rescue."
-    },
-    {
-        question: "What should I bring on a kayaking trip?",
-        answer: "We recommend bringing comfortable water-resistant clothing, sunscreen, a hat, and a reusable water bottle."
-    },
-    {
-        question: "What happens if the weather is bad?",
-        answer: "If conditions are unsafe, we will reschedule your trip or provide a full refund according to our weather policy."
-    }
+  {
+    question: "How do I book a tour package with World Wings?",
+    answer:
+      "You can explore our wide range of domestic and international tour packages on our website. Once you find a package you like, you can contact us via phone, email, or by filling out the enquiry form on this page to start the booking process.",
+  },
+  {
+    question: "Do you provide visa assistance for international tours?",
+    answer:
+      "Yes, we provide comprehensive travel documentation services, including visa processing and guidance for all countries, to ensure a hassle-free travel experience.",
+  },
+  {
+    question: "Can I customize my travel itinerary?",
+    answer:
+      "Absolutely! We specialize in customized tours tailored to your preferences, whether it's a family vacation, a honeymoon, or a corporate retreat. Let us know your requirements, and we'll design the perfect trip for you.",
+  },
+  {
+    question: "What does a typical tour package include?",
+    answer:
+      "Our tour packages generally include hotel accommodation, guided sightseeing tours, and airport transfers. Please refer to the specific itinerary of your chosen package for detailed inclusions and exclusions.",
+  },
 ];
 
 const ContactScreen = () => {
-    const [openFaq, setOpenFaq] = useState(0);
+  const [openFaq, setOpenFaq] = useState(0);
 
-    const toggleFaq = (index) => {
-        if (openFaq === index) {
-            setOpenFaq(null);
-        } else {
-            setOpenFaq(index);
-        }
-    };
+  const toggleFaq = (index) => {
+    if (openFaq === index) {
+      setOpenFaq(null);
+    } else {
+      setOpenFaq(index);
+    }
+  };
 
-    return (
-        <>
-            <Head>
-                <title>Contact Us - World Wings</title>
-                <meta name="description" content="Get in touch with World Wings for all your travel needs." />
-            </Head>
+  return (
+    <>
+      <Head>
+        <title>Contact Us - World Wings</title>
+        <meta
+          name="description"
+          content="Get in touch with World Wings for all your travel needs."
+        />
+      </Head>
 
-            <PageBanner title="Contact Us" image="/blog/blog-2.jpg" />
+      <PageBanner title="Contact Us" image="/images/about_banner.webp" />
 
-            <div className={styles.contactPage}>
-                <CustomContainer>
-                    {/* FORM SECTION */}
-                    <div className={styles.formSection}>
-                        <div className={styles.formContainer}>
-                            <h2>Your info</h2>
+      <div className={styles.contactPage}>
+        <CustomContainer>
+          {/* FORM SECTION */}
+          <div className={styles.formSection}>
+            <div className={styles.formContainer}>
+              <h2>Your info</h2>
 
-                            <form className={styles.contactForm}>
-                                <div className={styles.formLayout}>
-                                    <div className={styles.leftCol}>
-                                        <div className={styles.inputGroup}>
-                                            <label>Full name</label>
-                                            <input type="text" placeholder="Enter your full name" />
-                                        </div>
-                                        <div className={styles.inputGroup}>
-                                            <label>Email</label>
-                                            <input type="email" placeholder="Your mail address" />
-                                        </div>
-                                        <div className={styles.inputGroup}>
-                                            <label>Company Name</label>
-                                            <input type="text" placeholder="Your company name" />
-                                        </div>
-                                        <div className={styles.inputGroup}>
-                                            <label>Website</label>
-                                            <input type="url" placeholder="Your website" />
-                                        </div>
-                                    </div>
-
-                                    <div className={styles.rightCol}>
-                                        <div className={styles.inputGroup}>
-                                            <label>Your Enquiry*</label>
-                                            <textarea placeholder="Enter your message here"></textarea>
-                                        </div>
-                                        <div className={styles.submitWrap}>
-                                            <button type="button" className={styles.submitBtn}>Get Started</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+              <form className={styles.contactForm}>
+                <div className={styles.formLayout}>
+                  <div className={styles.leftCol}>
+                    <div className={styles.inputGroup}>
+                      <label>Full name</label>
+                      <input type="text" placeholder="Enter your full name" />
                     </div>
-
-                    {/* INFO CARDS */}
-                    <div className={styles.infoCardsSection}>
-                        <div className={styles.infoCard}>
-                            <div className={styles.iconWrap}>
-                                <GeoAlt />
-                            </div>
-                            <h3>Our Location</h3>
-                            <p>123 Main Street, Apt 4B Springfield, IL 62704, UK</p>
-                        </div>
-                        <div className={styles.infoCard}>
-                            <div className={styles.iconWrap}>
-                                <Envelope />
-                            </div>
-                            <h3>Email Us</h3>
-                            <p>Our support team is here to assist you</p>
-                            <a href="mailto:support@touriza.com">support@touriza.com</a>
-                        </div>
-                        <div className={styles.infoCard}>
-                            <div className={styles.iconWrap}>
-                                <Telephone />
-                            </div>
-                            <h3>Call Us</h3>
-                            <p>Our customer support team is available</p>
-                            <a href="tel:+111112542174">+1 (111) 125- 42174</a>
-                        </div>
+                    <div className={styles.inputGroup}>
+                      <label>Email</label>
+                      <input type="email" placeholder="Your mail address" />
                     </div>
-
-                    {/* MAP SECTION */}
-                    <div className={styles.mapSection}>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d2483.288961634382!2d-0.12210538422998492!3d51.50330057963467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2slastminute.com%20London%20Eye!5e0!3m2!1sen!2suk!4v1680101968560!5m2!1sen!2suk"
-                            width="100%"
-                            height="450"
-                            style={{ border: 0 }}
-                            allowFullScreen=""
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                            title="Google Maps London Eye"
-                        ></iframe>
+                    <div className={styles.inputGroup}>
+                      <label>Phone Number</label>
+                      <input type="text" placeholder="Your phone number" />
                     </div>
-
-                    {/* FAQ SECTION */}
-                    <div className={styles.faqSection}>
-                        <div className={styles.faqImageWrap}>
-                            <Image
-                                src="/images/couple.webp"
-                                alt="Have questions"
-                                fill
-                                className={styles.faqImage}
-                            />
-                        </div>
-                        <div className={styles.faqContent}>
-                            <h2>Have questions?</h2>
-                            <div className={styles.accordion}>
-                                {faqs.map((faq, index) => {
-                                    const isOpen = openFaq === index;
-                                    return (
-                                        <div
-                                            key={index}
-                                            className={`${styles.accordionItem} ${isOpen ? styles.open : ''}`}
-                                            onClick={() => toggleFaq(index)}
-                                        >
-                                            <div className={styles.accordionHeader}>
-                                                <h4>{faq.question}</h4>
-                                                <div className={styles.iconCircle}>
-                                                    <ArrowRight className={styles.arrowIcon} />
-                                                </div>
-                                            </div>
-                                            <div className={styles.accordionBody}>
-                                                <p>{faq.answer}</p>
-                                            </div>
-                                        </div>
-                                    );
-                                })}
-                            </div>
-                        </div>
+                    <div className={styles.inputGroup}>
+                      <label>City of residence</label>
+                      <input type="text" placeholder="Your city of residence" />
                     </div>
-                </CustomContainer>
+                  </div>
+
+                  <div className={styles.rightCol}>
+                    <div className={styles.inputGroup}>
+                      <label>Your Enquiry*</label>
+                      <textarea placeholder="Enter your message here"></textarea>
+                    </div>
+                    <div className={styles.submitWrap}>
+                      <button type="button" className={styles.submitBtn}>
+                        Get Started
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
-        </>
-    );
+          </div>
+
+          {/* INFO CARDS */}
+          <div className={styles.infoCardsSection}>
+            <div className={styles.infoCard}>
+              <div className={styles.iconWrap}>
+                <GeoAlt />
+              </div>
+              <h3>Our Location</h3>
+              <p>
+                {CONTACT_DETAILS.address.map((line, index) => (
+                  <React.Fragment key={index}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </p>
+            </div>
+            <div className={styles.infoCard}>
+              <div className={styles.iconWrap}>
+                <Envelope />
+              </div>
+              <h3>Email Us</h3>
+              <p>Our support team is here to assist you</p>
+              {CONTACT_DETAILS.emails.map((email, index) => (
+                <div key={index} style={{ marginBottom: "5px" }}>
+                  <a href={`mailto:${email}`}>{email}</a>
+                </div>
+              ))}
+            </div>
+            <div className={styles.infoCard}>
+              <div className={styles.iconWrap}>
+                <Telephone />
+              </div>
+              <h3>Call Us</h3>
+              <p>Our customer support team is available</p>
+              <a href={`tel:+${CONTACT_DETAILS.whatsapp1.number}`}>{CONTACT_DETAILS.phone1.text}</a>
+            </div>
+          </div>
+
+          {/* MAP SECTION */}
+          <div className={styles.mapSection}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.2923618840864!2d80.2374438!3d13.0806484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52650eda9f6c65%3A0x983e8a5ebc09521e!2sWORLD%20WINGS%20TOURS%20AND%20TRAVELS!5e0!3m2!1sen!2sin!4v1774614029695!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          {/* FAQ SECTION */}
+          <div className={styles.faqSection}>
+            <div className={styles.faqImageWrap}>
+              <Image
+                src="/images/couple.webp"
+                alt="Have questions"
+                fill
+                className={styles.faqImage}
+              />
+            </div>
+            <div className={styles.faqContent}>
+              <h2>Have questions?</h2>
+              <div className={styles.accordion}>
+                {faqs.map((faq, index) => {
+                  const isOpen = openFaq === index;
+                  return (
+                    <div
+                      key={index}
+                      className={`${styles.accordionItem} ${isOpen ? styles.open : ""}`}
+                      onClick={() => toggleFaq(index)}
+                    >
+                      <div className={styles.accordionHeader}>
+                        <h4>{faq.question}</h4>
+                        <div className={styles.iconCircle}>
+                          <ArrowRight className={styles.arrowIcon} />
+                        </div>
+                      </div>
+                      <div className={styles.accordionBody}>
+                        <p>{faq.answer}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </CustomContainer>
+      </div>
+    </>
+  );
 };
 
 export default ContactScreen;

@@ -22,6 +22,10 @@ const TourDetailsScreen = ({ tour }) => {
         ? `/destinations/${tour.folderName}/${tour.images[0]}`
         : "/blog/blog-1.jpg";
 
+
+    console.log(coverImage);
+
+
     return (
         <>
             <Head>

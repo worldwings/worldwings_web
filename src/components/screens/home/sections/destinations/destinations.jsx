@@ -54,7 +54,7 @@ const DestinationsSection = () => {
           >
             {
               POPULAR_DESTINATIONS.map((pd) => {
-                return <Link href={'/'} key={pd.name}
+                return <Link href={pd.href || '#'} key={pd.name}
                   className={styles.destCard}
                 >
                   <div

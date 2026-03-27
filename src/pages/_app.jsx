@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
-import Router from "next/router";
+import Router, { useRouter } from "next/router";
 import Head from "next/head";
 
 import { ToastContainer } from "react-toastify";
@@ -42,20 +42,22 @@ export default function App({ Component, pageProps }) {
     }, 1500);
   }, []);
 
+  const router = useRouter();
+  const isHome = router.pathname === "/";
+
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>World Wings | Coming Soon</title>
+        <title>World Wings | Home</title>
       </Head>
       <main className={FONTS.font2}>
-        {loading ? <LoadingScreen />
-          :
-          <Layout>
-            <Component {...pageProps} />
-            <ToastContainer position="bottom-right" />
-          </Layout>
-        }
+        {isHome && loading && <LoadingScreen />}
+        <Layout>
+          <Component {...pageProps} />
+          <ToastContainer position="bottom-right" />
+        </Layout>
+
       </main>
     </>
   );

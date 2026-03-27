@@ -6,7 +6,7 @@ import { ChevronRight, HouseFill } from "react-bootstrap-icons";
 const PageBanner = ({ title, image }) => {
     return <section className={styles.PageBanner}
         style={{
-            backgroundImage: `url(${image})`
+            backgroundImage: `url('${image}')`
         }}
     >
         <div className={styles.overlay} />

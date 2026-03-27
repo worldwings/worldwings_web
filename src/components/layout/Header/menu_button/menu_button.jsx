@@ -4,6 +4,7 @@ import styles from "./menu_button.module.scss";
 import { Offcanvas } from "react-bootstrap";
 import Logo from "@/components/common/couple_logo/couple_logo";
 import Link from "next/link";
+import { CONTACT_DETAILS } from "@/constants/conatct";
 
 const NavItem = ({ item, setShowDrawer }) => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -53,10 +54,10 @@ const RightMenu = ({ pages, setShowModal }) => {
 
   return (
     <div className={styles.RightMenu}>
-      <Link href={'tel:+919444175678'}
+      <Link href={`tel:+${CONTACT_DETAILS.whatsapp1.number}`}
         className={styles.callBtn}
       >
-        <TelephoneFill /> <span>+91 94441 75678</span>
+        <TelephoneFill /> <span>{CONTACT_DETAILS.phone1.text}</span>
       </Link>
 
       <div className={styles.MenuButton}>

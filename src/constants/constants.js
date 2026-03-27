@@ -94,26 +94,32 @@ export const POPULAR_DESTINATIONS = [
     {
         name: "Almaty",
         images: ["Almaty (1).webp"],
+        href: "/tours/international-tours/asia-tours/almaty"
     },
     {
         name: "Andhaman",
         images: ["Andhaman (1).jpg"],
+        href: "/tours/domestic-tours/south-india/andaman"
     },
     {
         name: "Australia",
         images: ["Australia (1).jpg"],
+        href: "/tours/international-tours/australia-and-new-zealand-tours/australia"
     },
     {
         name: "Azerbaijan",
         images: ["Azerbaijan (1).jpg"],
+        href: "/tours/international-tours/asia-tours/azerbaijan"
     },
     {
         name: "Bali",
         images: ["Bali (1).jpg"],
+        href: "/tours/international-tours/asia-tours/bali"
     },
     {
         name: "Dubai",
         images: ["Dubai (1).jpg"],
+        href: "/tours/international-tours/middle-east-tours/dubai"
     },
 ];
 

@@ -70,7 +70,7 @@ const GalleryScreen = () => {
                 <meta name="description" content="View our stunning collection of tour destinations." />
             </Head>
 
-            <PageBanner title="Gallery" image="/blog/blog-1.jpg" />
+            <PageBanner title="Gallery" image="/images/about_banner.webp" />
 
             <div className={styles.galleryPage}>
                 <CustomContainer>
@@ -118,11 +118,11 @@ const GalleryScreen = () => {
                     <button className={styles.closeBtn} onClick={() => setSelectedImage(null)}>
                         <X />
                     </button>
-                    
+
                     <button className={`${styles.navBtn} ${styles.prevBtn}`} onClick={handlePrev}>
                         <ChevronLeft />
                     </button>
-                    
+
                     <button className={`${styles.navBtn} ${styles.nextBtn}`} onClick={handleNext}>
                         <ChevronRight />
                     </button>
