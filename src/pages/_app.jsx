@@ -6,6 +6,7 @@ import NProgress from "nprogress";
 import "nprogress/nprogress.css";
 import Router from "next/router";
 import Head from "next/head";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import { ToastContainer } from "react-toastify";
 import Layout from "@/components/layout/layout";
@@ -57,6 +58,7 @@ export default function App({ Component, pageProps }) {
           </Layout>
         }
       </main>
+      <SpeedInsights />
     </>
   );
 }
