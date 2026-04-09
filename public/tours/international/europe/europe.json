@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Beauty of Europe - 08 Nights 09 Days - 2026",
+    "description": "A scenic Europe tour covering iconic cities, landmarks, and cultural highlights.",
+    "destinations": ["Europe"],
+    "duration": "9 Days"
+  },
+  {
+    "name": "Best of Europe - 12 Nights 13 Days - 2026",
+    "description": "A comprehensive Europe trip covering major countries, cities, and attractions.",
+    "destinations": ["Europe"],
+    "duration": "13 Days"
+  },
+  {
+    "name": "European Grandeur - 12 Nights 13 Days - 2026",
+    "description": "Explore the grandeur of Europe with famous cities, architecture, and experiences.",
+    "destinations": ["Europe"],
+    "duration": "13 Days"
+  },
+  {
+    "name": "European Highlights - 9 Nights 10 Days - 2026",
+    "description": "A highlights tour covering key European destinations and iconic attractions.",
+    "destinations": ["Europe"],
+    "duration": "10 Days"
+  },
+  {
+    "name": "Exclusive Europe - 10 Nights 11 Days - 2026",
+    "description": "A premium Europe experience covering major destinations with curated experiences.",
+    "destinations": ["Europe"],
+    "duration": "11 Days"
+  },
+  {
+    "name": "Fascinating Europe - 7 Nights 8 Days - 2026",
+    "description": "A short Europe getaway covering popular destinations and experiences.",
+    "destinations": ["Europe"],
+    "duration": "8 Days"
+  },
+  {
+    "name": "Glimpses Of United Kingdom - 07 Nights 08 Days - 2026",
+    "description": "Explore the United Kingdom with visits to London and other iconic destinations.",
+    "destinations": ["United Kingdom"],
+    "duration": "8 Days"
+  },
+  {
+    "name": "Grand European Highlights - 11 Nights 12 Days - 2026",
+    "description": "An extended Europe highlights tour covering major cities and attractions.",
+    "destinations": ["Europe"],
+    "duration": "12 Days"
+  },
+  {
+    "name": "Grand Exclusive Europe - 12 Nights 13 Days - 2026",
+    "description": "A premium Europe tour with extensive coverage of top destinations.",
+    "destinations": ["Europe"],
+    "duration": "13 Days"
+  },
+  {
+    "name": "Grand Fascinating Europe - 9 Nights 10 Days - 2026",
+    "description": "A detailed Europe journey covering scenic and cultural highlights.",
+    "destinations": ["Europe"],
+    "duration": "10 Days"
+  },
+  {
+    "name": "Grand Wonders of Europe - 15 Nights 16 Days - 2026",
+    "description": "A grand Europe itinerary covering multiple countries and iconic landmarks.",
+    "destinations": ["Europe"],
+    "duration": "16 Days"
+  },
+  {
+    "name": "Jewels of East Europe - 07 Nights 08 Days - 2026",
+    "description": "Discover Eastern Europe with historic cities and cultural experiences.",
+    "destinations": ["Eastern Europe"],
+    "duration": "8 Days"
+  },
+  {
+    "name": "Mini European Grandeur - 9 Nights 10 Days - 2026",
+    "description": "A shorter Europe tour covering essential destinations and highlights.",
+    "destinations": ["Europe"],
+    "duration": "10 Days"
+  },
+  {
+    "name": "Scandinavian Delights - 2026",
+    "description": "Explore Scandinavian countries with scenic landscapes and modern cities.",
+    "destinations": ["Scandinavia"],
+    "duration": "Custom"
+  },
+  {
+    "name": "Sound of Swiss - 07 Nights 08 Days - 2026",
+    "description": "Experience Switzerland with mountains, lakes, and scenic train journeys.",
+    "destinations": ["Switzerland"],
+    "duration": "8 Days"
+  },
+  {
+    "name": "Spain Portugal Fiesta - 10 Nights 11 Days",
+    "description": "Explore Spain and Portugal with cultural landmarks, cities, and cuisine.",
+    "destinations": ["Spain", "Portugal"],
+    "duration": "11 Days"
+  },
+  {
+    "name": "Wonders of Baku",
+    "description": "Discover Baku with modern architecture, culture, and historic sites.",
+    "destinations": ["Baku"],
+    "duration": "Custom"
+  },
+  {
+    "name": "Athens - Paros - Santorini - Ios [9 Days]",
+    "description": "A Greek island tour covering Athens, Paros, Santorini, and Ios.",
+    "destinations": ["Athens", "Paros", "Santorini", "Ios"],
+    "duration": "9 Days"
+  },
+  {
+    "name": "GD26-Athens - Paros - Santorini - Mykonos",
+    "description": "Explore Greece with Athens and popular islands including Paros, Santorini, and Mykonos.",
+    "destinations": ["Athens", "Paros", "Santorini", "Mykonos"],
+    "duration": "Custom"
+  },
+  {
+    "name": "GD26-Athens-Mykonos-Santorini",
+    "description": "A Greek getaway covering Athens, Mykonos, and Santorini.",
+    "destinations": ["Athens", "Mykonos", "Santorini"],
+    "duration": "Custom"
+  },
+  {
+    "name": "GD26-Athens-Mykonos-Santorini-crete",
+    "description": "A comprehensive Greece tour including Athens, Mykonos, Santorini, and Crete.",
+    "destinations": ["Athens", "Mykonos", "Santorini", "Crete"],
+    "duration": "Custom"
+  },
+  {
+    "name": "GD26-City Break in Athens 4 Days",
+    "description": "A short city break in Athens exploring history, culture, and landmarks.",
+    "destinations": ["Athens"],
+    "duration": "4 Days"
+  },
+  {
+    "name": "GD26-Classical Greece [7 days]",
+    "description": "Explore classical Greece with historical sites and cultural experiences.",
+    "destinations": ["Greece"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "GD26-Classical Greece [8 days]",
+    "description": "An extended classical Greece tour with additional sightseeing.",
+    "destinations": ["Greece"],
+    "duration": "8 Days"
+  },
+  {
+    "name": "GD26-Grand Tour of Greece",
+    "description": "A grand Greece itinerary covering major cities, islands, and attractions.",
+    "destinations": ["Greece"],
+    "duration": "Custom"
+  },
+  {
+    "name": "8 DAYS EUROPE PACKAGE",
+    "description": "A short Europe tour covering key destinations and experiences.",
+    "destinations": ["Europe"],
+    "duration": "8 Days"
+  },
+  {
+    "name": "10 Days Scandanivian Countries _ group",
+    "description": "A group tour covering Scandinavian countries and scenic landscapes.",
+    "destinations": ["Scandinavia"],
+    "duration": "10 Days"
+  },
+  {
+    "name": "12 Days European countries _ Group",
+    "description": "A group Europe tour covering multiple countries and attractions.",
+    "destinations": ["Europe"],
+    "duration": "12 Days"
+  },
+  {
+    "name": "12 Days Scandanavia Itinerary_updated",
+    "description": "An updated itinerary covering Scandinavian countries and experiences.",
+    "destinations": ["Scandinavia"],
+    "duration": "12 Days"
+  },
+  {
+    "name": "14 DAYS EUROPE PILGRIMAGE_ Group",
+    "description": "A spiritual Europe pilgrimage tour covering important religious sites.",
+    "destinations": ["Europe"],
+    "duration": "14 Days"
+  },
+  {
+    "name": "15 Days Europe_Nov 2023",
+    "description": "A detailed Europe itinerary covering major destinations and experiences.",
+    "destinations": ["Europe"],
+    "duration": "15 Days"
+  },
+  {
+    "name": "17 Days Fantastic Europe & London_ Group",
+    "description": "A long Europe tour including London and multiple countries.",
+    "destinations": ["Europe", "London"],
+    "duration": "17 Days"
+  },
+  {
+    "name": "7 Days Russia Tour",
+    "description": "Explore Russia with visits to major cities and cultural landmarks.",
+    "destinations": ["Russia"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "7Days London Trip",
+    "description": "A London-focused trip covering iconic landmarks and attractions.",
+    "destinations": ["London"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "14 DAYS UNITED KINGDOM",
+    "description": "A comprehensive United Kingdom tour covering major cities and attractions.",
+    "destinations": ["United Kingdom"],
+    "duration": "14 Days"
+  }
+]

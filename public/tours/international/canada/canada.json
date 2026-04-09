@@ -1,0 +1,32 @@
+[
+  {
+    "name": "7 DAYS - CANADIAN ROCKIES",
+    "description": "Explore the breathtaking Canadian Rockies with scenic mountains, lakes, and national parks.",
+    "destinations": ["Canadian Rockies"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "7 DAYS - ELEGANT EAST CANADA",
+    "description": "Discover Eastern Canada with visits to major cities, cultural landmarks, and scenic spots.",
+    "destinations": ["Eastern Canada"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "13 DAYS - BEST OF CANADA",
+    "description": "A comprehensive Canada tour covering major cities, natural wonders, and cultural highlights.",
+    "destinations": ["Canada"],
+    "duration": "13 Days"
+  },
+  {
+    "name": "7 DAYS - ELEGANT EAST CANADA_Fixed Departure",
+    "description": "A fixed departure tour of Eastern Canada covering key cities and attractions.",
+    "destinations": ["Eastern Canada"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "13 DAYS - BEST OF CANADA _Fixed Departures",
+    "description": "A fixed departure Canada tour exploring major destinations and scenic landscapes.",
+    "destinations": ["Canada"],
+    "duration": "13 Days"
+  }
+]

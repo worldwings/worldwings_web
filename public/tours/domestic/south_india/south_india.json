@@ -1,0 +1,92 @@
+[
+  {
+    "name": "3 Days Kerala",
+    "description": "A short trip to Kerala covering backwaters, greenery, and local cultural experiences.",
+    "destinations": ["Kerala"],
+    "duration": "3 Days"
+  },
+  {
+    "name": "3 Days Kodaikannal",
+    "description": "A refreshing hill station getaway to Kodaikanal with lakes, viewpoints, and cool climate.",
+    "destinations": ["Kodaikanal"],
+    "duration": "3 Days"
+  },
+  {
+    "name": "3 Days Wayanad",
+    "description": "Explore Wayanad’s forests, waterfalls, and wildlife in a short and scenic trip.",
+    "destinations": ["Wayanad"],
+    "duration": "3 Days"
+  },
+  {
+    "name": "4 Days Kerala",
+    "description": "Experience Kerala with backwaters, beaches, and cultural highlights in a relaxed itinerary.",
+    "destinations": ["Kerala"],
+    "duration": "4 Days"
+  },
+  {
+    "name": "5 Days Kerala",
+    "description": "A complete Kerala tour including Alleppey backwaters, Munnar hills, and local experiences.",
+    "destinations": ["Kerala"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "6 Days Kerala",
+    "description": "An extended Kerala trip covering Munnar, Alleppey, Thekkady, and scenic landscapes.",
+    "destinations": ["Kerala"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "3 Days Coorg",
+    "description": "A quick escape to Coorg with coffee plantations, waterfalls, and nature spots.",
+    "destinations": ["Coorg"],
+    "duration": "3 Days"
+  },
+  {
+    "name": "4 Days Coorg",
+    "description": "Explore Coorg in depth with plantations, viewpoints, and local attractions.",
+    "destinations": ["Coorg"],
+    "duration": "4 Days"
+  },
+  {
+    "name": "5 Days Coorg",
+    "description": "A relaxed Coorg vacation with sightseeing, nature walks, and cultural experiences.",
+    "destinations": ["Coorg"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "5 Days Mysore Coorg",
+    "description": "A combined trip covering Mysore’s heritage and Coorg’s natural beauty.",
+    "destinations": ["Mysore", "Coorg"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "3 Days Kanyakumari - poovar - trivandrum",
+    "description": "Explore the southern tip of India with Kanyakumari, Poovar backwaters, and Trivandrum city.",
+    "destinations": ["Kanyakumari", "Poovar", "Trivandrum"],
+    "duration": "3 Days"
+  },
+  {
+    "name": "3D 2N Kanyakumari → Poovar → Kovalam → Trivandrum",
+    "description": "A compact coastal journey covering Kanyakumari, Poovar, Kovalam beaches, and Trivandrum.",
+    "destinations": ["Kanyakumari", "Poovar", "Kovalam", "Trivandrum"],
+    "duration": "3 Days"
+  },
+  {
+    "name": "Kodaikanal Holiday Package 2 Nights",
+    "description": "A short holiday in Kodaikanal with lakes, viewpoints, and peaceful surroundings.",
+    "destinations": ["Kodaikanal"],
+    "duration": "2 Nights"
+  },
+  {
+    "name": "Ooty 3 Days",
+    "description": "Enjoy Ooty with its tea gardens, botanical gardens, and scenic hill views.",
+    "destinations": ["Ooty"],
+    "duration": "3 Days"
+  },
+  {
+    "name": "3 Days Hyderbad tour",
+    "description": "Explore Hyderabad’s historical sites, Charminar, Golconda Fort, and local cuisine.",
+    "destinations": ["Hyderabad"],
+    "duration": "3 Days"
+  }
+]

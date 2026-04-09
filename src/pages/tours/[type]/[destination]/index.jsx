@@ -1,21 +1,42 @@
+/* eslint-disable @next/next/no-assign-module-variable */
 import { useRouter } from "next/router";
 import ToursListScreen from "@/components/screens/tours/toursList";
-import { TOUR_PACKAGES } from "@/constants/tours";
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 
 const ToursPage = () => {
-    const router = useRouter();
-    const { type, destination } = router.query;
+  const router = useRouter();
+  const { type, destination } = router.query;
 
-    const filteredTours = useMemo(() => {
-        if (!type || !destination) return [];
+  const [filteredTours, setFilteredTours] = useState([]);
 
-        return TOUR_PACKAGES.filter((tour) => {
-            return tour.type === type && tour.destination === destination;
-        });
-    }, [type, destination]);
+  const loadTours = async () => {
+    try {
+      const res = await fetch(
+        `/tours/${type}/${destination}/${destination}.json`,
+      );
 
-    return <ToursListScreen tours={filteredTours} destination={destination} />;
+      const data = await res.json();
+
+      setFilteredTours(data);
+
+      return data;
+    } catch (err) {
+      console.error(err);
+      return [];
+    }
+  };
+
+  useEffect(() => {
+    loadTours();
+  }, [router.isReady, router.query.destination, type, destination]);
+
+  return (
+    <ToursListScreen
+      tours={filteredTours}
+      destination={destination}
+      type={type}
+    />
+  );
 };
 
 export default ToursPage;

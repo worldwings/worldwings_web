@@ -3,12 +3,22 @@ import styles from "./page_banner.module.scss";
 import Link from "next/link";
 import { ChevronRight, HouseFill } from "react-bootstrap-icons";
 
-const PageBanner = ({ title, image }) => {
+const PageBanner = ({ title, image, videoSrc }) => {
     return <section className={styles.PageBanner}
         style={{
-            backgroundImage: `url('${image}')`
+            backgroundImage: videoSrc ? 'none' : `url('${image}')`
         }}
     >
+        {videoSrc && (
+            <video 
+                src={videoSrc} 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                className={styles.bgVideo}
+            />
+        )}
         <div className={styles.overlay} />
 
         <CustomContainer>

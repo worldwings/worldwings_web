@@ -1,0 +1,14 @@
+[
+  {
+    "name": "10 DAYS SERENGETI AND MANYARA SAFARI",
+    "description": "An exciting wildlife safari covering Serengeti National Park and Lake Manyara with game drives and scenic landscapes.",
+    "destinations": ["Serengeti", "Lake Manyara"],
+    "duration": "10 Days"
+  },
+  {
+    "name": "TANZANIA SAFARI 10 days tour",
+    "description": "A comprehensive Tanzania safari exploring national parks, wildlife, and breathtaking natural beauty.",
+    "destinations": ["Tanzania"],
+    "duration": "10 Days"
+  }
+]

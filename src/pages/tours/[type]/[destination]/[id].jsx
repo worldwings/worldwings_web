@@ -1,19 +1,70 @@
-import { useRouter } from "next/router";
 import TourDetailsScreen from "@/components/screens/tour_details/tour_details";
-import { TOUR_PACKAGES } from "@/constants/tours";
-import { useMemo } from "react";
+import mammoth from "mammoth";
+import fs from "fs";
+import path from "path";
 
-const TourDetailsPage = () => {
-    const router = useRouter();
-    const { id } = router.query;
+export async function getServerSideProps(context) {
+  const { type, destination, id } = context.params;
 
-    // const tour = useMemo(() => {
-    //     if (!id) return null;
-    //     return TOUR_PACKAGES.find((t) => t.id === id);
-    // }, [id]);
-    const tour = TOUR_PACKAGES.find((t) => t.id === id)
+  let detailsHTML = null;
+  let tourData = null;
 
-    return <TourDetailsScreen tour={tour} />;
+  try {
+    // ✅ 1. Load JSON (tour data)
+    const jsonPath = path.join(
+      process.cwd(),
+      "public",
+      "tours",
+      type,
+      destination,
+      `${destination}.json`
+    );
+
+    const jsonData = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
+
+    tourData = jsonData.find((t) => t.name === id) || null;
+
+    // ✅ 2. Load DOCX (itinerary)
+    const docPath = path.join(
+      process.cwd(),
+      "public",
+      "tours",
+      type,
+      destination,
+      "itineraries",
+      `${id}.docx`
+    );
+
+    if (fs.existsSync(docPath)) {
+      const buffer = fs.readFileSync(docPath);
+
+      const result = await mammoth.convertToHtml({ buffer });
+
+      detailsHTML = result.value;
+    } else {
+      console.warn("DOCX not found:", docPath);
+    }
+  } catch (err) {
+    console.error("SSR ERROR:", err);
+  }
+
+  return {
+    props: {
+      detailsHTML,
+      tourData,
+      docUrl: `/tours/${type}/${destination}/itineraries/${id}.docx`,
+    },
+  };
+}
+
+const TourDetailsPage = ({ detailsHTML, tourData, docUrl }) => {
+  return (
+    <TourDetailsScreen
+      tour={tourData}
+      detailsHTML={detailsHTML}
+      docUrl={docUrl}
+    />
+  );
 };
 
 export default TourDetailsPage;

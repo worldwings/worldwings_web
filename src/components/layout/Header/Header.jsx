@@ -84,26 +84,26 @@ const Header = ({ setShowModal }) => {
 
 
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY < 100) {
-        setShowHeader(true)
-      } else {
-        if (window.scrollY > lastScrollY) {
-          // scrolling down
-          setShowHeader(false);
-        } else {
-          // scrolling up
-          setShowHeader(true);
-        }
-      }
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY < 100) {
+  //       setShowHeader(true)
+  //     } else {
+  //       if (window.scrollY > lastScrollY) {
+  //         // scrolling down
+  //         setShowHeader(false);
+  //       } else {
+  //         // scrolling up
+  //         setShowHeader(true);
+  //       }
+  //     }
 
-      setLastScrollY(window.scrollY);
-    };
+  //     setLastScrollY(window.scrollY);
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, [lastScrollY]);
 
   return (
     <header

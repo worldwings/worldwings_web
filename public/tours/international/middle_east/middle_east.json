@@ -1,0 +1,44 @@
+[
+  {
+    "name": "5 Days Oman Holiday Package Tour",
+    "description": "Explore Oman with desert landscapes, mountains, and cultural attractions.",
+    "destinations": ["Oman"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "6 DAYS OMAN DISCOVERY TOUR",
+    "description": "A detailed Oman journey covering deserts, forts, and scenic natural beauty.",
+    "destinations": ["Oman"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "6 Days Dubai Tour program",
+    "description": "Discover Dubai with city tours, desert safari, shopping, and modern attractions.",
+    "destinations": ["Dubai"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "4 Days Dubai Package",
+    "description": "A short Dubai getaway covering major attractions, shopping, and leisure.",
+    "destinations": ["Dubai"],
+    "duration": "4 Days"
+  },
+  {
+    "name": "5 Days Dubai Package",
+    "description": "Explore Dubai with city highlights, desert safari, and entertainment.",
+    "destinations": ["Dubai"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "6 Days Dubai & Abudhabi",
+    "description": "A combined UAE tour covering Dubai and Abu Dhabi with iconic landmarks.",
+    "destinations": ["Dubai", "Abu Dhabi"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "5 Days Abudhabi Package",
+    "description": "Explore Abu Dhabi with cultural sites, mosques, and modern attractions.",
+    "destinations": ["Abu Dhabi"],
+    "duration": "5 Days"
+  }
+]

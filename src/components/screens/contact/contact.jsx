@@ -5,7 +5,7 @@ import { GeoAlt, Envelope, Telephone, ArrowRight } from "react-bootstrap-icons";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import PageBanner from "@/components/common/page_banner/page_banner";
 import styles from "./contact.module.scss";
-import { CONTACT_DETAILS } from "@/constants/conatct";
+import { CONTACT_DETAILS, BRANCHES } from "@/constants/conatct";
 
 const faqs = [
   {
@@ -98,42 +98,51 @@ const ContactScreen = () => {
           </div>
 
           {/* INFO CARDS */}
-          <div className={styles.infoCardsSection}>
-            <div className={styles.infoCard}>
-              <div className={styles.iconWrap}>
-                <GeoAlt />
-              </div>
-              <h3>Our Location</h3>
-              <p>
-                {CONTACT_DETAILS.address.map((line, index) => (
-                  <React.Fragment key={index}>
-                    {line}
-                    <br />
-                  </React.Fragment>
-                ))}
-              </p>
-            </div>
-            <div className={styles.infoCard}>
-              <div className={styles.iconWrap}>
-                <Envelope />
-              </div>
-              <h3>Email Us</h3>
-              <p>Our support team is here to assist you</p>
-              {CONTACT_DETAILS.emails.map((email, index) => (
-                <div key={index} style={{ marginBottom: "5px" }}>
-                  <a href={`mailto:${email}`}>{email}</a>
+          {BRANCHES.map((branch, branchIndex) => (
+            <div key={branchIndex} className={styles.branchSection}>
+              <h2 className={styles.branchTitle}>{branch.title}</h2>
+              <div className={styles.infoCardsSection}>
+                <div className={styles.infoCard}>
+                  <div className={styles.iconWrap}>
+                    <GeoAlt />
+                  </div>
+                  <h3>Our Location</h3>
+                  <p>
+                    {branch.address.map((line, index) => (
+                      <React.Fragment key={index}>
+                        {line}
+                        <br />
+                      </React.Fragment>
+                    ))}
+                  </p>
                 </div>
-              ))}
-            </div>
-            <div className={styles.infoCard}>
-              <div className={styles.iconWrap}>
-                <Telephone />
+                <div className={styles.infoCard}>
+                  <div className={styles.iconWrap}>
+                    <Envelope />
+                  </div>
+                  <h3>Email Us</h3>
+                  <p>Our support team is here to assist you</p>
+                  {branch.emails.map((email, index) => (
+                    <div key={index} style={{ marginBottom: "5px" }}>
+                      <a href={`mailto:${email}`}>{email}</a>
+                    </div>
+                  ))}
+                </div>
+                <div className={styles.infoCard}>
+                  <div className={styles.iconWrap}>
+                    <Telephone />
+                  </div>
+                  <h3>Call Us</h3>
+                  <p>Our customer support team is available</p>
+                  {branch.phones.map((phone, index) => (
+                    <div key={index} style={{ marginBottom: "5px" }}>
+                      <span>{phone}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <h3>Call Us</h3>
-              <p>Our customer support team is available</p>
-              <a href={`tel:+${CONTACT_DETAILS.whatsapp1.number}`}>{CONTACT_DETAILS.phone1.text}</a>
             </div>
-          </div>
+          ))}
 
           {/* MAP SECTION */}
           <div className={styles.mapSection}>

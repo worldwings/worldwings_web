@@ -121,6 +121,18 @@ $border-color: rgba(0, 0, 0, 0.08);
 /* ================================
    INFO CARDS SECTION
    ================================ */
+.branchSection {
+  margin-bottom: 20px;
+}
+
+.branchTitle {
+  font-size: 28px;
+  color: $color_1;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .infoCardsSection {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

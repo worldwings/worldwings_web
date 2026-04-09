@@ -8,7 +8,7 @@ import OurTeamSection from "./sections/our_team/our_team";
 const AboutUsScreen = () => {
     return (
         <>
-            <PageBanner title="About Us" image="/images/about_banner.webp" />
+            <PageBanner title="About Us" videoSrc="/videos/bg_video.mp4" />
 
             <OurStorySection />
             {/* <AboutUsSection /> */}

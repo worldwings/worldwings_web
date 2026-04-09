@@ -1,0 +1,350 @@
+[
+  {
+    "name": "4N PhuQuo",
+    "description": "A relaxing getaway to Phu Quoc with beaches, island tours, and leisure activities.",
+    "destinations": ["Phu Quoc"],
+    "duration": "4 Nights"
+  },
+  {
+    "name": "5D4N PHU QUOC",
+    "description": "Explore Phu Quoc with beaches, island hopping, and local experiences.",
+    "destinations": ["Phu Quoc"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "6 Days Vietnam Tour package",
+    "description": "Discover Vietnam with visits to major cities, cultural sites, and scenic landscapes.",
+    "destinations": ["Vietnam"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "7 Days Vietnam Holiday Package",
+    "description": "A complete Vietnam trip covering popular destinations and cultural experiences.",
+    "destinations": ["Vietnam"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "8 Days Vietnam Tour",
+    "description": "An extended Vietnam journey exploring cities, heritage sites, and natural beauty.",
+    "destinations": ["Vietnam"],
+    "duration": "8 Days"
+  },
+  {
+    "name": "10 Days Vietnam Holiday Package",
+    "description": "A detailed Vietnam tour covering multiple regions, culture, and landscapes.",
+    "destinations": ["Vietnam"],
+    "duration": "10 Days"
+  },
+  {
+    "name": "4 Days Phuket trip",
+    "description": "Enjoy Phuket with beaches, island tours, and vibrant nightlife.",
+    "destinations": ["Phuket"],
+    "duration": "4 Days"
+  },
+  {
+    "name": "5 Days Phuket",
+    "description": "A relaxing Phuket vacation with beaches, sightseeing, and water activities.",
+    "destinations": ["Phuket"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "5 Days Thailand Tour Package",
+    "description": "Explore Thailand with visits to key attractions, beaches, and cultural landmarks.",
+    "destinations": ["Thailand"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "7 Days Thailand Holiday Trip",
+    "description": "A complete Thailand experience including cities, beaches, and local culture.",
+    "destinations": ["Thailand"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "7 DAYS THAILAND TRIP - Ex -Cochin",
+    "description": "A Thailand tour starting from Cochin covering major attractions and beaches.",
+    "destinations": ["Thailand"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "10 Days Thailand, Malaysia & Singapore",
+    "description": "A multi-country tour exploring Thailand, Malaysia, and Singapore highlights.",
+    "destinations": ["Thailand", "Malaysia", "Singapore"],
+    "duration": "10 Days"
+  },
+  {
+    "name": "12 Days Thailand, Malaysia & Singapore",
+    "description": "An extended Southeast Asia tour covering major cities and attractions.",
+    "destinations": ["Thailand", "Malaysia", "Singapore"],
+    "duration": "12 Days"
+  },
+  {
+    "name": "13 Days Thailand, Malaysia & Singapore",
+    "description": "A comprehensive multi-country itinerary with cultural and leisure experiences.",
+    "destinations": ["Thailand", "Malaysia", "Singapore"],
+    "duration": "13 Days"
+  },
+  {
+    "name": "4 Days Singapore Package",
+    "description": "Explore Singapore with city tours, attractions, and modern experiences.",
+    "destinations": ["Singapore"],
+    "duration": "4 Days"
+  },
+  {
+    "name": "5 days singapore",
+    "description": "A detailed Singapore tour with attractions, shopping, and cultural spots.",
+    "destinations": ["Singapore"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "4 DAYS LANGKAWI PACKAGE",
+    "description": "Enjoy Langkawi with beaches, cable car rides, and island experiences.",
+    "destinations": ["Langkawi"],
+    "duration": "4 Days"
+  },
+  {
+    "name": "4 Days Malaysia Package",
+    "description": "Discover Malaysia with city tours, culture, and modern attractions.",
+    "destinations": ["Malaysia"],
+    "duration": "4 Days"
+  },
+  {
+    "name": "5 Days Malaysia Package",
+    "description": "A relaxing Malaysia trip covering cities, shopping, and sightseeing.",
+    "destinations": ["Malaysia"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "7 Days Malaysia Singapore",
+    "description": "A dual-country tour covering Malaysia and Singapore highlights.",
+    "destinations": ["Malaysia", "Singapore"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "5 Days Bali Honeymoon package",
+    "description": "A romantic Bali getaway with beaches, resorts, and cultural experiences.",
+    "destinations": ["Bali"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "6 Days Bali Holiday Package",
+    "description": "Explore Bali with temples, beaches, and scenic landscapes.",
+    "destinations": ["Bali"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "Bali 7 Days Honeymoon Package",
+    "description": "An extended honeymoon in Bali with luxury stays and scenic tours.",
+    "destinations": ["Bali"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "5N Singapore + 4N Cambodia",
+    "description": "A combined tour of Singapore and Cambodia with city and heritage experiences.",
+    "destinations": ["Singapore", "Cambodia"],
+    "duration": "9 Nights"
+  },
+  {
+    "name": "2N Malaysia + 2N Singapore",
+    "description": "A short dual-country trip covering Malaysia and Singapore highlights.",
+    "destinations": ["Malaysia", "Singapore"],
+    "duration": "4 Nights"
+  },
+  {
+    "name": "2N Malaysia +3N Philippines",
+    "description": "A multi-country getaway covering Malaysia and the Philippines.",
+    "destinations": ["Malaysia", "Philippines"],
+    "duration": "5 Nights"
+  },
+  {
+    "name": "7D6N Manila +  Puerto Princesa (Palawan)",
+    "description": "Explore Manila and Palawan with city tours and island experiences.",
+    "destinations": ["Manila", "Puerto Princesa"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "7D6N Old Manila City Tour + Boracay Island Hopping Tour  + Twin City Tour",
+    "description": "A Philippines tour covering Manila, Boracay, and city highlights.",
+    "destinations": ["Manila", "Boracay"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "Singapore + 4N Cambodia",
+    "description": "A combined Singapore and Cambodia tour with modern and heritage experiences.",
+    "destinations": ["Singapore", "Cambodia"],
+    "duration": "4 Nights"
+  },
+  {
+    "name": "8 Days Japan Japan Holiday Package",
+    "description": "Explore Japan with cultural sites, cities, and scenic attractions.",
+    "destinations": ["Japan"],
+    "duration": "8 Days"
+  },
+  {
+    "name": "5N 6 Days Philippines Tour",
+    "description": "A Philippines tour covering beaches, islands, and city experiences.",
+    "destinations": ["Philippines"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "PHILIPHINES-6Days-Angelcity and Manila",
+    "description": "Explore Angeles City and Manila with culture and city attractions.",
+    "destinations": ["Angeles City", "Manila"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "PHILIPPINES ITINERARY",
+    "description": "A flexible itinerary covering key destinations across the Philippines.",
+    "destinations": ["Philippines"],
+    "duration": "Custom"
+  },
+  {
+    "name": "4 Days Thailand Package _July Group",
+    "description": "A group Thailand trip with city tours, attractions, and leisure time.",
+    "destinations": ["Thailand"],
+    "duration": "4 Days"
+  },
+  {
+    "name": "5 Days Thailand",
+    "description": "A relaxing Thailand vacation with beaches, shopping, and sightseeing.",
+    "destinations": ["Thailand"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "Nepal Tour 05 Nights 06 - Kathmandu & Pokhara",
+    "description": "Explore Nepal with visits to Kathmandu and Pokhara featuring mountains and culture.",
+    "destinations": ["Kathmandu", "Pokhara"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "5 Days Lakshadweep Package x 4 pax",
+    "description": "A tropical island getaway in Lakshadweep with beaches and water activities.",
+    "destinations": ["Lakshadweep"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "5 Days  Maldives Holiday Package",
+    "description": "A luxury Maldives trip with beaches, resorts, and water villas.",
+    "destinations": ["Maldives"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "6 DAYS MALDIVES",
+    "description": "An extended Maldives vacation with relaxation and island experiences.",
+    "destinations": ["Maldives"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "8 Days Philippines(Manila - Coron - Cebu)",
+    "description": "Explore Philippines covering Manila, Coron, and Cebu with island experiences.",
+    "destinations": ["Manila", "Coron", "Cebu"],
+    "duration": "8 Days"
+  },
+  {
+    "name": "5 Days SOUTH KOREA",
+    "description": "Discover South Korea with city tours, culture, and modern attractions.",
+    "destinations": ["South Korea"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "6 Days South Korea",
+    "description": "An extended South Korea trip with cultural and city experiences.",
+    "destinations": ["South Korea"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "7 Days SOUTH KOREA",
+    "description": "A comprehensive South Korea itinerary covering major attractions.",
+    "destinations": ["South Korea"],
+    "duration": "7 Days"
+  },
+  {
+    "name": "5 days Srilanka Holiday Package",
+    "description": "Explore Sri Lanka with beaches, culture, and scenic landscapes.",
+    "destinations": ["Sri Lanka"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "6 Srilanka Tour_Package",
+    "description": "A detailed Sri Lanka trip covering key attractions and experiences.",
+    "destinations": ["Sri Lanka"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "3 Days Almaty Holiday Package",
+    "description": "A short trip to Almaty with mountains, city tours, and local experiences.",
+    "destinations": ["Almaty"],
+    "duration": "3 Days"
+  },
+  {
+    "name": "4 Days Almaty Holiday Package",
+    "description": "Explore Almaty with scenic views, lakes, and city attractions.",
+    "destinations": ["Almaty"],
+    "duration": "4 Days"
+  },
+  {
+    "name": "5 Days Almaty Holiday Package",
+    "description": "A relaxing Almaty vacation with sightseeing and nature experiences.",
+    "destinations": ["Almaty"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "6 Days Almaty Holiday Package",
+    "description": "An extended Almaty tour covering nearby scenic and cultural spots.",
+    "destinations": ["Almaty"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "5 DAYS ANDAMAN HOLIDAY PACKAGE",
+    "description": "Explore Andaman Islands with beaches, water sports, and island tours.",
+    "destinations": ["Andaman"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "6 Days Andaman Package",
+    "description": "An extended Andaman trip with multiple islands and activities.",
+    "destinations": ["Andaman"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "Azerbaijan Tour (4 nights, 5 days), Sep",
+    "description": "Explore Azerbaijan with city tours, culture, and scenic landscapes.",
+    "destinations": ["Azerbaijan"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "10 Days China Holiday Tour",
+    "description": "A comprehensive China tour covering major cities and cultural landmarks.",
+    "destinations": ["China"],
+    "duration": "10 Days"
+  },
+  {
+    "name": "4 Days georgia Holiday Package",
+    "description": "Discover Georgia with mountains, culture, and historic sites.",
+    "destinations": ["Georgia"],
+    "duration": "4 Days"
+  },
+  {
+    "name": "6 Days Hongkong & Macau",
+    "description": "Explore Hong Kong and Macau with city attractions and entertainment.",
+    "destinations": ["Hong Kong", "Macau"],
+    "duration": "6 Days"
+  },
+  {
+    "name": "5 Days hongkong",
+    "description": "A Hong Kong trip covering attractions, shopping, and entertainment.",
+    "destinations": ["Hong Kong"],
+    "duration": "5 Days"
+  },
+  {
+    "name": "6N Nights Japan Tour",
+    "description": "A Japan tour covering major cities and cultural attractions.",
+    "destinations": ["Japan"],
+    "duration": "6 Nights"
+  },
+  {
+    "name": "7N Nights Japan Tour",
+    "description": "An extended Japan trip with cultural, scenic, and city experiences.",
+    "destinations": ["Japan"],
+    "duration": "7 Nights"
+  }
+]
