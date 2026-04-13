@@ -101,7 +101,7 @@ const ToursListScreen = ({ tours = [], destination, type }) => {
                       <div className={styles.imageWrap}>
                         {tour.images && tour.images.length > 0 ? (
                           <Image
-                            src={`/destinations/${tour.folderName}/${tour.images[0]}`}
+                            src={`${tour.images[0]}`}
                             alt={tour.title || tour.name}
                             width={400}
                             height={250}

@@ -35,8 +35,12 @@ const ServiceDetailsScreen = ({ service }) => {
                 <CustomContainer>
                     <div className={styles.contentWrap}>
                         <div className={styles.mainInfo}>
-                            <h2>About {service.title}</h2>
-                            <p className={styles.description}>{service.description}</p>
+                            {(!service.overviewHtml) && (
+                                <>
+                                    <h2>About {service.title}</h2>
+                                    <p className={styles.description}>{service.description}</p>
+                                </>
+                            )}
 
                             {service.highlights && service.highlights.length > 0 && (
                                 <div className={styles.highlights}>
@@ -51,7 +55,6 @@ const ServiceDetailsScreen = ({ service }) => {
 
                             {service.overviewHtml && (
                                 <div className={styles.htmlContentSection}>
-                                    <h3>Overview</h3>
                                     <div className={styles.htmlContent} dangerouslySetInnerHTML={{ __html: service.overviewHtml }} />
                                 </div>
                             )}

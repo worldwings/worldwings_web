@@ -2,43 +2,162 @@
   {
     "name": "5 Days Oman Holiday Package Tour",
     "description": "Explore Oman with desert landscapes, mountains, and cultural attractions.",
-    "destinations": ["Oman"],
-    "duration": "5 Days"
+    "destinations": [
+      "Oman"
+    ],
+    "duration": "5 Days",
+    "price": "Rs. 73500/-",
+    "images": [
+      "/destinations/Oman/Oman (1).jpg",
+      "/destinations/Oman/Oman (10).jpg",
+      "/destinations/Oman/Oman (11).jpg",
+      "/destinations/Oman/Oman (12).jpg",
+      "/destinations/Oman/Oman (2).jpg",
+      "/destinations/Oman/Oman (3).jpg",
+      "/destinations/Oman/Oman (4).jpg",
+      "/destinations/Oman/Oman (5).jpg",
+      "/destinations/Oman/Oman (6).jpg",
+      "/destinations/Oman/Oman (7).jpg",
+      "/destinations/Oman/Oman (8).jpg",
+      "/destinations/Oman/Oman (9).jpg"
+    ]
   },
   {
     "name": "6 DAYS OMAN DISCOVERY TOUR",
     "description": "A detailed Oman journey covering deserts, forts, and scenic natural beauty.",
-    "destinations": ["Oman"],
-    "duration": "6 Days"
+    "destinations": [
+      "Oman"
+    ],
+    "duration": "6 Days",
+    "price": "Rs. 63,500/-",
+    "images": [
+      "/destinations/Oman/Oman (1).jpg",
+      "/destinations/Oman/Oman (10).jpg",
+      "/destinations/Oman/Oman (11).jpg",
+      "/destinations/Oman/Oman (12).jpg",
+      "/destinations/Oman/Oman (2).jpg",
+      "/destinations/Oman/Oman (3).jpg",
+      "/destinations/Oman/Oman (4).jpg",
+      "/destinations/Oman/Oman (5).jpg",
+      "/destinations/Oman/Oman (6).jpg",
+      "/destinations/Oman/Oman (7).jpg",
+      "/destinations/Oman/Oman (8).jpg",
+      "/destinations/Oman/Oman (9).jpg"
+    ]
   },
   {
     "name": "6 Days Dubai Tour program",
     "description": "Discover Dubai with city tours, desert safari, shopping, and modern attractions.",
-    "destinations": ["Dubai"],
-    "duration": "6 Days"
+    "destinations": [
+      "Dubai"
+    ],
+    "duration": "6 Days",
+    "price": "Rs. 1,19,500/-",
+    "images": [
+      "/destinations/Dubai/Dubai (1).jpg",
+      "/destinations/Dubai/Dubai (10).jpg",
+      "/destinations/Dubai/Dubai (11).jpg",
+      "/destinations/Dubai/Dubai (12).jpg",
+      "/destinations/Dubai/Dubai (13).jpg",
+      "/destinations/Dubai/Dubai (14).jpg",
+      "/destinations/Dubai/Dubai (15).jpg",
+      "/destinations/Dubai/Dubai (2).jpg",
+      "/destinations/Dubai/Dubai (3).jpg",
+      "/destinations/Dubai/Dubai (4).jpg",
+      "/destinations/Dubai/Dubai (5).jpg",
+      "/destinations/Dubai/Dubai (6).jpg",
+      "/destinations/Dubai/Dubai (7).jpg",
+      "/destinations/Dubai/Dubai (8).jpg",
+      "/destinations/Dubai/Dubai (9).jpg"
+    ]
   },
   {
     "name": "4 Days Dubai Package",
     "description": "A short Dubai getaway covering major attractions, shopping, and leisure.",
-    "destinations": ["Dubai"],
-    "duration": "4 Days"
+    "destinations": [
+      "Dubai"
+    ],
+    "duration": "4 Days",
+    "price": "Rs. 59000/-",
+    "images": [
+      "/destinations/Dubai/Dubai (1).jpg",
+      "/destinations/Dubai/Dubai (10).jpg",
+      "/destinations/Dubai/Dubai (11).jpg",
+      "/destinations/Dubai/Dubai (12).jpg",
+      "/destinations/Dubai/Dubai (13).jpg",
+      "/destinations/Dubai/Dubai (14).jpg",
+      "/destinations/Dubai/Dubai (15).jpg",
+      "/destinations/Dubai/Dubai (2).jpg",
+      "/destinations/Dubai/Dubai (3).jpg",
+      "/destinations/Dubai/Dubai (4).jpg",
+      "/destinations/Dubai/Dubai (5).jpg",
+      "/destinations/Dubai/Dubai (6).jpg",
+      "/destinations/Dubai/Dubai (7).jpg",
+      "/destinations/Dubai/Dubai (8).jpg",
+      "/destinations/Dubai/Dubai (9).jpg"
+    ]
   },
   {
     "name": "5 Days Dubai Package",
     "description": "Explore Dubai with city highlights, desert safari, and entertainment.",
-    "destinations": ["Dubai"],
-    "duration": "5 Days"
+    "destinations": [
+      "Dubai"
+    ],
+    "duration": "5 Days",
+    "price": "Rs. 63,500/-",
+    "images": [
+      "/destinations/Dubai/Dubai (1).jpg",
+      "/destinations/Dubai/Dubai (10).jpg",
+      "/destinations/Dubai/Dubai (11).jpg",
+      "/destinations/Dubai/Dubai (12).jpg",
+      "/destinations/Dubai/Dubai (13).jpg",
+      "/destinations/Dubai/Dubai (14).jpg",
+      "/destinations/Dubai/Dubai (15).jpg",
+      "/destinations/Dubai/Dubai (2).jpg",
+      "/destinations/Dubai/Dubai (3).jpg",
+      "/destinations/Dubai/Dubai (4).jpg",
+      "/destinations/Dubai/Dubai (5).jpg",
+      "/destinations/Dubai/Dubai (6).jpg",
+      "/destinations/Dubai/Dubai (7).jpg",
+      "/destinations/Dubai/Dubai (8).jpg",
+      "/destinations/Dubai/Dubai (9).jpg"
+    ]
   },
   {
     "name": "6 Days Dubai & Abudhabi",
     "description": "A combined UAE tour covering Dubai and Abu Dhabi with iconic landmarks.",
-    "destinations": ["Dubai", "Abu Dhabi"],
-    "duration": "6 Days"
+    "destinations": [
+      "Dubai",
+      "Abu Dhabi"
+    ],
+    "duration": "6 Days",
+    "price": "Rs. 85,000/-",
+    "images": [
+      "/destinations/Dubai/Dubai (1).jpg",
+      "/destinations/Dubai/Dubai (10).jpg",
+      "/destinations/Dubai/Dubai (11).jpg",
+      "/destinations/Dubai/Dubai (12).jpg",
+      "/destinations/Dubai/Dubai (13).jpg",
+      "/destinations/Dubai/Dubai (14).jpg",
+      "/destinations/Dubai/Dubai (15).jpg",
+      "/destinations/Dubai/Dubai (2).jpg",
+      "/destinations/Dubai/Dubai (3).jpg",
+      "/destinations/Dubai/Dubai (4).jpg",
+      "/destinations/Dubai/Dubai (5).jpg",
+      "/destinations/Dubai/Dubai (6).jpg",
+      "/destinations/Dubai/Dubai (7).jpg",
+      "/destinations/Dubai/Dubai (8).jpg",
+      "/destinations/Dubai/Dubai (9).jpg"
+    ]
   },
   {
     "name": "5 Days Abudhabi Package",
     "description": "Explore Abu Dhabi with cultural sites, mosques, and modern attractions.",
-    "destinations": ["Abu Dhabi"],
-    "duration": "5 Days"
+    "destinations": [
+      "Abu Dhabi"
+    ],
+    "duration": "5 Days",
+    "price": "Rs. 80,000/-",
+    "images": []
   }
 ]

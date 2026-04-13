@@ -7,7 +7,6 @@ export const PAGES = [
       {
         title: "Domestic Tours",
         href: "/tours/domestic-tours",
-
         dropdown: [
           { title: "North India", href: "/tours/domestic/north_india" },
           { title: "South India", href: "/tours/domestic/south_india" },
@@ -15,170 +14,79 @@ export const PAGES = [
             title: "East & West India",
             href: "/tours/domestic/east_and_west_india",
           },
-
           {
             title: "Weekend Getaways",
             href: "/tours/domestic/weekend_getaway",
           },
         ],
-        // dropdown: [
-        //   { title: "North India", href: "/tours/domestic-tours/north-india" },
-        //   { title: "South India", href: "/tours/domestic-tours/south-india" },
-        //   {
-        //     title: "East & Northeast",
-        //     href: "/tours/domestic-tours/east-and-northeast",
-        //   },
-        //   { title: "West India", href: "/tours/domestic-tours/west-india" },
-        //   {
-        //     title: "Weekend Getaways",
-        //     href: "/tours/domestic-tours/weekend-getaways",
-        //   },
-        // ],
       },
       {
         title: "International Tours",
         href: "/tours/international-tours",
         dropdown: [
-          {
-            title: "Asia Tours",
-            href: "/tours/international/asia",
-          },
-          {
-            title: "Europe Tours",
-            href: "/tours/international/europe",
-          },
-          {
-            title: "Middle East Tours",
-            href: "/tours/international/middle_east",
-          },
-          {
-            title: "Africa Tours",
-            href: "/tours/international/africa",
-          },
-          {
-            title: "Australia & New Zealand Tours",
-            href: "/tours/international/australia_and_newzealand",
-          },
-          {
-            title: "America Tours",
-            href: "/tours/international/america",
-          },
-          {
-            title: "Canada Tours",
-            href: "/tours/international/canada",
-          },
-          {
-            title: "Cruise Holidays",
-            href: "/tours/international/cruise_holidays",
-          },
-          {
-            title: "Customized Tours",
-            href: "/tours/international/customized_tours",
-          },
+          { title: "Asia Tours", href: "/tours/international/asia" },
+          { title: "Europe Tours", href: "/tours/international/europe" },
+          { title: "Middle East Tours", href: "/tours/international/middle_east" },
+          { title: "Africa Tours", href: "/tours/international/africa" },
+          { title: "Australia & New Zealand Tours", href: "/tours/international/australia_and_newzealand" },
+          { title: "America Tours", href: "/tours/international/america" },
+          { title: "Canada Tours", href: "/tours/international/canada" },
+          { title: "Cruise Holidays", href: "/tours/international/cruise_holidays" },
+          { title: "Customized Tours", href: "/tours/international/customized_tours" },
         ],
       },
       {
         title: "Pilgrimage Tours",
         href: "/tours/pilgrimage",
         dropdown: [
-          {
-            title: "Holyland Tours",
-            href: "/tours/pilgrimage/holyland",
-          },
-          // {
-          //   title: "Europe Pilgrimage Tours",
-          //   href: "/tours/pilgrimage-tours/europe-pilgrimage-tours",
-          // },
+          { title: "Holyland Tours", href: "/tours/pilgrimage/holyland" },
         ],
       },
       {
         title: "Inbound Tours",
         href: "/tours/inbound-tours",
         dropdown: [
-          {
-            title: "Tours for Foreigners NRIs",
-            href: "/tours/inbound-tours/tours-for-foreigners-nris",
-          },
-
-          {
-            title: "Cultural Experiences",
-            href: "/tours/inbound-tours/cultural-experiences",
-          },
-          {
-            title: "Medical Tourism Packages",
-            href: "/tours/inbound-tours/medical-tourism-packages",
-          },
+          { title: "Tours for Foreigners NRIs", href: "/tours/inbound-tours/tours-for-foreigners-nris" },
+          { title: "Cultural Experiences", href: "/tours/inbound-tours/cultural-experiences" },
+          { title: "Medical Tourism Packages", href: "/tours/inbound-tours/medical-tourism-packages" },
         ],
       },
     ],
   },
   { title: "Visas", href: "/visas" },
-
   {
     title: "Services",
     href: "/services",
     dropdown: [
       {
-        title: "Travel Essentials",
-        href: "/services/travel-essentials",
+        title: "Special Services",
+        href: "/services/special-services",
         dropdown: [
-          {
-            title: "Flight Tickets",
-            href: "/services/travel-essentials/flight-tickets",
-          },
-          {
-            title: "Hotel Bookings",
-            href: "/services/travel-essentials/hotel-bookings",
-          },
-          {
-            title: "Eurorail Tickets",
-            href: "/services/travel-essentials/eurorail-tickets",
-          },
+          { title: "Corporate Travel", href: "/services/special-services/corporate-travel-solutions" },
+          { title: "Destination Weddings", href: "/services/special-services/event-management" },
+          { title: "Luxury Travel", href: "/services/special-services/luxury-travel" },
+          { title: "MICE Travel", href: "/services/special-services/mice" },
         ],
       },
       {
         title: "Travel Documentation",
-        href: "/services/travel-documentation",
         dropdown: [
-          {
-            title: "Passport Services",
-            href: "/services/travel-documentation/passport-services",
-          },
-          {
-            title: "Visa Services (All Countries)",
-            href: "/services/travel-documentation/visa-services-all-countries",
-          },
-          {
-            title: "Travel Insurance",
-            href: "/services/travel-documentation/travel-insurance",
-          },
+          { title: "Passport Services", href: "/services/travel-documentation/passport-services" },
+          { title: "Visa Services", href: "/services/travel-documentation/visa-services" },
+          { title: "Travel Insurance", href: "/services/travel-documentation/travel-insurance" },
         ],
       },
       {
-        title: "Special Services",
-        href: "/services/special-services",
+        title: "Travel Essentials",
+        href: "/services/travel-essentials",
         dropdown: [
-          {
-            title: "MICE (Meetings, Incentives, Conferences & Exhibitions)",
-            href: "/services/special-services/mice-meetings-incentives-conferences-exhibitions",
-          },
-          {
-            title: "Event Management",
-            href: "/services/special-services/event-management",
-          },
-          {
-            title: "Corporate Travel Solutions",
-            href: "/services/special-services/corporate-travel-solutions",
-          },
-          {
-            title: "Luxury Travel",
-            href: "/services/special-services/luxury-travel",
-          },
+          { title: "Eurail", href: "/services/travel-essentials/eurorail-tickets" },
+          { title: "Flight Ticket Booking", href: "/services/travel-essentials/flight-tickets" },
+          { title: "Hotel Booking", href: "/services/travel-essentials/hotel-bookings" },
         ],
       },
     ],
   },
-  //   { title: "Gallery", href: "/gallery" },
   { title: "Contact", href: "/contact" },
 ];
 

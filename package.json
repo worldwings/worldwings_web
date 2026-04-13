@@ -12,6 +12,7 @@
     "@vercel/analytics": "^2.0.1",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
+    "cheerio": "^1.2.0",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "firebase": "^12.3.0",

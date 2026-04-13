@@ -2,35 +2,14 @@ import CustomContainer from "@/components/ui/custom_container/custom_container";
 import styles from "./tour_details.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 import PageBanner from "@/components/common/page_banner/page_banner";
-import { CheckCircleFill } from "react-bootstrap-icons";
 
-const TourDetailsScreen = ({ tour = {}, detailsHTML, docUrl }) => {
-  // if (!tour) {
-  //     return (
-  //         <div className={styles.notFound}>
-  //             <CustomContainer>
-  //                 <h1>Tour Package Not Found</h1>
-  //                 <Link href="/" className={styles.btn}>Return to Home</Link>
-  //             </CustomContainer>
-  //         </div>
-  //     );
-  // }
-
-  // const coverImage = tour?.images && tour?.images.length > 0
-  //     ? `/destinations/${tour?.folderName}/${tour?.images[0]}`
-  //     : "/blog/blog-1.jpg";
-
+const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
+  const json = parsedData || {};
   const coverImage = "/images/about_banner.webp";
 
   return (
     <>
-      {/* <Head>
-                <title>{tour?.name} - World Wings</title>
-                <meta name="description" content={tour?.description} />
-            </Head> */}
-
       <div className={styles.detailsPage}>
         <PageBanner title={tour?.name} image={coverImage} />
 
@@ -40,19 +19,8 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, docUrl }) => {
               <h2>{tour?.name}</h2>
               <p className={styles.description}>{tour?.description}</p>
 
-              {/* <div className={styles.highlights}>
-                                <h3>Highlights</h3>
-                                <ul>
-                                    <li><CheckCircleFill /> Accommodation & Transfers Included</li>
-                                    <li><CheckCircleFill /> Expert Local Guides</li>
-                                    <li><CheckCircleFill /> Customized Itinerary Options</li>
-                                    <li><CheckCircleFill /> Premium 24/7 Support</li>
-                                </ul>
-                            </div> */}
-
               {detailsHTML && (
                 <div className={styles.htmlContentSection}>
-                  <h3>Detailed Itinerary</h3>
                   <div
                     className={styles.htmlContent}
                     dangerouslySetInnerHTML={{ __html: detailsHTML }}
@@ -83,15 +51,7 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, docUrl }) => {
                   className={styles.downloadBtn}
                 >
                   {tour?.name}.docx
-                  
                 </Link>
-                {/* {tour?.itineraries.map((itinerary, idx) => {
-                                        const parts = itinerary.split('/');
-                                        const fileName = parts[parts.length - 1];
-                                        return (
-                                           
-                                        );
-                                    })} */}
               </div>
             </div>
           </div>
