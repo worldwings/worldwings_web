@@ -26,8 +26,6 @@ const ToursListScreen = ({ tours = [], destination, type }) => {
       .join(" ");
   };
 
-
-
   const title = formatTitle(destination);
 
   const filteredTours = tours.filter((tour) => {
@@ -40,16 +38,18 @@ const ToursListScreen = ({ tours = [], destination, type }) => {
     const matchesDestination =
       filterState.destinations.length === 0 ||
       (tour.destinations
-        ? tour.destinations.some(d => filterState.destinations.includes(d))
+        ? tour.destinations.some((d) => filterState.destinations.includes(d))
         : filterState.destinations.includes(tour.destination));
 
     // Duration filter
-    const matchesDuration = filterState.maxDuration === undefined || (() => {
-      const durationMatch = tour.duration?.match(/(\d+)/);
-      if (!durationMatch) return true;
-      const tourDuration = parseInt(durationMatch[1], 10);
-      return tourDuration <= filterState.maxDuration;
-    })();
+    const matchesDuration =
+      filterState.maxDuration === undefined ||
+      (() => {
+        const durationMatch = tour.duration?.match(/(\d+)/);
+        if (!durationMatch) return true;
+        const tourDuration = parseInt(durationMatch[1], 10);
+        return tourDuration <= filterState.maxDuration;
+      })();
 
     return matchesSearch && matchesDestination && matchesDuration;
   });
@@ -77,18 +77,35 @@ const ToursListScreen = ({ tours = [], destination, type }) => {
         <CustomContainer>
           <div className={styles.toursLayout}>
             <aside className={styles.sidebar}>
-              <TourFilter tours={tours} onFilterChange={setFilterState} destination={destination}
-
+              <TourFilter
+                tours={tours}
+                onFilterChange={setFilterState}
+                destination={destination}
               />
             </aside>
             <main className={styles.mainContent}>
-
-              <TourTopBar searchQuery={searchQuery} onSearchQueryChange={setSearchQuery}
+              <TourTopBar
+                searchQuery={searchQuery}
+                onSearchQueryChange={setSearchQuery}
                 right={
                   <div className={styles.mobileFilterToggle}>
-
-                    <button className={styles.applyFilterBtn} onClick={handleShowMobileFilter}>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+                    <button
+                      className={styles.applyFilterBtn}
+                      onClick={handleShowMobileFilter}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                      </svg>
                       Apply Filters
                     </button>
                   </div>
@@ -108,15 +125,24 @@ const ToursListScreen = ({ tours = [], destination, type }) => {
                             className={styles.image}
                           />
                         ) : (
-                          <div className={styles.placeholderImage}>No Image</div>
+                          <div className={styles.placeholderImage}>
+                            No Image
+                          </div>
                         )}
                       </div>
                       <div className={styles.content}>
                         <h3>{tour.name}</h3>
                         <p>{tour.description}</p>
-                        <p>
-                          Duration: {tour.duration}
-                        </p>
+                        <div>
+                          <p>
+                            <span>Duration:</span>
+                            <br /> {tour.duration}
+                          </p>
+                          <p>
+                            <span>Price:</span>
+                            <br /> {tour.price}
+                          </p>
+                        </div>
                         <Link
                           href={`/tours/${type}/${destination}/${tour.name}`}
                           className={styles.btn}
@@ -135,12 +161,20 @@ const ToursListScreen = ({ tours = [], destination, type }) => {
             </main>
           </div>
 
-          <Offcanvas show={showMobileFilter} onHide={handleCloseMobileFilter} placement="start">
+          <Offcanvas
+            show={showMobileFilter}
+            onHide={handleCloseMobileFilter}
+            placement="start"
+          >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>Filters</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <TourFilter tours={tours} onFilterChange={setFilterState} destination={destination} />
+              <TourFilter
+                tours={tours}
+                onFilterChange={setFilterState}
+                destination={destination}
+              />
             </Offcanvas.Body>
           </Offcanvas>
         </CustomContainer>

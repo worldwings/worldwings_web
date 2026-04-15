@@ -130,6 +130,28 @@
       flex-grow: 1;
     }
 
+    > div {
+      display: flex;
+      justify-content: space-between;
+      // background-color: red;
+      p {
+        display: block;
+        width: fit-content;
+        font-size: 16px;
+        // border: 1px solid blue;
+        color: $color_2;
+        font-weight: bold;
+        span {
+          font-weight: normal;
+          color: $color_text_grey;
+        }
+
+        &:nth-child(2) {
+          text-align: right;
+        }
+      }
+    }
+
     .btn {
       display: inline-block;
       text-align: center;
