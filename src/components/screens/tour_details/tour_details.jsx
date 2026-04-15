@@ -14,11 +14,12 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
   const coverImage = tour?.images?.[0] || "/images/about_banner.webp";
   const [curremtImageIndex, setCurrentImageIndex] = useState(null);
 
+  const isGalleryAtTop = false;
+
   return (
     <>
       <div className={styles.detailsPage}>
         <PageBanner title={tour?.name} image={coverImage} />
-
 
         {curremtImageIndex !== null && (
           <div className={styles.fullScreen}>
@@ -33,7 +34,7 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
           </div>
         )}
         <CustomContainer>
-             {tour?.images && tour?.images.length > 0 && (
+          {tour?.images && tour?.images.length > 0 &&isGalleryAtTop && (
             <div className={styles.gallerySection}>
               {/* <h2>Image Gallery</h2> */}
               <div className={styles.galleryGrid}>
@@ -95,7 +96,27 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
             </div>
           </div>
 
-       
+
+            {tour?.images && tour?.images.length > 0 && !isGalleryAtTop && (
+            <div className={styles.gallerySection}>
+              <h2>Image Gallery</h2>
+              <div className={styles.galleryGrid}>
+                {tour?.images.map((img, index) => (
+                  <div key={index} className={styles.galleryImageWrap}>
+                    <NextImage
+                      src={img}
+                      alt={`${tour?.title} photo ${index + 1}`}
+                      fill
+                      className={styles.galleryImage}
+                      onClick={() => {
+                        setCurrentImageIndex(index);
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </CustomContainer>
       </div>
     </>
