@@ -7,36 +7,55 @@ import { ChevronDown, ChevronRight } from "react-bootstrap-icons";
 import RightMenu from "./menu_button/menu_button";
 import { PAGES } from "@/constants/constants";
 
-const DropDownItem = ({ item }) => {
-
+const DropDownItem = ({ item, setParentDropdown }) => {
   const [showSubDropDown, setShowSubDropDown] = useState(false);
 
   if (item.dropdown) {
-    return <div className={styles.subDropdown}
-      onMouseEnter={() => {
-        setShowSubDropDown(true);
-      }}
-      onMouseLeave={() => {
-        setShowSubDropDown(false);
-      }}
-    >
-      <Link href={item.href || "#"} >{item.title} <ChevronRight /></Link>
-      {
-        showSubDropDown && <div className={styles.subDropdownWrap}>
-          <div className={`${styles.subDropdown}`}>
-            {
-              item.dropdown.map((dd) => {
-                return <DropDownItem item={dd} key={dd.title} />
-              })
-            }
+    return (
+      <div
+        className={styles.subDropdown}
+        onMouseEnter={() => {
+          setShowSubDropDown(true);
+        }}
+        onMouseLeave={() => {
+          setShowSubDropDown(false);
+        }}
+      >
+        <p href={item.href || "#"}>
+          {item.title}
+          <ChevronRight />
+        </p>
+        {showSubDropDown && (
+          <div className={styles.subDropdownWrap}>
+            <div className={`${styles.subDropdown}`}>
+              {item.dropdown.map((dd) => {
+                return (
+                  <DropDownItem
+                    item={dd}
+                    key={dd.title}
+                    setParentDropdown={setParentDropdown}
+                  />
+                );
+              })}
+            </div>
           </div>
-        </div>
-      }
-    </div>
+        )}
+      </div>
+    );
   }
 
-  return <Link href={item.href || "#"} >{item.title}</Link>
-}
+  return (
+    <Link
+      href={item.href || "#"}
+      onClick={() => {
+        
+        setParentDropdown(false);
+      }}
+    >
+      {item.title}
+    </Link>
+  );
+};
 
 const NavItem = ({ item }) => {
   const [showDropDown, setShowDropDown] = useState(false);
@@ -59,11 +78,15 @@ const NavItem = ({ item }) => {
         {showDropDown && (
           <div className={styles.dropdownWrap}>
             <div className={`${styles.dropdown}`}>
-              {
-                item.dropdown.map((dd) => {
-                  return <DropDownItem item={dd} key={dd.title} />
-                })
-              }
+              {item.dropdown.map((dd) => {
+                return (
+                  <DropDownItem
+                    item={dd}
+                    key={dd.title}
+                    setParentDropdown={setShowDropDown}
+                  />
+                );
+              })}
             </div>
           </div>
         )}
@@ -81,8 +104,6 @@ const NavItem = ({ item }) => {
 const Header = ({ setShowModal }) => {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-
-
 
   // useEffect(() => {
   //   const handleScroll = () => {
@@ -112,11 +133,8 @@ const Header = ({ setShowModal }) => {
     >
       <CustomContainer lg>
         <div className={styles.wrap}>
-
-
           <Logo isWhite={false} />
           <div className={styles.left}>
-
             <nav className={styles.navLg}>
               <ul>
                 {PAGES.map((page) => {
