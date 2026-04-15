@@ -1,19 +1,58 @@
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import styles from "./tour_details.module.scss";
-import Image from "next/image";
+import { Image } from "react-bootstrap";
+
+import { default as NextImage } from "next/image";
+
 import Link from "next/link";
 import PageBanner from "@/components/common/page_banner/page_banner";
+import { useState } from "react";
+import { X } from "react-bootstrap-icons";
 
 const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
   const json = parsedData || {};
-  const coverImage = "/images/about_banner.webp";
+  const coverImage = tour?.images?.[0] || "/images/about_banner.webp";
+  const [curremtImageIndex, setCurrentImageIndex] = useState(null);
 
   return (
     <>
       <div className={styles.detailsPage}>
         <PageBanner title={tour?.name} image={coverImage} />
 
+
+        {curremtImageIndex !== null && (
+          <div className={styles.fullScreen}>
+            <div>
+              <X
+                onClick={() => {
+                  setCurrentImageIndex(null);
+                }}
+              />
+              <Image src={tour?.images?.[curremtImageIndex]} alt="xx" />
+            </div>
+          </div>
+        )}
         <CustomContainer>
+             {tour?.images && tour?.images.length > 0 && (
+            <div className={styles.gallerySection}>
+              {/* <h2>Image Gallery</h2> */}
+              <div className={styles.galleryGrid}>
+                {tour?.images.map((img, index) => (
+                  <div key={index} className={styles.galleryImageWrap}>
+                    <NextImage
+                      src={img}
+                      alt={`${tour?.title} photo ${index + 1}`}
+                      fill
+                      className={styles.galleryImage}
+                      onClick={() => {
+                        setCurrentImageIndex(index);
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
           <div className={styles.contentWrap}>
             <div className={styles.mainInfo}>
               <h2>{tour?.name}</h2>
@@ -56,23 +95,7 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
             </div>
           </div>
 
-          {tour?.images && tour?.images.length > 0 && (
-            <div className={styles.gallerySection}>
-              <h2>Image Gallery</h2>
-              <div className={styles.galleryGrid}>
-                {tour?.images.map((img, index) => (
-                  <div key={index} className={styles.galleryImageWrap}>
-                    <Image
-                      src={`/destinations/${tour?.folderName}/${img}`}
-                      alt={`${tour?.title} photo ${index + 1}`}
-                      fill
-                      className={styles.galleryImage}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+       
         </CustomContainer>
       </div>
     </>
