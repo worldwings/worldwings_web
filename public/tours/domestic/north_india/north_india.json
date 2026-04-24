@@ -1,0 +1,263 @@
+[
+  {
+    "name": "3 Days Golden Cities Escape: Delhi, Agra, Kolkata",
+    "description": "Explore the capital city Delhi, visit the iconic Taj Mahal in Agra, and discover the cultural heritage of Kolkata with a short yet enriching itinerary.",
+    "destinations": [
+      "Delhi",
+      "Agra",
+      "Kolkata"
+    ],
+    "duration": "3 Days",
+    "price": "Rs. 58,500 /-",
+    "images": [
+      "/tours/domestic/north_india/images/Agra/Agra (1).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (2).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (3).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (4).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (5).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (6).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (7).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (1).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (3).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (4).jpg"
+    ]
+  },
+  {
+    "name": "3 Days Delhi Quick Tour",
+    "description": "A quick tour covering major attractions of Delhi including historical monuments, markets, and cultural spots.",
+    "destinations": [
+      "Delhi"
+    ],
+    "duration": "3 Days",
+    "price": "Rs. 8,000/-",
+    "images": [
+      "/tours/domestic/north_india/images/Delhi/Delhi (1).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (3).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (4).jpg"
+    ]
+  },
+  {
+    "name": "4 Days Delhi Explorer",
+    "description": "A relaxed exploration of Delhi with additional time to experience local culture, shopping, and cuisine.",
+    "destinations": [
+      "Delhi"
+    ],
+    "duration": "4 Days",
+    "price": "Rs. 12,800/-",
+    "images": [
+      "/tours/domestic/north_india/images/Delhi/Delhi (1).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (3).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (4).jpg"
+    ]
+  },
+  {
+    "name": "7 Days Golden Triangle Tour: Delhi, Agra, Jaipur",
+    "description": "A complete Golden Triangle tour covering Delhi, Agra, and Jaipur with heritage sites, forts, and palaces.",
+    "destinations": [
+      "Delhi",
+      "Agra",
+      "Jaipur"
+    ],
+    "duration": "7 Days",
+    "price": "Rs. 22,900/-",
+    "images": [
+      "/tours/domestic/north_india/images/Agra/Agra (1).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (2).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (3).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (4).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (5).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (6).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (7).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (1).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (3).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (4).jpg",
+      "/tours/domestic/north_india/images/Jaipur/Jaipur.jpg"
+    ]
+  },
+  {
+    "name": "6 Days Triangle Getaway: Delhi, Agra, Jaipur",
+    "description": "A compact Golden Triangle journey exploring the best of Delhi, Agra, and Jaipur in six days.",
+    "destinations": [
+      "Delhi",
+      "Agra",
+      "Jaipur"
+    ],
+    "duration": "6 Days",
+    "price": "Rs. 24,000/-",
+    "images": [
+      "/tours/domestic/north_india/images/Agra/Agra (1).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (2).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (3).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (4).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (5).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (6).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (7).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (1).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (3).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (4).jpg",
+      "/tours/domestic/north_india/images/Jaipur/Jaipur.jpg"
+    ]
+  },
+  {
+    "name": "7 Days Himalayan Escape: Delhi, Shimla, Kullu, Manali",
+    "description": "A scenic hill station tour from Delhi covering Shimla, Kullu, and Manali with mountains and adventure activities.",
+    "destinations": [
+      "Delhi",
+      "Shimla",
+      "Kullu",
+      "Manali"
+    ],
+    "duration": "7 Days",
+    "price": "Rs. 32,500 /-",
+    "images": [
+      "/tours/domestic/north_india/images/Delhi/Delhi (1).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (3).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (4).jpg"
+    ]
+  },
+  {
+    "name": "6 Days Leh Ladakh Adventure",
+    "description": "An adventurous trip to Leh Ladakh exploring high-altitude landscapes, monasteries, and scenic valleys.",
+    "destinations": [
+      "Leh Ladakh"
+    ],
+    "duration": "6 Days",
+    "price": "Rs. 33,000/-",
+    "images": [
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (1).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (10).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (11).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (12).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (13).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (14).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (15).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (2).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (3).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (4).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (5).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (6).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (7).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (8).jpg",
+      "/tours/domestic/north_india/images/Leh Ladakh/Le Ladakh (9).jpg"
+    ]
+  },
+  {
+    "name": "6 Days Kashmir Delight",
+    "description": "Discover the beauty of Kashmir with visits to Srinagar, Gulmarg, and Pahalgam, known for lakes and valleys.",
+    "destinations": [
+      "Kashmir"
+    ],
+    "duration": "6 Days",
+    "price": "Rs. 44,000 /-",
+    "images": [
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (1).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (10).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (11).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (12).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (13).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (14).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (15).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (16).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (17).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (2).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (3).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (4).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (5).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (6).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (7).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (8).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (9).jpg"
+    ]
+  },
+  {
+    "name": "5 Days Kashmir Retreat",
+    "description": "A short getaway to Kashmir covering the must-visit destinations with serene landscapes and houseboat stays.",
+    "destinations": [
+      "Kashmir"
+    ],
+    "duration": "5 Days",
+    "price": "Rs. 37,000/-",
+    "images": [
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (1).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (10).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (11).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (12).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (13).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (14).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (15).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (16).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (17).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (2).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (3).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (4).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (5).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (6).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (7).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (8).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (9).jpg"
+    ]
+  },
+  {
+    "name": "5 Days Kashmir Paradise",
+    "description": "Experience the ultimate paradise in Kashmir with a 5-day package covering major attractions and serene valleys.",
+    "destinations": [
+      "Kashmir"
+    ],
+    "duration": "5 Days",
+    "price": "Rs. 30,000/-",
+    "images": [
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (1).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (10).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (11).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (12).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (13).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (14).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (15).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (16).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (17).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (2).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (3).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (4).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (5).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (6).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (7).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (8).jpg",
+      "/tours/domestic/north_india/images/Kashmir/Kashmir (9).jpg"
+    ]
+  },
+  {
+    "name": "6 Days Heritage Trail: Delhi, Agra, Kolkata",
+    "description": "Explore major cultural and historical capitals including Delhi, Agra, and Kolkata in this heritage-focused trail.",
+    "destinations": [
+      "Delhi",
+      "Agra",
+      "Kolkata"
+    ],
+    "duration": "6 Days",
+    "price": "Rs. 40,000/-",
+    "images": [
+      "/tours/domestic/north_india/images/Agra/Agra (1).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (2).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (3).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (4).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (5).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (6).jpg",
+      "/tours/domestic/north_india/images/Agra/Agra (7).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (1).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (3).jpg",
+      "/tours/domestic/north_india/images/Delhi/Delhi (4).jpg"
+    ]
+  },
+  {
+    "name": "6 Days Shimla Kullu Manali Getaway",
+    "description": "A wonderful getaway to the hill stations of Shimla, Kullu, and Manali, perfect for a refreshing break.",
+    "destinations": [
+      "Shimla",
+      "Kullu",
+      "Manali"
+    ],
+    "duration": "6 Days",
+    "price": "Rs. 27,300/-",
+    "images": []
+  }
+]
