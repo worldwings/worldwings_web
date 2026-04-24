@@ -58,6 +58,8 @@ const ServiceDetailsScreen = ({ service }) => {
                                     <div className={styles.htmlContent} dangerouslySetInnerHTML={{ __html: service.overviewHtml }} />
                                 </div>
                             )}
+
+
                         </div>
 
                         <div className={styles.bookingCard}>
@@ -68,6 +70,25 @@ const ServiceDetailsScreen = ({ service }) => {
                             </Link>
                         </div>
                     </div>
+
+                    {service.airlineLogos && service.airlineLogos.length > 0 && (
+                        <div className={styles.airlineLogosSection}>
+                            <h3>Airlines we work with</h3>
+                            <div className={styles.airlineLogosGrid}>
+                                {service.airlineLogos.map((logo, index) => (
+                                    <div key={index} className={styles.logoWrap}>
+                                        <Image
+                                            src={`/${service.logosFolder}/${logo}`}
+                                            alt="airline logo"
+                                            width={120}
+                                            height={60}
+                                            className={styles.airlineLogo}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
 
                     {service.images && service.images.length > 1 && (
                         <div className={styles.gallerySection}>
