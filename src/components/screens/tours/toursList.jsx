@@ -113,8 +113,8 @@ const ToursListScreen = ({ tours = [], destination, type }) => {
               />
               <div className={styles.toursGrid}>
                 {filteredTours.length > 0 ? (
-                  filteredTours.map((tour, index) => (
-                    <div className={styles.tourCard} key={tour.id || index}>
+                  filteredTours.map((tour) => (
+                    <div className={styles.tourCard} key={tour.name}>
                       <div className={styles.imageWrap}>
                         {tour.images && tour.images.length > 0 ? (
                           <Image

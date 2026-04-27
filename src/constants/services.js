@@ -4,9 +4,11 @@ export const SERVICES = [
         "category": "special-services",
         "title": "Corporate Travel",
         "images": [
-            "blog-1.jpg"
+            "Corporate Travels (1).jpg",
+            "Corporate Travels (2).jpg",
+            "Corporate Travels (3).jpg"
         ],
-        "folderName": "blog",
+        "folderName": "services/Special Services/Corporate Travel Solutions/images",
         "docxPath": "Special Services/Corporate Travel Solutions/Corporate Travel Solutions.docx"
     },
     {
@@ -14,9 +16,9 @@ export const SERVICES = [
         "category": "special-services",
         "title": "Destination Weddings",
         "images": [
-            "blog-1.jpg"
+            "Destination Wedding.jpg"
         ],
-        "folderName": "blog",
+        "folderName": "services/Special Services/Event Management/images",
         "docxPath": "Special Services/Event Management/Event Management.docx"
     },
     {
@@ -24,9 +26,9 @@ export const SERVICES = [
         "category": "special-services",
         "title": "Luxury Travel",
         "images": [
-            "blog-1.jpg"
+            "Luxury Travels.jpg"
         ],
-        "folderName": "blog",
+        "folderName": "services/Special Services/Luxury Travel/images",
         "docxPath": "Special Services/Luxury Travel/Luxury Travel.docx"
     },
     {
@@ -34,9 +36,10 @@ export const SERVICES = [
         "category": "special-services",
         "title": "MICE Travel",
         "images": [
-            "blog-1.jpg"
+            "Mice Travels (1).jpg",
+            "Mice Travels (2).jpg"
         ],
-        "folderName": "blog",
+        "folderName": "services/Special Services/MICE/images",
         "docxPath": "Special Services/MICE/MICE.docx"
     },
     {
@@ -44,9 +47,9 @@ export const SERVICES = [
         "category": "travel-documentation",
         "title": "Passport Services",
         "images": [
-            "blog-1.jpg"
+            "Passport services.jpg"
         ],
-        "folderName": "blog",
+        "folderName": "services/Travel Documentation/Passport Services/images",
         "docxPath": "Travel Documentation/Passport Services/Passport Services.docx"
     },
     {
@@ -54,9 +57,9 @@ export const SERVICES = [
         "category": "travel-documentation",
         "title": "Travel Insurance",
         "images": [
-            "blog-1.jpg"
+            "Travel Insurance.jpg"
         ],
-        "folderName": "blog",
+        "folderName": "services/Travel Documentation/Travel Insurance",
         "docxPath": "Travel Documentation/Travel Insurance/Travel Insurance.docx"
     },
     {
@@ -64,9 +67,17 @@ export const SERVICES = [
         "category": "travel-essentials",
         "title": "Eurail",
         "images": [
-            "blog-1.jpg"
+            "Eurorail (1).jpg",
+            "Eurorail (2).jpg",
+            "Eurorail (3).jpg",
+            "Eurorail (4).jpg",
+            "Eurorail (5).jpg",
+            "Eurorail (6).jpg",
+            "Eurorail (7).jpg",
+            "Eurorail (8).jpg",
+            "Eurorail (9).jpg"
         ],
-        "folderName": "blog",
+        "folderName": "services/Travel Essentials/Eurorail Tickets/images",
         "docxPath": "Travel Essentials/Eurorail Tickets/Eurorail Tickets.docx"
     },
     {
@@ -74,9 +85,9 @@ export const SERVICES = [
         "category": "travel-essentials",
         "title": "Flight Ticket Booking",
         "images": [
-            "blog-1.jpg"
+            "Flight Ticket Booking.png"
         ],
-        "folderName": "blog",
+        "folderName": "services/Travel Essentials/Flight Tickets/images",
         "docxPath": "Travel Essentials/Flight Tickets/Flight Tickets.docx",
         "airlineLogos": [
             "Aegean-Airlines-logo.png",
@@ -138,9 +149,9 @@ export const SERVICES = [
         "category": "travel-essentials",
         "title": "Hotel Booking",
         "images": [
-            "blog-1.jpg"
+            "Hotel Booking.jpg"
         ],
-        "folderName": "blog",
+        "folderName": "services/Travel Essentials/Hotel Bookings/images",
         "docxPath": "Travel Essentials/Hotel Bookings/Hotel Bookings.docx"
     },
     {
@@ -148,9 +159,9 @@ export const SERVICES = [
         "category": "travel-documentation",
         "title": "Visa Services",
         "images": [
-            "blog-1.jpg"
+            "Visa.jpg"
         ],
-        "folderName": "blog",
+        "folderName": "services/Travel Documentation/Visa Services/images",
         "docxPath": "Travel Documentation/Visa Services/Visa Services.docx"
     }
 ];
