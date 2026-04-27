@@ -46,6 +46,31 @@
     font-weight: 700;
   }
 
+  .destinations {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    margin-bottom: 24px;
+
+    .destTag {
+      background-color: #f3f4f6;
+      color: #4b5563;
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid #e5e7eb;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $color_2;
+        color: white;
+        border-color: $color_2;
+      }
+    }
+  }
+
   .description {
     font-size: 18px;
     line-height: 1.8;
@@ -313,7 +338,8 @@
   background-color: rgba(0, 0, 0, 0.9);
   @include flexCenter;
   z-index: 1000;
-  > div {
+
+  >div {
     @include flexCenter;
     position: relative;
 

@@ -130,9 +130,10 @@
       flex-grow: 1;
     }
 
-    > div {
+    >div {
       display: flex;
       justify-content: space-between;
+
       // background-color: red;
       p {
         display: block;
@@ -141,6 +142,7 @@
         // border: 1px solid blue;
         color: $color_2;
         font-weight: bold;
+
         span {
           font-weight: normal;
           color: $color_text_grey;
@@ -168,6 +170,32 @@
       &:hover {
         background-color: darken($color_2, 5%);
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .destinations {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-start;
+      margin-top: 10px;
+      margin-bottom: 20px;
+
+      .destTag {
+        background-color: #f3f4f6;
+        color: #4b5563;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        border: 1px solid #e5e7eb;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background-color: $color_2;
+          color: white;
+          border-color: $color_2;
+        }
       }
     }
   }

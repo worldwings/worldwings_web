@@ -46,9 +46,9 @@ export const PAGES = [
         title: "Inbound Tours",
         href: "/tours/inbound-tours",
         dropdown: [
-          { title: "Tours for Foreigners NRIs", href: "/tours/inbound-tours/tours-for-foreigners-nris" },
-          { title: "Cultural Experiences", href: "/tours/inbound-tours/cultural-experiences" },
-          { title: "Medical Tourism Packages", href: "/tours/inbound-tours/medical-tourism-packages" },
+          { title: "Cultural Experiences", href: "/tours/inbound/inbound-tours/Cultural Experiences" },
+          { title: "Tours for Foreigners NRIs", href: "/tours/inbound/inbound-tours/Tour for Foreigners and NRIs" },
+          { title: "Medical Tourism Packages", href: "/tours/inbound/inbound-tours/Medical Tourism" },
         ],
       },
     ],

@@ -57,6 +57,15 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
           <div className={styles.contentWrap}>
             <div className={styles.mainInfo}>
               <h2>{tour?.name}</h2>
+              {tour?.destinations && tour?.destinations.length > 0 && (
+                <div className={styles.destinations}>
+                  {tour.destinations.map((dest, i) => (
+                    <span key={i} className={styles.destTag}>
+                      {dest}
+                    </span>
+                  ))}
+                </div>
+              )}
               <p className={styles.description}>{tour?.description}</p>
 
               {detailsHTML && (

@@ -143,6 +143,15 @@ const ToursListScreen = ({ tours = [], destination, type }) => {
                             <br /> {tour.price}
                           </p>
                         </div>
+                        {tour.destinations && tour.destinations.length > 0 && (
+                          <div className={styles.destinations}>
+                            {tour.destinations.map((dest, i) => (
+                              <span key={i} className={styles.destTag}>
+                                {dest}
+                              </span>
+                            ))}
+                          </div>
+                        )}
                         <Link
                           href={`/tours/${type}/${destination}/${tour.name}`}
                           className={styles.btn}

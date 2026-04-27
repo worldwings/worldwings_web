@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Cultural Experiences",
+        "description": "Explore India’s rich heritage, spiritual journeys, culinary discoveries, and traditional arts with curated tours that go beyond sightseeing to connect with the traditions, people, and stories of a destination.",
+        "destinations": [
+            "India"
+        ],
+        "duration": "Flexible",
+        "price": "Available on Request",
+        "images": [
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (1).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (2).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (3).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (4).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (5).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (6).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (7).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (8).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (9).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (10).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (11).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (12).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (13).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (14).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (15).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (16).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (17).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (18).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (19).jpg",
+            "/tours/inbound/inbound-tours/images/Cultural Experiences/Cultural Experiences (20).jpg"
+        ]
+    },
+    {
+        "name": "Tour for Foreigners and NRIs",
+        "description": "An unforgettable 15-day journey through Kerala, Tamil Nadu, Karnataka, and Telangana, offering a perfect blend of culture, comfort, and memorable experiences for foreigners and NRIs.",
+        "destinations": [
+            "South India"
+        ],
+        "duration": "15 Days",
+        "price": "Available on Request",
+        "images": [
+            "/tours/inbound/inbound-tours/images/Tour for Foreigners and NRIs/Tour for Foreigners and NRIs.jpg"
+        ]
+    },
+    {
+        "name": "Medical Tourism",
+        "description": "Safe, affordable, and quality healthcare with complete travel support for advanced treatments, wellness care, dental procedures, fertility assistance, and health check-ups.",
+        "destinations": [
+            "Chennai, Bengaluru, Hyderabad, Mumbai, Delhi, Kerala"
+        ],
+        "duration": "Flexible",
+        "price": "Available on Request",
+        "images": [
+            "/tours/inbound/inbound-tours/images/Medical Tourism/Medical Tourism.avif"
+        ]
+    }
+]
