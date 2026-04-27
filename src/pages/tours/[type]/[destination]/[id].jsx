@@ -12,7 +12,7 @@ function parseTourHTML(html) {
     title: "",
     overview: "",
     highlights: "",
-    hotel: "",
+    hotel: "", 
     itinerary: [],
     price: "",
     inclusions: [],

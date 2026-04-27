@@ -2,12 +2,7 @@
   {
     "name": "12 Days Amazing Australia Explorer",
     "description": "Explore the best of Australia covering iconic cities and natural wonders including Sydney, Gold Coast, Cairns, and Melbourne. This tour offers a perfect mix of city attractions, theme parks, wildlife experiences, and scenic landscapes like the Great Barrier Reef and Great Ocean Road.",
-    "destinations": [
-      "Sydney",
-      "Gold Coast",
-      "Cairns",
-      "Melbourne"
-    ],
+    "destinations": ["Sydney", "Gold Coast", "Cairns", "Melbourne"],
     "duration": "12 Days",
     "price": "Rs. 2,64,860/-",
     "images": [
@@ -60,7 +55,6 @@
     "duration": "11 Days",
     "price": "Rs. 2,95,000/-",
     "images": [
-      "/tours/international/australia_and_newzealand/images/New zealand/Xplore New Zealand Departure.png",
       "/tours/international/australia_and_newzealand/images/New zealand/aaron-sebastian-bfgEYpS0Znk-unsplash.jpg",
       "/tours/international/australia_and_newzealand/images/New zealand/andrea-lightfoot-Pj6fYNRzRT0-unsplash.jpg",
       "/tours/international/australia_and_newzealand/images/New zealand/andreas-sjovall-ZZUPu8ARD8U-unsplash.jpg",

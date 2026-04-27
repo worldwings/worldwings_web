@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "name": "1 Day Pondicherry Getaway",
+    "description": "A refreshing overnight escape from Chennai, Pondicherry is the perfect destination to unwind with its French colonial streets, serene beaches, spiritual attractions, and charming cafés.",
+    "destinations": [
+      "Pondicherry"
+    ],
+    "duration": "1 Day",
+    "price": "Rs. 6500/-",
+    "images": [
+      "/tours/domestic/weekend_getaway/images/Pondicherry/ashwini-chaudhary-monty-1RrZBf1NkCE-unsplash.jpg",
+      "/tours/domestic/weekend_getaway/images/Pondicherry/kaushik-murali-iOcJ3qh_vM8-unsplash.jpg",
+      "/tours/domestic/weekend_getaway/images/Pondicherry/mrinal-rai-F0WhZ0w2UWU-unsplash.jpg",
+      "/tours/domestic/weekend_getaway/images/Pondicherry/pexels-ayush-sinha-855671783-33836391.jpg",
+      "/tours/domestic/weekend_getaway/images/Pondicherry/pexels-colourclouds-34264091.jpg",
+      "/tours/domestic/weekend_getaway/images/Pondicherry/pexels-colourclouds-34293562.jpg",
+      "/tours/domestic/weekend_getaway/images/Pondicherry/pexels-colourclouds-36335014.jpg",
+      "/tours/domestic/weekend_getaway/images/Pondicherry/pexels-kamakshi-72543796-32550610.jpg",
+      "/tours/domestic/weekend_getaway/images/Pondicherry/pexels-kamakshi-72543796-32661287.jpg",
+      "/tours/domestic/weekend_getaway/images/Pondicherry/pexels-shyam-s-desk-164967671-11370492.jpg",
+      "/tours/domestic/weekend_getaway/images/Pondicherry/pexels-sunil-97165465-31297190.jpg",
+      "/tours/domestic/weekend_getaway/images/Pondicherry/zoshua-colah-TMUkJmdCTbM-unsplash.jpg"
+    ]
+  },
+  {
+    "name": "1 Day ECR Coastal Escape",
+    "description": "Take a refreshing break from the city with a perfect beach resort outing designed for relaxation, fun, and delicious dining. Enjoy a full day of leisure with swimming pool access, private beach time, and a lavish buffet lunch.",
+    "destinations": [
+      "ECR, Chennai"
+    ],
+    "duration": "1 Day",
+    "price": "Rs. 3500/-",
+    "images": [
+      "/tours/domestic/weekend_getaway/images/ECR/409194656.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/Pool.webp",
+      "/tours/domestic/weekend_getaway/images/ECR/aryaman-agarwal--H018GUWsmM-unsplash.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/blue-bay-beach-resort.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/darrell-cassell-hoCXpPUMCoE-unsplash.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/golden-sun-beach-resort.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/k-kannan-4Jp5qhZBo2I-unsplash.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/mitchell-luo-DqgKEI0OCV0-unsplash.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/nick-wojtas-KgFpXagcIn0-unsplash.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/pexels-aadhi-5647775.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/pexels-frank-van-dijk-121009207-36998138.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/pexels-logalongwithme-29089025.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/pexels-mihirs1970-33516545.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/pexels-varan-7365981.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/sudeshna-sahoo-II2zd-7Rnmw-unsplash.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/venkateshwaran-selvaraj-nPrhgpimZDY-unsplash.jpg",
+      "/tours/domestic/weekend_getaway/images/ECR/wstugwjw6vjdm6zjnk0o.jpg"
+    ]
+  }
+]
