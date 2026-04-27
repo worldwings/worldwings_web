@@ -119,7 +119,11 @@
     ],
     "duration": "4 Days",
     "price": "Rs. 38,000/-",
-    "images": []
+    "images": [
+      "/tours/international/asia/images/Phuket/Phuket (1).jpg",
+      "/tours/international/asia/images/Phuket/Phuket (1).avif",
+      "/tours/international/asia/images/Phuket/Phuket (2).jpg"
+    ]
   },
   {
     "name": "5 Days Phuket Island Retreat",
@@ -129,7 +133,11 @@
     ],
     "duration": "5 Days",
     "price": "Rs. 46,500/-",
-    "images": []
+    "images": [
+      "/tours/international/asia/images/Phuket/Phuket (1).jpg",
+      "/tours/international/asia/images/Phuket/Phuket (1).avif",
+      "/tours/international/asia/images/Phuket/Phuket (2).jpg"
+    ]
   },
   {
     "name": "5 Days Thailand Amazing Escape",
@@ -139,7 +147,11 @@
     ],
     "duration": "5 Days",
     "price": "Rs. 34,000/-",
-    "images": []
+    "images": [
+      "/tours/international/asia/images/Thailand/Thailand (1).jpg",
+      "/tours/international/asia/images/Thailand/Thailand (1).webp",
+      "/tours/international/asia/images/Thailand/Thailand (2).jpg"
+    ]
   },
   {
     "name": "7 Days Thailand Cultural Journey: Phuket, Pattaya, Bangkok",
@@ -151,7 +163,17 @@
     ],
     "duration": "7 Days",
     "price": "Rs. 55,000/-",
-    "images": []
+    "images": [
+      "/tours/international/asia/images/Phuket/Phuket (1).jpg",
+      "/tours/international/asia/images/Phuket/Phuket (1).avif",
+      "/tours/international/asia/images/Phuket/Phuket (2).jpg",
+      "/tours/international/asia/images/Pattaya/Pattaya (1).avif",
+      "/tours/international/asia/images/Pattaya/Pattaya (1).webp",
+      "/tours/international/asia/images/Pattaya/Pattaya (2).webp",
+      "/tours/international/asia/images/Bangkok/Bangkok.jpg",
+      "/tours/international/asia/images/Bangkok/Bangkok.avif",
+      "/tours/international/asia/images/Bangkok/Bangkok2.webp"
+    ]
   },
   {
     "name": "10 Days Thailand Malaysia Singapore Trio Explorer",
@@ -320,7 +342,14 @@
     ],
     "duration": "4 Days",
     "price": "Rs. 40,000/-",
-    "images": []
+    "images": [
+      "/tours/international/asia/images/Genting Highlands/Genting Highlands.jpg",
+      "/tours/international/asia/images/Genting Highlands/Genting Highlands2.jpg",
+      "/tours/international/asia/images/Genting Highlands/Genting Highlands3.webp",
+      "/tours/international/asia/images/Kuala Lumpur/Kuala Lumpur1.jpg",
+      "/tours/international/asia/images/Kuala Lumpur/Kuala Lumpur1.webp",
+      "/tours/international/asia/images/Kuala Lumpur/Kuala Lumpur3.jpg"
+    ]
   },
   {
     "name": "7 Days Malaysia Singapore Twin Escape",
@@ -621,7 +650,7 @@
     ]
   },
   {
-    "name": "4 Days Thailand Delight: Pattaya, Bangkok",
+    "name": "4 Days Thailand Delight - Pattaya, Bangkok",
     "description": "A group Thailand trip with city tours, attractions, and leisure time.",
     "destinations": [
       "Pattaya",
@@ -629,7 +658,14 @@
     ],
     "duration": "4 Days",
     "price": "Rs. 28,000/-",
-    "images": []
+    "images": [
+      "/tours/international/asia/images/Pattaya/Pattaya (1).avif",
+      "/tours/international/asia/images/Pattaya/Pattaya (1).webp",
+      "/tours/international/asia/images/Pattaya/Pattaya (2).webp",
+      "/tours/international/asia/images/Bangkok/Bangkok.jpg",
+      "/tours/international/asia/images/Bangkok/Bangkok.avif",
+      "/tours/international/asia/images/Bangkok/Bangkok2.webp"
+    ]
   },
   {
     "name": "6 Days Nepal Himalayan Serenity",
