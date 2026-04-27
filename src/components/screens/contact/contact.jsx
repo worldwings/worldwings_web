@@ -51,7 +51,7 @@ const ContactScreen = () => {
         />
       </Head>
 
-      <PageBanner title="Contact Us" image="/images/about_banner.webp" />
+      <PageBanner title="Contact Us" image="/images/contact-banner.jpg" />
 
       <div className={styles.contactPage}>
         <CustomContainer>

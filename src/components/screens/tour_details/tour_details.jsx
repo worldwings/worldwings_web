@@ -105,6 +105,25 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
             </div>
           </div>
 
+          {tour?.cruiseLogos && tour?.cruiseLogos.length > 0 && (
+            <div className={styles.cruiseLogosSection}>
+              <h3>Our Cruise Partners</h3>
+              <div className={styles.logosGrid}>
+                {tour.cruiseLogos.map((logo, index) => (
+                  <div key={index} className={styles.logoWrap}>
+                    <NextImage
+                      src={logo}
+                      alt="cruise logo"
+                      width={180}
+                      height={90}
+                      className={styles.cruiseLogo}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
 
             {tour?.images && tour?.images.length > 0 && !isGalleryAtTop && (
             <div className={styles.gallerySection}>

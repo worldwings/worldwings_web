@@ -1,1 +1,21 @@
-[]
+[
+    {
+        "name": "Luxury Ocean Cruise Experience",
+        "description": "Embark on a journey of a lifetime with our premium cruise holidays. Experience world-class hospitality, gourmet dining, and spectacular entertainment while sailing to some of the world's most beautiful destinations.",
+        "destinations": [
+            "International Waters",
+            "Scenic Coasts"
+        ],
+        "duration": "Flexible",
+        "price": "Available on Request",
+        "images": [
+            "/tours/international/cruise_holidays/images/Cruise Holidays.jpg"
+        ],
+        "cruiseLogos": [
+            "/tours/international/cruise_holidays/cruise-logos/Cordelia Cruises.png",
+            "/tours/international/cruise_holidays/cruise-logos/Disney_Cruise_Line_Logo.webp",
+            "/tours/international/cruise_holidays/cruise-logos/Norwegian-Cruise-Line-Logo.svg.png",
+            "/tours/international/cruise_holidays/cruise-logos/Royal Caribbean.png"
+        ]
+    }
+]

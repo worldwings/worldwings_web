@@ -275,6 +275,68 @@
   }
 }
 
+.cruiseLogosSection {
+  margin-top: 80px;
+  padding-top: 60px;
+  border-top: 1px solid #eee;
+
+  h3 {
+    font-size: 28px;
+    color: $color_1;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .logosGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    @include respond-below(md) {
+      gap: 30px;
+    }
+  }
+
+  .logoWrap {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background: white;
+    // padding: 15px;
+    // border-radius: 12px;
+    // box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    @include respond-below(md) {
+      width: 150px;
+      height: 80px;
+    }
+  }
+
+  .cruiseLogo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    // filter: grayscale(100%);
+    // opacity: 0.8;
+    // transition: all 0.3s ease;
+
+    // &:hover {
+    //   filter: grayscale(0%);
+    //   opacity: 1;
+    // }
+  }
+}
+
 .gallerySection {
   margin-top: 60px;
 
