@@ -3,12 +3,12 @@ import styles from "./page_banner.module.scss";
 import Link from "next/link";
 import { ChevronRight, HouseFill } from "react-bootstrap-icons";
 
-const PageBanner = ({ title, label, subtitle, image, videoSrc }) => {
+const PageBanner = ({ title, label, subtitle, image, videoSrc, fullHeight }) => {
 
 
     const buttonText = "";
     const saveText = ""
-    return <section className={styles.PageBanner}
+    return <section className={`${styles.PageBanner} ${fullHeight ? styles.fullHeight : ""}`}
         style={{
             backgroundImage: videoSrc ? 'none' : `url('${image}')`
         }}

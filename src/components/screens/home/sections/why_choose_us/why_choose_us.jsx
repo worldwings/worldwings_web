@@ -90,12 +90,12 @@ const WhyChooseUsSection = () => {
         <div className={styles.wrap}>
           <div className={styles.left} data-aos="fade-right">
             <div className={styles.mainImg} />
-            <div className={styles.subImg} />
+            {/* <div className={styles.subImg} /> */}
           </div>
           <div className={styles.right}>
             <SectionHeading
               title={"Why Choose Us"}
-              head="Trusted thousands of travelers worldwide"
+              head="Trusted by thousands of travelers worldwide"
               caption="At World Wings Tours and Travels, we believe that travel is more than movement—it's about experiences, memories, and connections. Let us take care of your journey with professionalism, passion, and a personal touch that sets us apart."
             />
             <div className={styles.cards}>

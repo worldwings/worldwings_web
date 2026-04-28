@@ -154,7 +154,7 @@
     ]
   },
   {
-    "name": "7 Days Thailand Cultural Journey: Phuket, Pattaya, Bangkok",
+    "name": "7 Days Thailand Cultural Journey - Phuket, Pattaya, Bangkok",
     "description": "A complete Thailand experience including cities, beaches, and local culture.",
     "destinations": [
       "Phuket",
@@ -429,14 +429,14 @@
     ]
   },
   {
-    "name": "2N Malaysia + 2N Singapore",
+    "name": "5 Days Malaysia Singapore Escape",
     "description": "A short dual-country trip covering Malaysia and Singapore highlights.",
     "destinations": [
       "Malaysia",
       "Singapore"
     ],
-    "duration": "4 Nights",
-    "price": "Rs. 22,000/-",
+    "duration": "5 Days",
+    "price": "Rs. 70,000/-",
     "images": [
       "/tours/international/asia/images/Malaysia/Malaysia (1).jpg",
       "/tours/international/asia/images/Malaysia/Malaysia (2).jpg",
@@ -461,14 +461,14 @@
     ]
   },
   {
-    "name": "2N Malaysia + 3N Philippines",
+    "name": "6 Days Malaysia Philippines Delight",
     "description": "A multi-country getaway covering Malaysia and the Philippines.",
     "destinations": [
       "Malaysia",
       "Philippines"
     ],
-    "duration": "5 Nights",
-    "price": "Rs. 62000/-",
+    "duration": "6 Days",
+    "price": "Rs. 60,000/-",
     "images": [
       "/tours/international/asia/images/Malaysia/Malaysia (1).jpg",
       "/tours/international/asia/images/Malaysia/Malaysia (2).jpg",
@@ -484,7 +484,6 @@
       "/tours/international/asia/images/Philiphines/Philiphines (10).jpg",
       "/tours/international/asia/images/Philiphines/Philiphines (11).jpg",
       "/tours/international/asia/images/Philiphines/Philiphines (12).jpg",
-      "/tours/international/asia/images/Philiphines/Philiphines (13).jpg",
       "/tours/international/asia/images/Philiphines/Philiphines (14).jpg",
       "/tours/international/asia/images/Philiphines/Philiphines (15).jpg",
       "/tours/international/asia/images/Philiphines/Philiphines (16).jpg",
@@ -609,7 +608,6 @@
       "/tours/international/asia/images/Philiphines/Philiphines (10).jpg",
       "/tours/international/asia/images/Philiphines/Philiphines (11).jpg",
       "/tours/international/asia/images/Philiphines/Philiphines (12).jpg",
-      "/tours/international/asia/images/Philiphines/Philiphines (13).jpg",
       "/tours/international/asia/images/Philiphines/Philiphines (14).jpg",
       "/tours/international/asia/images/Philiphines/Philiphines (15).jpg",
       "/tours/international/asia/images/Philiphines/Philiphines (16).jpg",
@@ -702,28 +700,6 @@
       "/tours/international/asia/images/Nepal/Nepal (23).jpg",
       "/tours/international/asia/images/Nepal/Nepal (24).jpg",
       "/tours/international/asia/images/Nepal/Nepal (25).jpg"
-    ]
-  },
-  {
-    "name": "5 Days Lakshadweep Island Escape",
-    "description": "A tropical island getaway in Lakshadweep with white sandy beaches and turquoise waters.",
-    "destinations": [
-      "Lakshadweep"
-    ],
-    "duration": "5 Days",
-    "price": "Rs. 75,000/-",
-    "images": [
-      "/tours/international/asia/images/Lakshadweep/Lakshadweep (1).jpg",
-      "/tours/international/asia/images/Lakshadweep/Lakshadweep (10).jpg",
-      "/tours/international/asia/images/Lakshadweep/Lakshadweep (11).jpg",
-      "/tours/international/asia/images/Lakshadweep/Lakshadweep (2).jpg",
-      "/tours/international/asia/images/Lakshadweep/Lakshadweep (3).jpg",
-      "/tours/international/asia/images/Lakshadweep/Lakshadweep (4).jpg",
-      "/tours/international/asia/images/Lakshadweep/Lakshadweep (5).jpg",
-      "/tours/international/asia/images/Lakshadweep/Lakshadweep (6).jpg",
-      "/tours/international/asia/images/Lakshadweep/Lakshadweep (7).jpg",
-      "/tours/international/asia/images/Lakshadweep/Lakshadweep (8).jpg",
-      "/tours/international/asia/images/Lakshadweep/Lakshadweep (9).jpg"
     ]
   },
   {
@@ -971,30 +947,6 @@
       "/tours/international/asia/images/Almaty/Almaty (5).jpg",
       "/tours/international/asia/images/Almaty/Almaty (6).jpg",
       "/tours/international/asia/images/Almaty/Almaty (7).jpg"
-    ]
-  },
-  {
-    "name": "5 DAYS ANDAMAN HOLIDAY PACKAGE",
-    "description": "Explore Andaman Islands with beaches, water sports, and island tours.",
-    "destinations": [
-      "Andaman"
-    ],
-    "duration": "5 Days",
-    "price": "Rs.22000/-",
-    "images": [
-      "/tours/international/asia/images/Andhaman/Andhaman (1).jpg"
-    ]
-  },
-  {
-    "name": "6 Days Andaman Package",
-    "description": "An extended Andaman trip with multiple islands and activities.",
-    "destinations": [
-      "Andaman"
-    ],
-    "duration": "6 Days",
-    "price": "Rs. 27000/-",
-    "images": [
-      "/tours/international/asia/images/Andhaman/Andhaman (1).jpg"
     ]
   },
   {

@@ -54,28 +54,24 @@ const ToursListScreen = ({ tours = [], destination, type }) => {
     return matchesSearch && matchesDestination && matchesDuration;
   });
 
-  const isDomestic = type === "domestic";
-  const isInternational = type === "international";
-  console.log(type);
+
+
 
 
 
 
   const bannerData = {
-    title: isDomestic ? "Domestic Tours" : isInternational ? "International Tours" : title,
+    title: title,
     label: "",
-    saveText: (isDomestic || isInternational) ? "Save Up to 30% on Next Adventure!" : "",
+    image: (tours.length > 0 && tours[0].images?.length > 0
+      ? tours[0].bannerImg ||
+      tours[0].images[0] : "/images/international.jpg"
+    )
 
-    buttonText: (isDomestic || isInternational) ? "Book Today" : "",
-    image: isDomestic
-      ? "/images/Domestic Tour_ Home Page  Poster.jpg"
-      : isInternational
-        ? "/images/international tour_ Home Page Poster.jpg"
-        : (tours.length > 0 && tours[0].images?.length > 0
-          ? `/destinations/${tours[0].folderName}/${tours[0].images[0]}`
-          : "/blog/blog-1.jpg"),
-    videoSrc: (isDomestic || isInternational) ? null : "/videos/bg_video.mp4"
   };
+
+  console.log("bannerData", bannerData);
+
 
   return (
     <>

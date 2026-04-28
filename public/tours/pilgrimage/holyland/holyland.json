@@ -2,6 +2,7 @@
   {
     "name": "8 Days Spiritual Treasures of the Holy Land",
     "description": "A spiritual journey to the Holy Land covering key biblical sites and religious landmarks.",
+    "bannerImg": "/images/holy_land_header.jpg",
     "destinations": [
       "Holy Land"
     ],
@@ -57,6 +58,7 @@
     "destinations": [
       "Holyland"
     ],
+    "bannerImg": "/images/holy_land_header.jpg",
     "duration": "10 Days",
     "price": "Rs 1,75,000/-",
     "images": [

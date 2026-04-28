@@ -2,7 +2,7 @@ export const PAGES = [
   { title: "About Us", href: "/about" },
   {
     title: "Tours",
-    href: "/tours",
+    href: "/tours/domestic",
     dropdown: [
       {
         title: "Domestic Tours",
@@ -29,8 +29,9 @@ export const PAGES = [
           { title: "Middle East Tours", href: "/tours/international/middle_east" },
           { title: "Africa Tours", href: "/tours/international/africa" },
           { title: "Australia & New Zealand Tours", href: "/tours/international/australia_and_newzealand" },
-          { title: "America Tours", href: "/tours/international/america" },
-          { title: "Canada Tours", href: "/tours/international/canada" },
+          // { title: "America Tours", href: "/tours/international/america" },
+          { title: "USA & Canada Tours", href: "/tours/international/usa_and_canada" },
+          // { title: "Canada Tours", href: "/tours/international/canada" },
           { title: "Cruise Holidays", href: "/tours/international/cruise_holidays" },
           { title: "Customized Tours", href: "/tours/international/customized_tours" },
         ],
@@ -57,6 +58,7 @@ export const PAGES = [
   {
     title: "Services",
     href: "/services",
+    hideInfooter: true,
     dropdown: [
       {
         title: "Special Services",
@@ -72,7 +74,7 @@ export const PAGES = [
         title: "Travel Documentation",
         dropdown: [
           { title: "Passport Services", href: "/services/travel-documentation/passport-services" },
-          { title: "Visa Services", href: "/services/travel-documentation/visa-services" },
+
           { title: "Travel Insurance", href: "/services/travel-documentation/travel-insurance" },
         ],
       },

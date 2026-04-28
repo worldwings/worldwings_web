@@ -1,16 +1,17 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import SectionHeading from "@/components/common/section_heading/section_heading";
 import styles from "./registered_members.module.scss";
+import { Image } from "react-bootstrap";
 
 const logos = [
-    { src: "/images/about us/Registered Members Logo/01 IATA Logo-01.png", alt: "IATA" },
-    { src: "/images/about us/Registered Members Logo/02 TAFI-01.png", alt: "TAFI" },
-    { src: "/images/about us/Registered Members Logo/03 IAAI-01.png", alt: "IAAI" },
-    { src: "/images/about us/Registered Members Logo/04 Otoai-01.png", alt: "OTOAI" },
-    { src: "/images/about us/Registered Members Logo/05 Incredible-01.png", alt: "Incredible India" },
-    { src: "/images/about us/Registered Members Logo/06 Uten-01.png", alt: "UTEN" },
+    { src: "/images/about us/registered_members_logo/IATA.png", alt: "IATA" },
+    { src: "/images/about us/registered_members_logo/TAFI.png", alt: "TAFI" },
+    { src: "/images/about us/registered_members_logo/IAAI.png", alt: "IAAI" },
+    { src: "/images/about us/registered_members_logo/OTOAI.png", alt: "OTOAI" },
+    { src: "/images/about us/registered_members_logo/Incredible_India.png", alt: "Incredible India" },
+    { src: "/images/about us/registered_members_logo/UTEN.png", alt: "UTEN" },
 ];
 
 const RegisteredMembersSection = () => {
@@ -23,6 +24,7 @@ const RegisteredMembersSection = () => {
                         caption="Certifications & Memberships"
                         title="Registered Memberships"
                         center
+
                     />
                     <div className={styles.logosGrid}>
                         {logos.map((logo, index) => (

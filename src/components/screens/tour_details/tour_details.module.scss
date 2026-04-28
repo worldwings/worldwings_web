@@ -138,6 +138,7 @@
 
       p {
         margin-bottom: 16px;
+        // line-height: 22px;
       }
 
       ul,
@@ -159,7 +160,7 @@
       strong {
         font-size: 20px;
         display: block;
-        margin-top: 24px;
+        margin-top: 16px;
       }
 
       h1,
@@ -216,7 +217,7 @@
     font-size: 14.5px;
     margin-bottom: 30px;
     opacity: 0.9;
-    line-height: 1.6;
+    line-height: 1.6px;
   }
 
   .bookBtn {
@@ -405,13 +406,43 @@
     @include flexCenter;
     position: relative;
 
-    svg {
+    .closeBtn {
       color: white;
       font-size: 50px;
       position: absolute;
       top: -50px;
       right: 0px;
       cursor: pointer;
+    }
+
+
+    .rightBtn {
+      color: white;
+      font-size: 50px;
+      position: absolute;
+      top: 50%;
+      right: -60px;
+      cursor: pointer;
+      transform: translateY(-50%);
+
+      @include respond-below(md) {
+        right: 0px;
+      }
+    }
+
+    .leftBtn {
+      color: white;
+      font-size: 50px;
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      cursor: pointer;
+      transform: translateY(-50%);
+      left: -60px;
+
+      @include respond-below(md) {
+        left: 0px;
+      }
     }
 
     img {

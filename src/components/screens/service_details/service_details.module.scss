@@ -128,13 +128,22 @@
             strong,
             b {
                 color: $color_1;
-                font-weight: 600;
+                font-size: 24px;
+                font-weight: 400;
+                display: block;
+                margin-top: 24px;
+                margin-bottom: 8px;
             }
 
-            h1, h2, h3, h4, h5, h6 {
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
                 color: $color_1;
-                margin-top: 30px;
-                margin-bottom: 15px;
+                // margin-top: 30px;
+                // margin-bottom: 15px;
             }
         }
     }
@@ -281,4 +290,3 @@
         filter: grayscale(0%);
     }
 }
-

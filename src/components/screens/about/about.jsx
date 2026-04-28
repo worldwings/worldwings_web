@@ -9,7 +9,9 @@ import RegisteredMembersSection from "./sections/registered_members/registered_m
 const AboutUsScreen = () => {
     return (
         <>
-            <PageBanner title="About Us" videoSrc="/videos/bg_video.mp4" />
+            <PageBanner title="About Us" videoSrc="/videos/bg_video.mp4"
+                fullHeight
+            />
 
             <OurStorySection />
             <RegisteredMembersSection />

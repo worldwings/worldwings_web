@@ -25,6 +25,7 @@
         z-index: 1;
     }
 
+
     .cont {
         height: 550px;
         position: relative;
@@ -32,6 +33,8 @@
         @include flexCenter;
         flex-direction: column;
         gap: 10px;
+
+
 
         .label {
             color: white;
@@ -107,6 +110,13 @@
                 color: white;
                 font-size: 14px;
             }
+        }
+    }
+
+
+    &.fullHeight {
+        .cont {
+            height: 100vh;
         }
     }
 }

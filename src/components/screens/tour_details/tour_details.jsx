@@ -7,7 +7,7 @@ import { default as NextImage } from "next/image";
 import Link from "next/link";
 import PageBanner from "@/components/common/page_banner/page_banner";
 import { useState } from "react";
-import { X } from "react-bootstrap-icons";
+import { ChevronLeft, ChevronRight, X } from "react-bootstrap-icons";
 
 const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
   const json = parsedData || {};
@@ -24,17 +24,20 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
         {curremtImageIndex !== null && (
           <div className={styles.fullScreen}>
             <div>
+              <ChevronLeft className={styles.leftBtn} onClick={() => setCurrentImageIndex(curremtImageIndex - 1)} />
               <X
                 onClick={() => {
                   setCurrentImageIndex(null);
                 }}
+                className={styles.closeBtn}
               />
               <Image src={tour?.images?.[curremtImageIndex]} alt="xx" />
+              <ChevronRight className={styles.rightBtn} onClick={() => setCurrentImageIndex(curremtImageIndex + 1)} />
             </div>
           </div>
         )}
         <CustomContainer>
-          {tour?.images && tour?.images.length > 0 &&isGalleryAtTop && (
+          {tour?.images && tour?.images.length > 0 && isGalleryAtTop && (
             <div className={styles.gallerySection}>
               {/* <h2>Image Gallery</h2> */}
               <div className={styles.galleryGrid}>
@@ -56,7 +59,9 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
           )}
           <div className={styles.contentWrap}>
             <div className={styles.mainInfo}>
-              <h2>{tour?.name}</h2>
+              {/* <h2>{tour?.name} </h2> */}
+              {/* <p className={styles.description}>{tour?.description}</p> */}
+
               {tour?.destinations && tour?.destinations.length > 0 && (
                 <div className={styles.destinations}>
                   {tour.destinations.map((dest, i) => (
@@ -66,7 +71,6 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
                   ))}
                 </div>
               )}
-              <p className={styles.description}>{tour?.description}</p>
 
               {detailsHTML && (
                 <div className={styles.htmlContentSection}>
@@ -125,7 +129,7 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
           )}
 
 
-            {tour?.images && tour?.images.length > 0 && !isGalleryAtTop && (
+          {tour?.images && tour?.images.length > 0 && !isGalleryAtTop && (
             <div className={styles.gallerySection}>
               <h2>Image Gallery</h2>
               <div className={styles.galleryGrid}>

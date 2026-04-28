@@ -61,6 +61,7 @@ const Footer = () => {
                         <ul className={styles.linkList}>
                             {
                                 PAGES.map((page) => {
+                                    if (page.hideInfooter) return null;
                                     return <li key={page.title}><Link href={page.href || "#"}><CaretRightFill className={styles.bulletIcon} /> {page.title}</Link></li>
                                 })
                             }
