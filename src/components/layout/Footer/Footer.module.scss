@@ -50,19 +50,26 @@
             flex-direction: column;
 
             .contactLabel {
-                color: $color_text_grey2;
-                font-size: 13px;
-                margin-bottom: 2px;
+                color: #ccc;
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .numbers {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
             }
 
             .contactNumber {
-                color: #ffffff;
-                font-size: 16px;
+                color: white;
+                font-size: 18px;
                 font-weight: 700;
                 text-decoration: none;
+                transition: color 0.3s ease;
 
                 &:hover {
-                    color: $color_1;
+                    color: var(--primary-color, #e31c23);
                 }
             }
         }

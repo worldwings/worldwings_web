@@ -20,7 +20,7 @@ const BlogSection = () => {
                 <Row className={styles.cardsRow}>
                     {BLOG_POSTS.map((post, idx) => (
                         <Col lg={4} md={6} sm={12} key={post.id} className={styles.cardCol}>
-                            <Link href={`/blog/${post.id}`} className={styles.blogCard}
+                            <Link href={post.href} className={styles.blogCard}
                                 // data-aos="fade-up"
                                 data-aos-delay={idx * 100}
                             >

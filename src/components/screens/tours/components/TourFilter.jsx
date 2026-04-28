@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import styles from './TourFilter.module.scss';
 
 const TourFilter = ({ tours, onFilterChange, destination }) => {
+  const router = useRouter();
   // Support both 'destinations' array and 'destination' string for backward compatibility
   const getTourDestinations = (t) => t.destinations || (t.destination ? [t.destination] : []);
 
@@ -16,48 +18,66 @@ const TourFilter = ({ tours, onFilterChange, destination }) => {
     );
   }, [tours]);
 
-  const [selectedDestinations, setSelectedDestinations] = useState([]);
+  const [selectedDestinations, setSelectedDestinations] = useState(['Bali']);
   const [maxDuration, setMaxDuration] = useState(computedMaxDuration);
   const [showAllDestinations, setShowAllDestinations] = useState(false);
+
+  console.log('xxx--->>', selectedDestinations);
+
+
+  // Initialize from query param if present
+
+
+  useEffect(() => {
+    if (onFilterChange) {
+      onFilterChange({ destinations: selectedDestinations, maxDuration });
+    }
+  }, [selectedDestinations, maxDuration]);
 
   React.useEffect(() => {
     setMaxDuration(computedMaxDuration);
   }, [computedMaxDuration]);
 
   const handleDestinationChange = (dest) => {
-    let updated;
     if (selectedDestinations.includes(dest)) {
-      updated = selectedDestinations.filter(d => d !== dest);
+      setSelectedDestinations(selectedDestinations.filter(d => d !== dest));
     } else {
-      updated = [...selectedDestinations, dest];
-    }
-    setSelectedDestinations(updated);
-    if (onFilterChange) {
-      onFilterChange({ destinations: updated, maxDuration });
+      setSelectedDestinations([...selectedDestinations, dest]);
     }
   };
 
   const handleDurationChange = (e) => {
-    const newDuration = parseInt(e.target.value, 10);
-    setMaxDuration(newDuration);
-    if (onFilterChange) {
-      onFilterChange({ destinations: selectedDestinations, maxDuration: newDuration });
-    }
+    setMaxDuration(parseInt(e.target.value, 10));
   };
 
   const handleClear = () => {
     setSelectedDestinations([]);
     setMaxDuration(computedMaxDuration);
-    if (onFilterChange) {
-      onFilterChange({ destinations: [], maxDuration: undefined });
-    }
   };
-
-  const visibleDestinations = showAllDestinations ? destinations : destinations.slice(0, 5);
 
   useEffect(() => {
     handleClear()
-  }, [destination])
+    console.log('1');
+
+    if (router.isReady && router.query.destinations) {
+      console.log('2');
+      const queryDest = router.query.destinations;
+      console.log('3');
+      console.log(router.query.destinations);
+      if (Array.isArray(queryDest)) {
+        console.log('4');
+        setSelectedDestinations(queryDest);
+      } else {
+        console.log('4');
+        console.log(queryDest);
+        setSelectedDestinations([queryDest]);
+      }
+    }
+  }, [router.isReady, router.query.destinations]);
+
+  const visibleDestinations = showAllDestinations ? destinations : destinations.slice(0, 5);
+
+
 
   return (
     <div className={styles.filterSidebar}>
@@ -74,7 +94,7 @@ const TourFilter = ({ tours, onFilterChange, destination }) => {
           </span>
         </div>
         <div className={styles.checkboxList}>
-          {visibleDestinations.map(dest => (
+          {visibleDestinations.sort((a, b) => a.localeCompare(b)).map(dest => (
             <label key={dest} className={styles.checkboxLabel}>
               <input
                 type="checkbox"

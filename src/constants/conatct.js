@@ -3,6 +3,14 @@ export const CONTACT_DETAILS = {
     number: "9444175678",
     text: "+91 94441 75678",
   },
+  phone2: {
+    number: "9445475692",
+    text: "+91 94454 75692",
+  },
+  phone3: {
+    number: "9677860678",
+    text: "+91 96778 60678",
+  },
   whatsapp1: {
     number: "919444175678",
     text: "+91 94441 75678",
@@ -20,6 +28,12 @@ export const CONTACT_DETAILS = {
     " Taylors Road, Kilpauk",
     " Chennai-600010. ",
   ],
+  socials: {
+    facebook: "https://www.facebook.com/WorldWingstt/",
+    instagram: "#",
+    youtube: "#",
+    x: "#"
+  }
 };
 
 export const BRANCHES = [

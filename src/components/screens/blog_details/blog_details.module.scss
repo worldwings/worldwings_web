@@ -1,0 +1,95 @@
+.blogDetails {
+    background-color: #f8f9fa;
+
+    .contentWrapper {
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+        .metaInfo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+
+            .author {
+                font-weight: 600;
+                color: var(--primary-color, #e31c23);
+            }
+        }
+
+        .content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+
+            .blogBody {
+                h1, h2, h3 {
+                    font-weight: 800;
+                    margin-top: 40px;
+                    margin-bottom: 20px;
+                    color: #222;
+                    position: relative;
+                    
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 50px;
+                        height: 4px;
+                        background: var(--primary-color, #e31c23);
+                        margin-top: 10px;
+                    }
+                }
+
+                p {
+                    margin-bottom: 25px;
+                }
+
+                ul, ol {
+                    margin-bottom: 25px;
+                    padding-left: 20px;
+
+                    li {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 12px;
+                    margin: 30px 0;
+                }
+            }
+        }
+
+        .tags {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+
+            .tag {
+                background: #f0f0f0;
+                padding: 5px 15px;
+                border-radius: 50px;
+                font-size: 14px;
+                color: #555;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background: var(--primary-color, #e31c23);
+                    color: white;
+                }
+            }
+        }
+    }
+}

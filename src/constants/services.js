@@ -158,10 +158,14 @@ export const SERVICES = [
         "id": "visa-services",
         "category": "travel-documentation",
         "title": "Visa Services",
+        "label": "",
+        "saveText": "Hassle-Free",
+        "subtitle": "Visa Assistance for All Destinations!",
+        "buttonText": "Apply Today",
         "images": [
-            "Visa.jpg"
+            "Visa_ Home Page Poster.jpg"
         ],
-        "folderName": "services/Travel Documentation/Visa Services/images",
+        "folderName": "images",
         "docxPath": "Travel Documentation/Visa Services/Visa Services.docx"
     }
 ];

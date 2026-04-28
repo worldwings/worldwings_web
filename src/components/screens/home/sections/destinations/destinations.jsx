@@ -60,7 +60,7 @@ const DestinationsSection = () => {
                   <div
                     className={styles.bg}
                     style={{
-                      backgroundImage: `url('/destinations/${pd.name}/${pd.images[0]}')`
+                      backgroundImage: `url('${pd.images[0]}')`
                     }}
                   />
                   <p>{pd.name}</p>

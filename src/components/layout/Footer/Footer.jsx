@@ -30,19 +30,27 @@ const Footer = () => {
                                 </div>
                                 <div className={styles.contactDetails}>
                                     <span className={styles.contactLabel}>Call Us 24/7</span>
-                                    <a href={`tel:+${CONTACT_DETAILS.whatsapp1.number}`} className={styles.contactNumber}>
-                                        {CONTACT_DETAILS.phone1.text}
-                                    </a>
+                                    <div className={styles.numbers}>
+                                        <a href={`tel:+91${CONTACT_DETAILS.phone1.number}`} className={styles.contactNumber}>
+                                            {CONTACT_DETAILS.phone1.text}
+                                        </a>
+                                        <a href={`tel:+91${CONTACT_DETAILS.phone2.number}`} className={styles.contactNumber}>
+                                            {CONTACT_DETAILS.phone2.text}
+                                        </a>
+                                        <a href={`tel:+91${CONTACT_DETAILS.phone3.number}`} className={styles.contactNumber}>
+                                            {CONTACT_DETAILS.phone3.text}
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
                             <div className={styles.socialFollow}>
                                 <span className={styles.followText}>Follow Us -</span>
                                 <div className={styles.socialIcons}>
-                                    <a href="#"><Facebook /></a>
-                                    <a href="#"><Linkedin /></a>
-                                    <a href="#"><XIcon /></a>
-                                    <a href="#"><Youtube /></a>
+                                    <a href={CONTACT_DETAILS.socials.facebook} target="_blank" rel="noreferrer"><Facebook /></a>
+                                    <a href={CONTACT_DETAILS.socials.instagram} target="_blank" rel="noreferrer"><Linkedin /></a>
+                                    <a href={CONTACT_DETAILS.socials.x} target="_blank" rel="noreferrer"><XIcon /></a>
+                                    <a href={CONTACT_DETAILS.socials.youtube} target="_blank" rel="noreferrer"><Youtube /></a>
                                 </div>
                             </div>
                         </div>

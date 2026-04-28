@@ -30,7 +30,14 @@ const ServiceDetailsScreen = ({ service }) => {
             </Head>
 
             <div className={styles.detailsPage}>
-                <PageBanner title={service.title} image={coverImage} />
+                <PageBanner 
+                    title={service.title} 
+                    label={service.label}
+                    saveText={service.saveText}
+                    subtitle={service.subtitle}
+                    buttonText={service.buttonText}
+                    image={coverImage} 
+                />
 
                 <CustomContainer>
                     <div className={styles.contentWrap}>
