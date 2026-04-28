@@ -3,12 +3,15 @@
     padding: 80px 0;
 }
 
-.cardsRow {
-    margin-top: 80px;
+.sliderCont {
+    margin-top: 60px;
+    padding-bottom: 40px;
+
+
 }
 
-.cardCol {
-    margin-bottom: 30px;
+.cardWrapper {
+    padding: 10px;
 }
 
 .blogCard {
@@ -19,6 +22,7 @@
     height: 400px; // fixed height for uniformity
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px; // Extra safety for slider spacing
 
     &:hover {
         transform: translateY(-5px);

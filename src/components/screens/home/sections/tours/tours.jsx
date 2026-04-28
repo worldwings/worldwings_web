@@ -2,7 +2,7 @@ import CustomContainer from "@/components/ui/custom_container/custom_container";
 import React from "react";
 import styles from "./tours.module.scss";
 import Link from "next/link";
-
+ 
 const ToursSection = () => {
   const TOURS = [
     {
@@ -10,14 +10,14 @@ const ToursSection = () => {
       imgSrc: "/images/Domestic Tour_ Home Page  Poster.jpg",
       saveText: "Save Up to 30% on Next Adventure!",
       buttonText: "Book Today",
-      href: "/tours/domestic/north_india"
+      href: "/tours/domestic"
     },
     {
       name: "International Tours",
       imgSrc: "/images/international tour_ Home Page Poster.jpg",
       saveText: "Save Up to 30% on Next Adventure!",
       buttonText: "Book Today",
-      href: "/tours/international/asia"
+      href: "/tours/international"
     },
     {
       name: "Visa Services",
