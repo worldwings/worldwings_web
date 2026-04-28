@@ -2,7 +2,6 @@ import CustomContainer from "@/components/ui/custom_container/custom_container";
 import React from "react";
 import styles from "./tours.module.scss";
 import Link from "next/link";
-import CustomButton from "@/components/ui/custom_button/custom_button";
 
 const ToursSection = () => {
   const TOURS = [
@@ -45,13 +44,9 @@ const ToursSection = () => {
                 data-aos="fade-left"
                 data-aos-delay={idx * 100}
               >
+                <p>{tour.buttonText}</p>
                 <h3>{tour.name}</h3>
                 <h4>{tour.saveText}</h4>
-
-                <CustomButton
-                  variant={2}
-                >{tour.buttonText}</CustomButton>
-
               </Link>
             );
           })}
