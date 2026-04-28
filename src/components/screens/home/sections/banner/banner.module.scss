@@ -25,12 +25,13 @@
 
     p {
       color: white;
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 12px;
     }
+
     h1 {
       color: white;
-      font-size: 98px;
+      font-size: clamp(40px, 5.5vw, 75px);
       font-weight: 600;
       letter-spacing: -2px;
       display: flex;
@@ -40,13 +41,16 @@
       span {
         display: block;
         margin-right: 20px;
+
         &.w3 {
           color: $color_2;
         }
+
         &.w4 {
           color: $color_1;
         }
       }
+
       // span {
       //   color: $color_1;
       //   span {
@@ -72,9 +76,11 @@
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
+
   100% {
     transform: scale(1);
   }

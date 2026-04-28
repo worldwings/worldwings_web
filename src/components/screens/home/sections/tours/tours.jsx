@@ -1,20 +1,31 @@
 import CustomContainer from "@/components/ui/custom_container/custom_container";
 import React from "react";
 import styles from "./tours.module.scss";
+import Link from "next/link";
+import CustomButton from "@/components/ui/custom_button/custom_button";
 
 const ToursSection = () => {
   const TOURS = [
     {
       name: "Domestic Tours",
-      imgSrc: "/images/domestic.jpg",
+      imgSrc: "/images/Domestic Tour_ Home Page  Poster.jpg",
+      saveText: "Save Up to 30% on Next Adventure!",
+      buttonText: "Book Today",
+      href: "/tours/domestic/north_india"
     },
     {
       name: "International Tours",
-      imgSrc: "/images/international.jpg",
+      imgSrc: "/images/international tour_ Home Page Poster.jpg",
+      saveText: "Save Up to 30% on Next Adventure!",
+      buttonText: "Book Today",
+      href: "/tours/international/asia"
     },
     {
-      name: "Inbound Tours",
-      imgSrc: "/images/inbound.webp",
+      name: "Visa Services",
+      imgSrc: "/images/Visa_ Home Page Poster.jpg",
+      saveText: "Hassle-Free Visa Assistance for All Destinations!",
+      buttonText: "Apply Today",
+      href: "/visas"
     },
   ];
 
@@ -24,7 +35,8 @@ const ToursSection = () => {
         <div className={styles.wrap}>
           {TOURS.map((tour, idx) => {
             return (
-              <div
+              <Link
+                href={tour.href}
                 className={styles.tour}
                 key={tour.name}
                 style={{
@@ -33,10 +45,14 @@ const ToursSection = () => {
                 data-aos="fade-left"
                 data-aos-delay={idx * 100}
               >
-                <p>Book Today</p>
                 <h3>{tour.name}</h3>
-                <h4>Save Up to 30% on Next Adventure!</h4>
-              </div>
+                <h4>{tour.saveText}</h4>
+
+                <CustomButton
+                  variant={2}
+                >{tour.buttonText}</CustomButton>
+
+              </Link>
             );
           })}
         </div>

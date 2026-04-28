@@ -16,8 +16,14 @@
       position: relative;
       display: flex;
 
+      button {
+        margin-top: 20px;
+        width: fit-content;
+      }
+
       flex-direction: column;
       justify-content: flex-end;
+
       * {
         position: relative;
         z-index: 10;
@@ -37,9 +43,25 @@
       }
 
       h3 {
-        font-size: 30px;
-        margin: 8px 0;
+        font-size: 24px;
+        margin: 4px 0;
         color: $color_1;
+        font-weight: 700;
+      }
+
+      h4 {
+        font-size: 14px;
+        color: white;
+        font-weight: 500;
+        opacity: 0.9;
+      }
+
+      p {
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #ddd;
+        margin-bottom: 0;
       }
     }
   }
