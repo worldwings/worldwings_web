@@ -27,7 +27,7 @@
         width: 50%;
         height: 75%;
         bottom: -30px;
-        right: 0;
+        right: -20px;
         background-image: url("/images/couple.webp");
 
         background-size: cover;
@@ -55,7 +55,7 @@
             color: $color_1;
           }
 
-          >div {
+          > div {
             text-align: center;
 
             h3 {
@@ -97,12 +97,45 @@
     }
   }
 
+  @include respond-below(xxl) {
+    .wrap {
+      .left {
+        .subImg {
+          width: 60%;
+          // display: none;
+        }
+      }
+    }
+  }
+  @include respond-below(xl) {
+    .wrap {
+      .left {
+        .subImg {
+          width: 70%;
+          height: 60%;
+          // display: none;
+        }
+      }
+    }
+  }
 
   @include respond-below(lg) {
     .wrap {
       grid-template-columns: 1fr;
 
+      .left {
+        .mainImg {
+          margin: auto;
+          width: 60%;
+        }
 
+        // margin: auto;
+        .subImg {
+          height: 80%;
+          width: 40%;
+          right: 50px;
+        }
+      }
 
       .right {
         .cards {
@@ -115,6 +148,27 @@
       margin-top: 80px;
       grid-template-columns: 1fr 1fr;
       gap: 20px;
+    }
+  }
+
+  @include respond-below(md) {
+    .wrap {
+      grid-template-columns: 1fr;
+
+      .left {
+        height: 600px;
+
+        .mainImg {
+          margin: 0 auto 0 0;
+          width: 90%;
+        }
+
+        .subImg {
+          right: 0;
+          width: 80%;
+          height: 70%;
+        }
+      }
     }
   }
 }

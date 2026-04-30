@@ -90,7 +90,7 @@ const WhyChooseUsSection = () => {
         <div className={styles.wrap}>
           <div className={styles.left} data-aos="fade-right">
             <div className={styles.mainImg} />
-            {/* <div className={styles.subImg} /> */}
+            <div className={styles.subImg} />
           </div>
           <div className={styles.right}>
             <SectionHeading
