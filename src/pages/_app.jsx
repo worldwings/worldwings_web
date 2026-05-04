@@ -7,12 +7,10 @@ import "nprogress/nprogress.css";
 import Router, { useRouter } from "next/router";
 import Head from "next/head";
 
-
 import { ToastContainer } from "react-toastify";
 import Layout from "@/components/layout/layout";
 import { FONTS } from "@/styles/fonts";
 import LoadingScreen from "@/components/ui/loading_screen/loading_screen";
-
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -47,6 +45,8 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
   const isHome = router.pathname === "/";
 
+  const [showEnquiryModal, setShowEnquiryModal] = useState(false);
+
   return (
     <>
       <Head>
@@ -56,13 +56,14 @@ export default function App({ Component, pageProps }) {
 
       <main className={FONTS.font2}>
         {isHome && loading && <LoadingScreen />}
-        <Layout>
-          <Component {...pageProps} />
+        <Layout
+          showEnquiryModal={showEnquiryModal}
+          setShowEnquiryModal={setShowEnquiryModal}
+        >
+          <Component {...pageProps} setShowEnquiryModal={setShowEnquiryModal}/>
           <ToastContainer position="bottom-right" />
         </Layout>
-
       </main>
-
     </>
   );
 }

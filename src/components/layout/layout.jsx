@@ -30,8 +30,7 @@ const WhatsappButton = ({ setShow }) => {
   );
 };
 
-const Layout = ({ children }) => {
-  const [show, setShow] = useState(false);
+const Layout = ({ children,showEnquiryModal, setShowEnquiryModal }) => {
 
   useEffect(() => {
 
@@ -39,7 +38,7 @@ const Layout = ({ children }) => {
 
     if (!isEnquiryPopupShown) {
       const timer = setTimeout(() => {
-        setShow(true);
+        setShowEnquiryModal(true);
         localStorage.setItem("enquiryPopupShown", "true");
       }, 5000);
       return () => clearTimeout(timer);
@@ -48,13 +47,13 @@ const Layout = ({ children }) => {
 
   return (
     <div className={styles.Layout}>
-      <Header setShowModal={setShow} />
+      <Header setShowModal={setShowEnquiryModal} />
       {children}
-      <EnquireButton setShow={setShow} />
+      <EnquireButton setShow={setShowEnquiryModal} />
       <WhatsappButton />
 
       <Footer />
-      <EnquiryModal show={show} setShow={setShow} />
+      <EnquiryModal show={showEnquiryModal} setShow={setShowEnquiryModal} />
     </div>
   );
 };

@@ -9,7 +9,13 @@ import PageBanner from "@/components/common/page_banner/page_banner";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "react-bootstrap-icons";
 
-const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
+const TourDetailsScreen = ({
+  tour = {},
+  detailsHTML,
+  parsedData,
+  docUrl,
+  setShowEnquiryModal,
+}) => {
   const json = parsedData || {};
   const coverImage = tour?.images?.[0] || "/images/about_banner.webp";
   const [curremtImageIndex, setCurrentImageIndex] = useState(null);
@@ -69,18 +75,21 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
           )}
           <div className={styles.contentWrap}>
             <div className={styles.mainInfo}>
-              {/* <h2>{tour?.name} </h2> */}
-              {/* <p className={styles.description}>{tour?.description}</p> */}
+              <div className={styles.top}>
+                {tour?.destinations && tour?.destinations.length > 0 && (
+                  <div className={styles.destinations}>
+                    {tour.destinations.map((dest, i) => (
+                      <span key={i} className={styles.destTag}>
+                        {dest}
+                      </span>
+                    ))}
+              
+               
+                  </div>
+                )}
 
-              {tour?.destinations && tour?.destinations.length > 0 && (
-                <div className={styles.destinations}>
-                  {tour.destinations.map((dest, i) => (
-                    <span key={i} className={styles.destTag}>
-                      {dest}
-                    </span>
-                  ))}
-                </div>
-              )}
+                <p className={styles.price}>{tour.price}</p>
+              </div>
 
               {detailsHTML && (
                 <div className={styles.htmlContentSection}>
@@ -98,9 +107,14 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
                 Contact our experts to get a personalized quote and itinerary
                 tailored just for you.
               </p>
-              <Link href="/contact" className={styles.bookBtn}>
+              <button
+                onClick={() => {
+                  setShowEnquiryModal(tour.name);
+                }}
+                className={styles.bookBtn}
+              >
                 Enquire Now
-              </Link>
+              </button>
 
               <div className={styles.itinerarySection}>
                 <hr className={styles.divider} />

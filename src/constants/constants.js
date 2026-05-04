@@ -26,14 +26,29 @@ export const PAGES = [
         dropdown: [
           { title: "Asia Tours", href: "/tours/international/asia" },
           { title: "Europe Tours", href: "/tours/international/europe" },
-          { title: "Middle East Tours", href: "/tours/international/middle_east" },
+          {
+            title: "Middle East Tours",
+            href: "/tours/international/middle_east",
+          },
           { title: "Africa Tours", href: "/tours/international/africa" },
-          { title: "Australia & New Zealand Tours", href: "/tours/international/australia_and_newzealand" },
+          {
+            title: "Australia & New Zealand Tours",
+            href: "/tours/international/australia_and_newzealand",
+          },
           // { title: "America Tours", href: "/tours/international/america" },
-          { title: "USA & Canada Tours", href: "/tours/international/usa_and_canada" },
+          {
+            title: "USA & Canada Tours",
+            href: "/tours/international/usa_and_canada",
+          },
           // { title: "Canada Tours", href: "/tours/international/canada" },
-          { title: "Cruise Holidays", href: "/tours/international/cruise_holidays" },
-          { title: "Customized Tours", href: "/tours/international/customized_tours" },
+          {
+            title: "Cruise Holidays",
+            href: "/tours/international/cruise_holidays",
+          },
+          {
+            title: "Customized Tours",
+            href: "/tours/international/customized_tours//Customized Tours",
+          },
         ],
       },
       {
@@ -47,9 +62,18 @@ export const PAGES = [
         title: "Inbound Tours",
         href: "/tours/inbound-tours",
         dropdown: [
-          { title: "Cultural Experiences", href: "/tours/inbound/inbound-tours/Cultural Experiences" },
-          { title: "Tours for Foreigners NRIs", href: "/tours/inbound/inbound-tours/Tour for Foreigners and NRIs" },
-          { title: "Medical Tourism Packages", href: "/tours/inbound/inbound-tours/Medical Tourism" },
+          {
+            title: "Cultural Experiences",
+            href: "/tours/inbound/inbound-tours/Cultural Experiences",
+          },
+          {
+            title: "Tours for Foreigners NRIs",
+            href: "/tours/inbound/inbound-tours/Tour for Foreigners and NRIs",
+          },
+          {
+            title: "Medical Tourism Packages",
+            href: "/tours/inbound/inbound-tours/Medical Tourism",
+          },
         ],
       },
     ],
@@ -64,27 +88,51 @@ export const PAGES = [
         title: "Special Services",
         href: "/services/special-services",
         dropdown: [
-          { title: "Corporate Travel", href: "/services/special-services/corporate-travel-solutions" },
-          { title: "Destination Weddings", href: "/services/special-services/event-management" },
-          { title: "Luxury Travel", href: "/services/special-services/luxury-travel" },
+          {
+            title: "Corporate Travel",
+            href: "/services/special-services/corporate-travel-solutions",
+          },
+          {
+            title: "Destination Weddings",
+            href: "/services/special-services/event-management",
+          },
+          {
+            title: "Luxury Travel",
+            href: "/services/special-services/luxury-travel",
+          },
           { title: "MICE Travel", href: "/services/special-services/mice" },
         ],
       },
       {
         title: "Travel Documentation",
         dropdown: [
-          { title: "Passport Services", href: "/services/travel-documentation/passport-services" },
+          {
+            title: "Passport Services",
+            href: "/services/travel-documentation/passport-services",
+          },
 
-          { title: "Travel Insurance", href: "/services/travel-documentation/travel-insurance" },
+          {
+            title: "Travel Insurance",
+            href: "/services/travel-documentation/travel-insurance",
+          },
         ],
       },
       {
         title: "Travel Essentials",
         href: "/services/travel-essentials",
         dropdown: [
-          { title: "Eurail", href: "/services/travel-essentials/eurorail-tickets" },
-          { title: "Flight Ticket Booking", href: "/services/travel-essentials/flight-tickets" },
-          { title: "Hotel Booking", href: "/services/travel-essentials/hotel-bookings" },
+          {
+            title: "Eurail",
+            href: "/services/travel-essentials/eurorail-tickets",
+          },
+          {
+            title: "Flight Ticket Booking",
+            href: "/services/travel-essentials/flight-tickets",
+          },
+          {
+            title: "Hotel Booking",
+            href: "/services/travel-essentials/hotel-bookings",
+          },
         ],
       },
     ],
@@ -101,7 +149,9 @@ export const POPULAR_DESTINATIONS = [
   },
   {
     name: "Azerbaijan",
-    images: ["/tours/international/europe/images/Baku Azerbaijan/iltun-huseynli-BzjjoIeu-Ds-unsplash.jpg"],
+    images: [
+      "/tours/international/europe/images/Baku Azerbaijan/iltun-huseynli-BzjjoIeu-Ds-unsplash.jpg",
+    ],
     href: "/tours/international/europe?destinations=Azerbaijan",
   },
   {
@@ -111,7 +161,9 @@ export const POPULAR_DESTINATIONS = [
   },
   {
     name: "London",
-    images: ["/tours/international/europe/images/United Kingdom/London (1).jpg"],
+    images: [
+      "/tours/international/europe/images/United Kingdom/London (1).jpg",
+    ],
     href: "/tours/international/europe?destinations=London",
   },
   {
@@ -127,6 +179,126 @@ export const POPULAR_DESTINATIONS = [
 ];
 
 export const BLOG_POSTS = [
+  {
+    id: "10-essential-travel-tips-for-first-time-travelers",
+    title: "10 Essential Travel Tips for First-Time Travelers",
+    author: "World Wings",
+    tags: ["Travel Tips", "Guide"],
+    image: "/blogs/10 Essential Travel Tips for First/banner.jpg",
+    folder: "10 Essential Travel Tips for First",
+    highlightTitle: false,
+    href: "/blog/10-essential-travel-tips-for-first-time-travelers",
+  },
+  {
+    id: "discover-india-a-journey-through-culture",
+    title: "Discover India: A Journey Through Culture",
+    author: "World Wings",
+    tags: ["India", "Culture"],
+    image: "/blogs/Discover India/banner.jpg",
+    folder: "Discover India",
+    highlightTitle: false,
+    href: "/blog/discover-india-a-journey-through-culture",
+  },
+  {
+    id: "why-choose-a-travel-agency-for-your-next-trip",
+    title: "Why Choose a Travel Agency for Your Next Trip",
+    author: "World Wings",
+    tags: ["Travel Advice", "Planning"],
+    image: "/blogs/Why Choose a Travel Agency/banner.jpg",
+    folder: "Why Choose a Travel Agency",
+    highlightTitle: true,
+    href: "/blog/why-choose-a-travel-agency-for-your-next-trip",
+  },
+  {
+    id: "the-spiritual-path-exploring-pilgrimage-tours",
+    title: "The Spiritual Path: Exploring Pilgrimage Tours",
+    author: "World Wings",
+    tags: ["Spiritual", "Pilgrimage"],
+    image: "/blogs/Pilgrimage Tours/banner.jpg",
+    folder: "Pilgrimage Tours",
+    highlightTitle: false,
+    href: "/blog/the-spiritual-path-exploring-pilgrimage-tours",
+  },
+  {
+    id: "10-essential-travel-tips-for-first-time-travelers",
+    title: "10 Essential Travel Tips for First-Time Travelers",
+    author: "World Wings",
+    tags: ["Travel Tips", "Guide"],
+    image: "/blogs/10 Essential Travel Tips for First/banner.jpg",
+    folder: "10 Essential Travel Tips for First",
+    highlightTitle: false,
+    href: "/blog/10-essential-travel-tips-for-first-time-travelers",
+  },
+  {
+    id: "discover-india-a-journey-through-culture",
+    title: "Discover India: A Journey Through Culture",
+    author: "World Wings",
+    tags: ["India", "Culture"],
+    image: "/blogs/Discover India/banner.jpg",
+    folder: "Discover India",
+    highlightTitle: false,
+    href: "/blog/discover-india-a-journey-through-culture",
+  },
+  {
+    id: "why-choose-a-travel-agency-for-your-next-trip",
+    title: "Why Choose a Travel Agency for Your Next Trip",
+    author: "World Wings",
+    tags: ["Travel Advice", "Planning"],
+    image: "/blogs/Why Choose a Travel Agency/banner.jpg",
+    folder: "Why Choose a Travel Agency",
+    highlightTitle: true,
+    href: "/blog/why-choose-a-travel-agency-for-your-next-trip",
+  },
+  {
+    id: "the-spiritual-path-exploring-pilgrimage-tours",
+    title: "The Spiritual Path: Exploring Pilgrimage Tours",
+    author: "World Wings",
+    tags: ["Spiritual", "Pilgrimage"],
+    image: "/blogs/Pilgrimage Tours/banner.jpg",
+    folder: "Pilgrimage Tours",
+    highlightTitle: false,
+    href: "/blog/the-spiritual-path-exploring-pilgrimage-tours",
+  },
+  {
+    id: "10-essential-travel-tips-for-first-time-travelers",
+    title: "10 Essential Travel Tips for First-Time Travelers",
+    author: "World Wings",
+    tags: ["Travel Tips", "Guide"],
+    image: "/blogs/10 Essential Travel Tips for First/banner.jpg",
+    folder: "10 Essential Travel Tips for First",
+    highlightTitle: false,
+    href: "/blog/10-essential-travel-tips-for-first-time-travelers",
+  },
+  {
+    id: "discover-india-a-journey-through-culture",
+    title: "Discover India: A Journey Through Culture",
+    author: "World Wings",
+    tags: ["India", "Culture"],
+    image: "/blogs/Discover India/banner.jpg",
+    folder: "Discover India",
+    highlightTitle: false,
+    href: "/blog/discover-india-a-journey-through-culture",
+  },
+  {
+    id: "why-choose-a-travel-agency-for-your-next-trip",
+    title: "Why Choose a Travel Agency for Your Next Trip",
+    author: "World Wings",
+    tags: ["Travel Advice", "Planning"],
+    image: "/blogs/Why Choose a Travel Agency/banner.jpg",
+    folder: "Why Choose a Travel Agency",
+    highlightTitle: true,
+    href: "/blog/why-choose-a-travel-agency-for-your-next-trip",
+  },
+  {
+    id: "the-spiritual-path-exploring-pilgrimage-tours",
+    title: "The Spiritual Path: Exploring Pilgrimage Tours",
+    author: "World Wings",
+    tags: ["Spiritual", "Pilgrimage"],
+    image: "/blogs/Pilgrimage Tours/banner.jpg",
+    folder: "Pilgrimage Tours",
+    highlightTitle: false,
+    href: "/blog/the-spiritual-path-exploring-pilgrimage-tours",
+  },
   {
     id: "10-essential-travel-tips-for-first-time-travelers",
     title: "10 Essential Travel Tips for First-Time Travelers",

@@ -6,6 +6,7 @@ import CustomContainer from "@/components/ui/custom_container/custom_container";
 import PageBanner from "@/components/common/page_banner/page_banner";
 import styles from "./contact.module.scss";
 import { CONTACT_DETAILS, BRANCHES } from "@/constants/conatct";
+import Link from "next/link";
 
 const faqs = [
   {
@@ -136,7 +137,7 @@ const ContactScreen = () => {
                   <p>Our customer support team is available</p>
                   {branch.phones.map((phone, index) => (
                     <div key={index} style={{ marginBottom: "5px" }}>
-                      <span>{phone}</span>
+                      <Link href={`tel:${phone}`}>{phone}</Link>
                     </div>
                   ))}
                 </div>

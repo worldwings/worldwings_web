@@ -2,9 +2,7 @@
   {
     "name": "9 Days Beauty of Europe",
     "description": "A scenic Europe tour covering iconic cities, landmarks, and cultural highlights.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "9 Days",
     "price": "Rs. 3,45,581/-",
     "images": [
@@ -52,9 +50,7 @@
   {
     "name": "13 days Best of Europe",
     "description": "A comprehensive Europe trip covering major countries, cities, and attractions.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "13 Days",
     "price": "Rs. 3,88,843/-",
     "images": [
@@ -102,9 +98,7 @@
   {
     "name": "13 days European Grandeur",
     "description": "Explore the grandeur of Europe with famous cities, architecture, and experiences.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "13 Days",
     "price": "Rs. 4,59,316/-",
     "images": [
@@ -152,9 +146,7 @@
   {
     "name": "10 Days European Highlights",
     "description": "A highlights tour covering key European destinations and iconic attractions.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "10 Days",
     "price": "Rs. 2,86,096/-",
     "images": [
@@ -202,9 +194,7 @@
   {
     "name": "11 Days Exclusive Europe",
     "description": "A premium Europe experience covering major destinations with curated experiences.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "11 Days",
     "price": "Rs. 3,58, 199/-",
     "images": [
@@ -252,9 +242,7 @@
   {
     "name": "8 Days Fascinating Europe",
     "description": "A short Europe getaway covering popular destinations and experiences.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "8 Days",
     "price": "Rs. 3,07, 126/-",
     "images": [
@@ -302,9 +290,7 @@
   {
     "name": "8 Days Glimpses Of United Kingdom",
     "description": "Explore the United Kingdom with visits to London and other iconic destinations.",
-    "destinations": [
-      "United Kingdom"
-    ],
+    "destinations": ["United Kingdom"],
     "duration": "8 Days",
     "price": "Rs. 2,94,475/-",
     "images": [
@@ -332,9 +318,7 @@
   {
     "name": "12 Days Grand European Highlights",
     "description": "An extended Europe highlights tour covering major cities and attractions.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "12 Days",
     "price": "Rs. 3,70,989/-",
     "images": [
@@ -382,9 +366,7 @@
   {
     "name": "13 Days Grand Exclusive Europe",
     "description": "A premium Europe tour with extensive coverage of top destinations.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "13 Days",
     "price": "Rs.4,43,092/-",
     "images": [
@@ -432,9 +414,7 @@
   {
     "name": "10 Days Grand Fascinating Europe",
     "description": "A detailed Europe journey covering scenic and cultural highlights.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "10 Days",
     "price": "Rs. 3,92,019/-",
     "images": [
@@ -482,9 +462,7 @@
   {
     "name": "16 Days Grand Wonders of Europe",
     "description": "A grand Europe itinerary covering multiple countries and iconic landmarks.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "16 Days",
     "price": "Rs. 4,83,951/-",
     "images": [
@@ -532,9 +510,7 @@
   {
     "name": "8 Days Jewels of East Europe",
     "description": "Discover Eastern Europe with historic cities and cultural experiences.",
-    "destinations": [
-      "Eastern Europe"
-    ],
+    "destinations": ["Eastern Europe"],
     "duration": "8 Days",
     "price": "Rs. 2,62, 662/-",
     "images": [
@@ -546,9 +522,7 @@
   {
     "name": "10 Days Mini European Grandeur",
     "description": "A shorter Europe tour covering essential destinations and highlights.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "10 Days",
     "price": "Rs. 3,70, 817/-",
     "images": [
@@ -596,9 +570,7 @@
   {
     "name": "10 Days Scandinavian Delights",
     "description": "Explore Scandinavian countries with scenic landscapes and modern cities.",
-    "destinations": [
-      "Scandinavia"
-    ],
+    "destinations": ["Scandinavia"],
     "duration": "10 Days",
     "price": "Rs. 3,70, 830/-",
     "images": [
@@ -619,9 +591,7 @@
   {
     "name": "8 Days Sound of Swiss",
     "description": "Experience Switzerland with mountains, lakes, and scenic train journeys.",
-    "destinations": [
-      "Switzerland"
-    ],
+    "destinations": ["Switzerland"],
     "duration": "8 Days",
     "price": "Rs. 3,67,979",
     "images": [
@@ -655,10 +625,7 @@
   {
     "name": "11 Days Spain Portugal Fiesta",
     "description": "Explore Spain and Portugal with cultural landmarks, cities, and cuisine.",
-    "destinations": [
-      "Spain",
-      "Portugal"
-    ],
+    "destinations": ["Spain", "Portugal"],
     "duration": "11 Days",
     "price": "Rs. 3,20, 345/-",
     "images": [
@@ -705,9 +672,7 @@
   {
     "name": "6 Days Wonders of Baku",
     "description": "Discover Baku with modern architecture, culture, and historic sites.",
-    "destinations": [
-      "Baku"
-    ],
+    "destinations": ["Baku"],
     "duration": "6 Days",
     "price": "Rs. 60,000/",
     "images": [
@@ -728,12 +693,7 @@
   {
     "name": "9 Days Aegean Island Escape",
     "description": "A Greek island tour covering Athens, Paros, Santorini, and Ios.",
-    "destinations": [
-      "Athens",
-      "Paros",
-      "Santorini",
-      "Ios"
-    ],
+    "destinations": ["Athens", "Paros", "Santorini", "Ios"],
     "duration": "9 Days",
     "price": "Rs. 3,20, 345/-",
     "images": [
@@ -772,12 +732,7 @@
   {
     "name": "8 Days Greek Island Hopper Escape",
     "description": "Explore Greece with Athens and popular islands including Paros, Santorini, and Mykonos.",
-    "destinations": [
-      "Athens",
-      "Paros",
-      "Santorini",
-      "Mykonos"
-    ],
+    "destinations": ["Athens", "Paros", "Santorini", "Mykonos"],
     "duration": "8 Days",
     "price": "Rs. 169400/-",
     "images": [
@@ -816,11 +771,7 @@
   {
     "name": "8 Days Classic Greece Trio Escape",
     "description": "A Greek getaway covering Athens, Mykonos, and Santorini.",
-    "destinations": [
-      "Athens",
-      "Mykonos",
-      "Santorini"
-    ],
+    "destinations": ["Athens", "Mykonos", "Santorini"],
     "duration": "8 Days",
     "price": "Rs. 1,74,200/-",
     "images": [
@@ -859,12 +810,7 @@
   {
     "name": "10 DaysComplete Greek Island Escape",
     "description": "A comprehensive Greece tour including Athens, Mykonos, Santorini, and Crete.",
-    "destinations": [
-      "Athens",
-      "Mykonos",
-      "Santorini",
-      "Crete"
-    ],
+    "destinations": ["Athens", "Mykonos", "Santorini", "Crete"],
     "duration": "10 Days",
     "price": "Rs. 2,45,000/-",
     "images": [
@@ -903,9 +849,7 @@
   {
     "name": "4 Days Athens City Escape",
     "description": "A short city break in Athens exploring history, culture, and landmarks.",
-    "destinations": [
-      "Athens"
-    ],
+    "destinations": ["Athens"],
     "duration": "4 Days",
     "price": "Rs. 99000/-",
     "images": [
@@ -944,9 +888,7 @@
   {
     "name": "7 Days Classical Greece Escape",
     "description": "Explore classical Greece with historical sites and cultural experiences.",
-    "destinations": [
-      "Greece"
-    ],
+    "destinations": ["Greece"],
     "duration": "7 Days",
     "price": "Rs. 1,35,000/-",
     "images": [
@@ -985,9 +927,7 @@
   {
     "name": "8 Days Classical Greece Explorer",
     "description": "An extended classical Greece tour with additional sightseeing.",
-    "destinations": [
-      "Greece"
-    ],
+    "destinations": ["Greece"],
     "duration": "8 Days",
     "price": "Rs. 1,60,000/-",
     "images": [
@@ -1024,11 +964,9 @@
     ]
   },
   {
-    "name": "10 Days Grand Greece Explorer",
+    "name": "10 Days Complete Greek Island Escape",
     "description": "A grand Greece itinerary covering major cities, islands, and attractions.",
-    "destinations": [
-      "Greece"
-    ],
+    "destinations": ["Greece"],
     "duration": "10 Days",
     "price": "Rs. 1,84,000/-",
     "images": [
@@ -1067,9 +1005,7 @@
   {
     "name": "8 Days European Highlights",
     "description": "A short Europe tour covering key destinations and experiences.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "8 Days",
     "price": "Rs. 2,30,000/-",
     "images": [
@@ -1117,9 +1053,7 @@
   {
     "name": "10 Days Scandinavian Escape",
     "description": "A group tour covering Scandinavian countries and scenic landscapes.",
-    "destinations": [
-      "Scandinavia"
-    ],
+    "destinations": ["Scandinavia"],
     "duration": "10 Days",
     "price": "Rs. 3,50,000/-",
     "images": [
@@ -1140,9 +1074,7 @@
   {
     "name": "12 Days Ultimate Europe Explorer",
     "description": "A group Europe tour covering multiple countries and attractions.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "12 Days",
     "price": "Rs. 3,65,000/-",
     "images": [
@@ -1190,12 +1122,11 @@
   {
     "name": "12 Days Scandinavia Explorer",
     "description": "An updated itinerary covering Scandinavian countries and experiences.",
-    "destinations": [
-      "Scandinavia"
-    ],
+    "destinations": ["Scandinavia"],
     "duration": "12 Days",
     "price": "Rs. 3,65,000/-",
     "images": [
+      "/tours/international/europe/images/Scandanavia/Scandanavia (10).jpg",
       "/tours/international/europe/images/Scandanavia/Scandanavia (4).jpg",
       "/tours/international/europe/images/Scandanavia/Scandanavia (1).jpg",
       "/tours/international/europe/images/Scandanavia/Scandanavia (3).jpg",
@@ -1204,7 +1135,7 @@
       "/tours/international/europe/images/Scandanavia/Scandanavia (7).jpg",
       "/tours/international/europe/images/Scandanavia/Scandanavia (8).jpg",
       "/tours/international/europe/images/Scandanavia/Scandanavia (9).jpg",
-      "/tours/international/europe/images/Scandanavia/Scandanavia (10).jpg",
+
       "/tours/international/europe/images/Scandanavia/Scandanavia (11).jpg",
       "/tours/international/europe/images/Scandanavia/Scandanavia (12).jpg",
       "/tours/international/europe/images/Scandanavia/Scandanavia (13).jpg"
@@ -1213,9 +1144,7 @@
   {
     "name": "14 Days European Pilgrimage Journey",
     "description": "A spiritual Europe pilgrimage tour covering important religious sites.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "14 Days",
     "price": "Rs. 3,52,000/-",
     "images": [
@@ -1263,9 +1192,7 @@
   {
     "name": "15 Days Grand Europe Escape",
     "description": "A detailed Europe itinerary covering major destinations and experiences.",
-    "destinations": [
-      "Europe"
-    ],
+    "destinations": ["Europe"],
     "duration": "15 Days",
     "price": "Rs. 3,62,000/-",
     "images": [
@@ -1313,10 +1240,7 @@
   {
     "name": "17 Days Ultimate Europe & London Journey",
     "description": "A long Europe tour including London and multiple countries.",
-    "destinations": [
-      "Europe",
-      "London"
-    ],
+    "destinations": ["Europe", "London"],
     "duration": "17 Days",
     "price": "Rs. 4,30,000/-",
     "images": [
@@ -1383,9 +1307,7 @@
   {
     "name": "7 Days Russia Highlights",
     "description": "Explore Russia with visits to major cities and cultural landmarks.",
-    "destinations": [
-      "Russia"
-    ],
+    "destinations": ["Russia"],
     "duration": "7 Days",
     "price": "Rs. 1,80,000/-",
     "images": [
@@ -1410,9 +1332,7 @@
   {
     "name": "7 Days London Explorer",
     "description": "A London-focused trip covering iconic landmarks and attractions.",
-    "destinations": [
-      "London"
-    ],
+    "destinations": ["London"],
     "duration": "7 Days",
     "price": "Rs. 3,20,000/-",
     "images": [
@@ -1440,9 +1360,7 @@
   {
     "name": "14 Days Best of United Kingdom",
     "description": "A comprehensive United Kingdom tour covering major cities and attractions.",
-    "destinations": [
-      "United Kingdom"
-    ],
+    "destinations": ["United Kingdom"],
     "duration": "14 Days",
     "price": "Rs. 4,28,000/-",
     "images": [

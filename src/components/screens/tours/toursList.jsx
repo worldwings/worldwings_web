@@ -54,24 +54,37 @@ const ToursListScreen = ({ tours = [], destination, type }) => {
     return matchesSearch && matchesDestination && matchesDuration;
   });
 
+  const headerImages = {
+    australia_and_newzealand:
+      "/images/header_images/australia_and_newzealand.jpg",
+    usa_and_canada: "/images/header_images/usa_and_canada.jpg",
+    europe: "/images/header_images/europe.jpg",
+    middle_east: "/images/header_images/middle_east.jpg",
+    africa: "/images/header_images/africa.jpg",
+    asia: "/images/header_images/asia.jpg",
+  };
 
+  
+  
 
+  const getHeaderimage = () => {
 
+    if(headerImages[destination]){
+      return headerImages[destination]
+    }
 
-
+    return tours?.length > 0 && tours[0]?.images?.length > 0
+      && tours[0]?.bannerImg || tours[0]?.images[0]
+      
+  };
 
   const bannerData = {
     title: title,
     label: "",
-    image: (tours.length > 0 && tours[0].images?.length > 0
-      ? tours[0].bannerImg ||
-      tours[0].images[0] : "/images/international.jpg"
-    )
-
+    image: getHeaderimage(),
   };
 
-  console.log("bannerData", bannerData);
-
+  
 
   return (
     <>
@@ -89,7 +102,7 @@ const ToursListScreen = ({ tours = [], destination, type }) => {
           saveText={bannerData.saveText}
           subtitle={bannerData.subtitle}
           buttonText={bannerData.buttonText}
-          image={bannerData.image}
+          image={getHeaderimage()}
           videoSrc={bannerData.videoSrc}
         />
 

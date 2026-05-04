@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "name": "Customized Tours",
+    "description": "Embark on a journey of a lifetime with our premium cruise holidays. Experience world-class hospitality, gourmet dining, and spectacular entertainment while sailing to some of the world's most beautiful destinations.",
+    "destinations": ["International"],
+    "duration": "Flexible",
+    "price": "Available on Request",
+    "images": [
+      "/tours/international/customized_tours/images/customized_tours.jpg"
+    ]
+  }
+]

@@ -90,6 +90,7 @@ const ServiceDetailsScreen = ({ service }) => {
                                             width={120}
                                             height={60}
                                             className={styles.airlineLogo}
+                                            
                                         />
                                     </div>
                                 ))}

@@ -2,9 +2,7 @@
   {
     "name": "5 Days Phu Quoc Tropical Getaway",
     "description": "Explore Phu Quoc with beaches, island hopping, and local experiences.",
-    "destinations": [
-      "Phu Quoc"
-    ],
+    "destinations": ["Phu Quoc"],
     "duration": "5 Days",
     "price": "Rs. 56,500/-",
     "images": [
@@ -22,9 +20,7 @@
   {
     "name": "6 Days Vietnam Explorer Delight",
     "description": "Discover Vietnam with visits to major cities, cultural sites, and scenic landscapes.",
-    "destinations": [
-      "Vietnam"
-    ],
+    "destinations": ["Vietnam"],
     "duration": "6 Days",
     "price": "Rs. 83,000/-",
     "images": [
@@ -45,9 +41,7 @@
   {
     "name": "7 Days Vietnam Scenic Discovery",
     "description": "A complete Vietnam trip covering popular destinations and cultural experiences.",
-    "destinations": [
-      "Vietnam"
-    ],
+    "destinations": ["Vietnam"],
     "duration": "7 Days",
     "price": "Rs. 87,000/-",
     "images": [
@@ -68,9 +62,7 @@
   {
     "name": "8 Days Vietnam Ultimate Experience",
     "description": "An extended Vietnam journey exploring cities, heritage sites, and natural beauty.",
-    "destinations": [
-      "Vietnam"
-    ],
+    "destinations": ["Vietnam"],
     "duration": "8 Days",
     "price": "Rs. 92,500/-",
     "images": [
@@ -91,9 +83,7 @@
   {
     "name": "10 Days Vietnam Ultimate Explorer",
     "description": "A detailed Vietnam tour covering multiple regions, culture, and landscapes.",
-    "destinations": [
-      "Vietnam"
-    ],
+    "destinations": ["Vietnam"],
     "duration": "10 Days",
     "price": "Rs. 1,06,000/-",
     "images": [
@@ -114,9 +104,7 @@
   {
     "name": "4 Days Phuket Beach Bliss",
     "description": "Enjoy Phuket with beaches, island tours, and vibrant nightlife.",
-    "destinations": [
-      "Phuket"
-    ],
+    "destinations": ["Phuket"],
     "duration": "4 Days",
     "price": "Rs. 38,000/-",
     "images": [
@@ -128,9 +116,7 @@
   {
     "name": "5 Days Phuket Island Retreat",
     "description": "A relaxing Phuket vacation with beaches, sightseeing, and water activities.",
-    "destinations": [
-      "Phuket"
-    ],
+    "destinations": ["Phuket"],
     "duration": "5 Days",
     "price": "Rs. 46,500/-",
     "images": [
@@ -142,9 +128,7 @@
   {
     "name": "5 Days Thailand Amazing Escape",
     "description": "Explore Thailand with visits to key attractions, beaches, and cultural landmarks.",
-    "destinations": [
-      "Thailand"
-    ],
+    "destinations": ["Thailand"],
     "duration": "5 Days",
     "price": "Rs. 34,000/-",
     "images": [
@@ -156,11 +140,7 @@
   {
     "name": "7 Days Thailand Cultural Journey - Phuket, Pattaya, Bangkok",
     "description": "A complete Thailand experience including cities, beaches, and local culture.",
-    "destinations": [
-      "Phuket",
-      "Pattaya",
-      "Bangkok"
-    ],
+    "destinations": ["Phuket", "Pattaya", "Bangkok"],
     "duration": "7 Days",
     "price": "Rs. 55,000/-",
     "images": [
@@ -178,11 +158,7 @@
   {
     "name": "10 Days Thailand Malaysia Singapore Trio Explorer",
     "description": "A multi-country tour exploring Thailand, Malaysia, and Singapore highlights.",
-    "destinations": [
-      "Thailand",
-      "Malaysia",
-      "Singapore"
-    ],
+    "destinations": ["Thailand", "Malaysia", "Singapore"],
     "duration": "10 Days",
     "price": "Rs. 1,18,000/-",
     "images": [
@@ -211,11 +187,7 @@
   {
     "name": "12 Days Thailand Malaysia Singapore Ultimate Journey",
     "description": "An extended Southeast Asia tour covering major cities and attractions.",
-    "destinations": [
-      "Thailand",
-      "Malaysia",
-      "Singapore"
-    ],
+    "destinations": ["Thailand", "Malaysia", "Singapore"],
     "duration": "12 Days",
     "price": "Rs. 1,40,000/-",
     "images": [
@@ -244,11 +216,7 @@
   {
     "name": "13 Days Thailand Malaysia Singapore Grand Capitals Tour",
     "description": "A comprehensive multi-country itinerary with cultural and leisure experiences.",
-    "destinations": [
-      "Thailand",
-      "Malaysia",
-      "Singapore"
-    ],
+    "destinations": ["Thailand", "Malaysia", "Singapore"],
     "duration": "13 Days",
     "price": "Rs. 1,47,000/-",
     "images": [
@@ -277,9 +245,7 @@
   {
     "name": "4 Days Singapore City Lights",
     "description": "Explore Singapore with city tours, attractions, and modern experiences.",
-    "destinations": [
-      "Singapore"
-    ],
+    "destinations": ["Singapore"],
     "duration": "4 Days",
     "price": "Rs. 54,000/-",
     "images": [
@@ -298,9 +264,7 @@
   {
     "name": "5 Days Singapore Urban Escape",
     "description": "A detailed Singapore tour with attractions, shopping, and cultural spots.",
-    "destinations": [
-      "Singapore"
-    ],
+    "destinations": ["Singapore"],
     "duration": "5 Days",
     "price": "Rs. 78,500/-",
     "images": [
@@ -319,9 +283,7 @@
   {
     "name": "4 Days Langkawi Island Paradise",
     "description": "Enjoy Langkawi with beaches, cable car rides, and island experiences.",
-    "destinations": [
-      "Langkawi"
-    ],
+    "destinations": ["Langkawi"],
     "duration": "4 Days",
     "price": "Rs. 42,000/-",
     "images": [
@@ -334,12 +296,9 @@
     ]
   },
   {
-    "name": "4 Days Malaysia Getaway: Kuala Lumpur | Genting Highlands Escape",
+    "name": "4 Days Malaysia Getaway Kuala Lumpur - Genting Highlands Escape",
     "description": "Discover Malaysia with city tours of Kuala Lumpur and the excitement of Genting Highlands.",
-    "destinations": [
-      "Kuala Lumpur",
-      "Genting Highlands"
-    ],
+    "destinations": ["Kuala Lumpur", "Genting Highlands"],
     "duration": "4 Days",
     "price": "Rs. 40,000/-",
     "images": [
@@ -354,10 +313,7 @@
   {
     "name": "7 Days Malaysia Singapore Twin Escape",
     "description": "A dual-country tour covering Malaysia and Singapore highlights.",
-    "destinations": [
-      "Malaysia",
-      "Singapore"
-    ],
+    "destinations": ["Malaysia", "Singapore"],
     "duration": "7 Days",
     "price": "Rs. 77,000/-",
     "images": [
@@ -386,9 +342,7 @@
   {
     "name": "5 Days Bali Romantic Escape",
     "description": "A romantic Bali getaway with beaches, resorts, and cultural experiences.",
-    "destinations": [
-      "Bali"
-    ],
+    "destinations": ["Bali"],
     "duration": "5 Days",
     "price": "Rs. 45,000/-",
     "images": [
@@ -401,9 +355,7 @@
   {
     "name": "6 Days Bali Bliss Holiday",
     "description": "Explore Bali with temples, beaches, and scenic landscapes.",
-    "destinations": [
-      "Bali"
-    ],
+    "destinations": ["Bali"],
     "duration": "6 Days",
     "price": "Rs. 48,000/-",
     "images": [
@@ -416,9 +368,7 @@
   {
     "name": "7 Days Bali Romantic Retreat",
     "description": "An extended honeymoon in Bali with luxury stays and scenic tours.",
-    "destinations": [
-      "Bali"
-    ],
+    "destinations": ["Bali"],
     "duration": "7 Days",
     "price": "Rs. 55,000/-",
     "images": [
@@ -431,10 +381,7 @@
   {
     "name": "5 Days Malaysia Singapore Escape",
     "description": "A short dual-country trip covering Malaysia and Singapore highlights.",
-    "destinations": [
-      "Malaysia",
-      "Singapore"
-    ],
+    "destinations": ["Malaysia", "Singapore"],
     "duration": "5 Days",
     "price": "Rs. 70,000/-",
     "images": [
@@ -463,10 +410,7 @@
   {
     "name": "6 Days Malaysia Philippines Delight",
     "description": "A multi-country getaway covering Malaysia and the Philippines.",
-    "destinations": [
-      "Malaysia",
-      "Philippines"
-    ],
+    "destinations": ["Malaysia", "Philippines"],
     "duration": "6 Days",
     "price": "Rs. 60,000/-",
     "images": [
@@ -504,10 +448,7 @@
   {
     "name": "7D6N Philippines Island Discovery",
     "description": "Explore Manila and Palawan with city tours and island experiences.",
-    "destinations": [
-      "Manila",
-      "Puerto Princesa"
-    ],
+    "destinations": ["Manila", "Puerto Princesa"],
     "duration": "7 Days",
     "price": "Rs. 86500/-",
     "images": [
@@ -526,10 +467,7 @@
   {
     "name": "7D6N Philippines Island Hopper",
     "description": "A Philippines tour covering Manila, Boracay, and city highlights.",
-    "destinations": [
-      "Manila",
-      "Boracay"
-    ],
+    "destinations": ["Manila", "Boracay"],
     "duration": "7 Days",
     "price": "Rs. 88600/-",
     "images": [
@@ -548,9 +486,7 @@
   {
     "name": "8 Days Japan Cultural Wonders",
     "description": "Explore Japan with cultural sites, cities, and scenic attractions.",
-    "destinations": [
-      "Japan"
-    ],
+    "destinations": ["Japan"],
     "duration": "8 Days",
     "price": "Rs. 2,90,000/-",
     "images": [
@@ -577,9 +513,7 @@
   {
     "name": "4 Days Malaysia Classic Escape",
     "description": "A classic 4-day escape to Malaysia, exploring its vibrant culture and modern attractions.",
-    "destinations": [
-      "Malaysia"
-    ],
+    "destinations": ["Malaysia"],
     "duration": "4 Days",
     "price": "Rs. 35,000/-",
     "images": [
@@ -598,9 +532,7 @@
   {
     "name": "6 Days Philippines Tropical Escape",
     "description": "A Philippines tour covering beaches, islands, and city experiences.",
-    "destinations": [
-      "Philippines"
-    ],
+    "destinations": ["Philippines"],
     "duration": "6 Days",
     "price": "Rs. 88,000/-",
     "images": [
@@ -628,10 +560,7 @@
   {
     "name": "6 Days Philippines City & Leisure Tour",
     "description": "Explore Angeles City and Manila with culture and city attractions.",
-    "destinations": [
-      "Angeles City",
-      "Manila"
-    ],
+    "destinations": ["Angeles City", "Manila"],
     "duration": "6 Days",
     "price": "Rs 1,32,000/-",
     "images": [
@@ -650,10 +579,7 @@
   {
     "name": "4 Days Thailand Delight - Pattaya, Bangkok",
     "description": "A group Thailand trip with city tours, attractions, and leisure time.",
-    "destinations": [
-      "Pattaya",
-      "Bangkok"
-    ],
+    "destinations": ["Pattaya", "Bangkok"],
     "duration": "4 Days",
     "price": "Rs. 28,000/-",
     "images": [
@@ -668,10 +594,7 @@
   {
     "name": "6 Days Nepal Himalayan Serenity",
     "description": "Explore Nepal with visits to Kathmandu and Pokhara featuring mountains and culture.",
-    "destinations": [
-      "Kathmandu",
-      "Pokhara"
-    ],
+    "destinations": ["Kathmandu", "Pokhara"],
     "duration": "6 Days",
     "price": "Rs. 28,000/-",
     "images": [
@@ -705,9 +628,7 @@
   {
     "name": "5 Days Maldives Luxury Retreat",
     "description": "A luxury Maldives trip with beaches, resorts, and water villas.",
-    "destinations": [
-      "Maldives"
-    ],
+    "destinations": ["Maldives"],
     "duration": "5 Days",
     "price": "Rs. 1,20,000/-",
     "images": [
@@ -729,9 +650,7 @@
   {
     "name": "6 Days Maldives Dream Vacation",
     "description": "An extended Maldives vacation with relaxation and island experiences.",
-    "destinations": [
-      "Maldives"
-    ],
+    "destinations": ["Maldives"],
     "duration": "6 Days",
     "price": "Rs. 1,45,215/-",
     "images": [
@@ -753,11 +672,7 @@
   {
     "name": "8 Days Philippines Island Trail",
     "description": "Explore Philippines covering Manila, Coron, and Cebu with island experiences.",
-    "destinations": [
-      "Manila",
-      "Coron",
-      "Cebu"
-    ],
+    "destinations": ["Manila", "Coron", "Cebu"],
     "duration": "8 Days",
     "price": "Rs. 1,00,000/-",
     "images": [
@@ -776,9 +691,7 @@
   {
     "name": "5 Days South Korea Discovery",
     "description": "Discover South Korea with city tours, culture, and modern attractions.",
-    "destinations": [
-      "South Korea"
-    ],
+    "destinations": ["South Korea"],
     "duration": "5 Days",
     "price": "Rs. 1,30,000/-",
     "images": [
@@ -800,9 +713,7 @@
   {
     "name": "6 Days South Korea Cultural Journey",
     "description": "An extended South Korea trip with cultural and city experiences.",
-    "destinations": [
-      "South Korea"
-    ],
+    "destinations": ["South Korea"],
     "duration": "6 Days",
     "price": "Rs. 1,80,000/-",
     "images": [
@@ -824,9 +735,7 @@
   {
     "name": "7 Days South Korea Grand Tour",
     "description": "A comprehensive South Korea itinerary covering major attractions.",
-    "destinations": [
-      "South Korea"
-    ],
+    "destinations": ["South Korea"],
     "duration": "7 Days",
     "price": "Rs. 2,10,000/-",
     "images": [
@@ -848,9 +757,7 @@
   {
     "name": "5 Days Sri Lanka Serene Escape",
     "description": "Explore Sri Lanka with beaches, culture, and scenic landscapes.",
-    "destinations": [
-      "Sri Lanka"
-    ],
+    "destinations": ["Sri Lanka"],
     "duration": "5 Days",
     "price": "Rs. 35,500/-",
     "images": [
@@ -870,9 +777,7 @@
   {
     "name": "6 Days Sri Lanka Heritage Tour",
     "description": "A detailed Sri Lanka trip covering key attractions and experiences.",
-    "destinations": [
-      "Sri Lanka"
-    ],
+    "destinations": ["Sri Lanka"],
     "duration": "6 Days",
     "price": "Rs 41000/-",
     "images": [
@@ -892,9 +797,7 @@
   {
     "name": "4 Days Almaty Scenic Retreat",
     "description": "Explore Almaty with scenic views, lakes, and city attractions.",
-    "destinations": [
-      "Almaty"
-    ],
+    "destinations": ["Almaty"],
     "duration": "4 Days",
     "price": "Rs. 45,000/-",
     "images": [
@@ -912,9 +815,7 @@
   {
     "name": "5 Days Almaty Explorer",
     "description": "A relaxing Almaty vacation with sightseeing and nature experiences.",
-    "destinations": [
-      "Almaty"
-    ],
+    "destinations": ["Almaty"],
     "duration": "5 Days",
     "price": "Rs. 60,000/-",
     "images": [
@@ -932,9 +833,7 @@
   {
     "name": "6 Days Almaty Complete Experience",
     "description": "An extended Almaty tour covering nearby scenic and cultural spots.",
-    "destinations": [
-      "Almaty"
-    ],
+    "destinations": ["Almaty"],
     "duration": "6 Days",
     "price": "Rs. 75000/-",
     "images": [
@@ -952,9 +851,7 @@
   {
     "name": "5 Days Azerbaijan Cultural Journey",
     "description": "Explore Azerbaijan with city tours, culture, and scenic landscapes.",
-    "destinations": [
-      "Azerbaijan"
-    ],
+    "destinations": ["Azerbaijan"],
     "duration": "5 Days",
     "price": "Rs. 55,000/-",
     "images": [
@@ -967,9 +864,7 @@
   {
     "name": "10 Days China Grand Discovery",
     "description": "A comprehensive China tour covering major cities and cultural landmarks.",
-    "destinations": [
-      "China"
-    ],
+    "destinations": ["China"],
     "duration": "10 Days",
     "price": "Rs. 1,52,500/-",
     "images": [
@@ -1000,9 +895,7 @@
   {
     "name": "5 Days Georgia Caucasus Escape",
     "description": "Discover Georgia with mountains, culture, and historic sites.",
-    "destinations": [
-      "Georgia"
-    ],
+    "destinations": ["Georgia"],
     "duration": "5 Days",
     "price": "Rs. 74,000/-",
     "images": [
@@ -1017,10 +910,7 @@
   {
     "name": "6 Days Hong Kong Macau Highlights",
     "description": "Explore Hong Kong and Macau with city attractions and entertainment.",
-    "destinations": [
-      "Hong Kong",
-      "Macau"
-    ],
+    "destinations": ["Hong Kong", "Macau"],
     "duration": "6 Days",
     "price": "Rs. 92,000/-",
     "images": [
@@ -1038,9 +928,7 @@
   {
     "name": "5 Days Hong Kong City Explorer",
     "description": "A Hong Kong trip covering attractions, shopping, and entertainment.",
-    "destinations": [
-      "Hong Kong"
-    ],
+    "destinations": ["Hong Kong"],
     "duration": "5 Days",
     "price": "Rs. 79,500/-",
     "images": [
@@ -1058,9 +946,7 @@
   {
     "name": "8 Days Japan Grand Explorer",
     "description": "An extended Japan trip with cultural, scenic, and city experiences.",
-    "destinations": [
-      "Japan"
-    ],
+    "destinations": ["Japan"],
     "duration": "8 Days",
     "price": "Rs. 3,98,000/-",
     "images": [
@@ -1087,9 +973,7 @@
   {
     "name": "6 Days Bhutan Happiness Journey",
     "description": "Discover Bhutan with visits to Paro, Thimphu, and Punakha featuring monasteries, landscapes, and culture.",
-    "destinations": [
-      "Bhutan"
-    ],
+    "destinations": ["Bhutan"],
     "duration": "6 Days",
     "price": "Rs. 44,000/-",
     "images": [
@@ -1111,9 +995,7 @@
   {
     "name": "8 Days Bhutan Mystical Escape",
     "description": "An in-depth Bhutan tour covering major cities, monasteries, and scenic valleys.",
-    "destinations": [
-      "Bhutan"
-    ],
+    "destinations": ["Bhutan"],
     "duration": "8 Days",
     "price": "Rs. 42,000/-",
     "images": [

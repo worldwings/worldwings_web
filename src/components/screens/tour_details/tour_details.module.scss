@@ -39,19 +39,22 @@
 }
 
 .mainInfo {
-  h2 {
-    font-size: 30px;
-    color: $color_1;
-    margin-bottom: 24px;
-    font-weight: 700;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+    @include respond-below(md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   .destinations {
     display: flex;
     flex-wrap: wrap;
-
     gap: 10px;
-    margin-bottom: 24px;
 
     .destTag {
       background-color: #f3f4f6;
@@ -69,6 +72,13 @@
         border-color: $color_2;
       }
     }
+  }
+
+  .price {
+    // min-width: 180px;
+    font-size: 24px;
+    font-weight: bold;
+    color: $color_2;
   }
 
   .description {
@@ -217,7 +227,7 @@
     font-size: 14.5px;
     margin-bottom: 30px;
     opacity: 0.9;
-    line-height: 1.6px;
+    // line-height: 1.6px;
   }
 
   .bookBtn {
@@ -230,6 +240,10 @@
     font-weight: 600;
     border-radius: 8px;
     transition: background-color 0.3s ease;
+
+    @include respond-below(md) {
+      margin: auto;
+    }
 
     &:hover {
       background-color: darken($color_2, 8%);
@@ -402,7 +416,7 @@
   @include flexCenter;
   z-index: 1000;
 
-  >div {
+  > div {
     @include flexCenter;
     position: relative;
 
@@ -414,7 +428,6 @@
       right: 0px;
       cursor: pointer;
     }
-
 
     .rightBtn {
       color: white;

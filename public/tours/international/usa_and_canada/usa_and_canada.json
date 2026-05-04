@@ -2,9 +2,7 @@
   {
     "name": "6 Days Eastern Escapade USA",
     "description": "Explore the eastern United States with visits to iconic cities, landmarks, and cultural attractions.",
-    "destinations": [
-      "Eastern USA"
-    ],
+    "destinations": ["Eastern USA"],
     "duration": "6 Days",
     "price": "Rs. 1, 95,000/-",
     "images": [
@@ -39,9 +37,7 @@
   {
     "name": "6 Days Western Wonders USA",
     "description": "Discover the highlights of the western United States including scenic landscapes and famous cities.",
-    "destinations": [
-      "Western USA"
-    ],
+    "destinations": ["Western USA"],
     "duration": "6 Days",
     "price": "Rs. 2,20,000/-",
     "images": [
@@ -76,19 +72,18 @@
   {
     "name": "11 Days coast to coast USA",
     "description": "A cross-country journey across the USA covering major cities and attractions from east to west.",
-    "destinations": [
-      "USA"
-    ],
+    "destinations": ["USA"],
     "duration": "11 Days",
     "price": "Rs. 3,78,000/-",
     "images": [
-      "/tours/international/usa_and_canada/images/usa/america (12).jpg",
+      "/tours/international/usa_and_canada/images/usa/america (15).jpg",
+
       "/tours/international/usa_and_canada/images/usa/america (3).jpg",
+      "/tours/international/usa_and_canada/images/usa/america (12).jpg",
       "/tours/international/usa_and_canada/images/usa/america (1).jpg",
       "/tours/international/usa_and_canada/images/usa/america (10).jpg",
       "/tours/international/usa_and_canada/images/usa/america (11).jpg",
       "/tours/international/usa_and_canada/images/usa/america (14).jpg",
-      "/tours/international/usa_and_canada/images/usa/america (15).jpg",
       "/tours/international/usa_and_canada/images/usa/america (16).jpg",
       "/tours/international/usa_and_canada/images/usa/america (17).jpg",
       "/tours/international/usa_and_canada/images/usa/america (18).jpg",
@@ -113,9 +108,7 @@
   {
     "name": "7 Days Canadian Rockies",
     "description": "Explore the breathtaking Canadian Rockies with scenic mountains, lakes, and national parks.",
-    "destinations": [
-      "Canadian Rockies"
-    ],
+    "destinations": ["Canadian Rockies"],
     "duration": "7 Days",
     "price": "Rs. 2,70,000/-",
     "images": [
@@ -165,9 +158,7 @@
   {
     "name": "7 Days Elegant East Canada",
     "description": "Discover Eastern Canada with visits to major cities, cultural landmarks, and scenic spots.",
-    "destinations": [
-      "Eastern Canada"
-    ],
+    "destinations": ["Eastern Canada"],
     "duration": "7 Days",
     "price": "Rs. 2,20,000/-",
     "images": [
@@ -217,9 +208,7 @@
   {
     "name": "13 Days Best of Canada",
     "description": "A comprehensive Canada tour covering major cities, natural wonders, and cultural highlights.",
-    "destinations": [
-      "Canada"
-    ],
+    "destinations": ["Canada"],
     "duration": "13 Days",
     "price": "Rs. 4,50,000/-",
     "images": [

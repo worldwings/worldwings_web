@@ -8,7 +8,7 @@ const countsData = [
   { text: "Happy Travelers", count: 71, prefix: "k+" },
   { text: "Tour Packages", count: 350, prefix: "+" },
   { text: "Destinations", count: 150, prefix: "+" },
-  { text: "Countries", count: 50, prefix: "+" },
+  { text: "Countries", count: 60, prefix: "+" },
 ];
 
 

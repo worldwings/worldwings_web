@@ -12,7 +12,7 @@ function parseTourHTML(html) {
     title: "",
     overview: "",
     highlights: "",
-    hotel: "", 
+    hotel: "",
     itinerary: [],
     price: "",
     inclusions: [],
@@ -99,7 +99,7 @@ export async function getServerSideProps(context) {
       "tours",
       type,
       destination,
-      `${destination}.json`
+      `${destination}.json`,
     );
 
     const jsonData = JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
@@ -114,7 +114,7 @@ export async function getServerSideProps(context) {
       type,
       destination,
       "itineraries",
-      `${id}.docx`
+      `${id}.docx`,
     );
 
     if (fs.existsSync(docPath)) {
@@ -132,21 +132,32 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-        detailsHTML,
-        tourData,
-        parsedData: parseTourHTML(detailsHTML),
-        docUrl: `/tours/${type}/${destination}/itineraries/${id}.docx`,
+      detailsHTML,
+      tourData,
+      parsedData: parseTourHTML(detailsHTML),
+      docUrl: `/tours/${type}/${destination}/itineraries/${id}.docx`,
     },
   };
 }
 
-const TourDetailsPage = ({ detailsHTML, tourData, parsedData, docUrl }) => {
+const TourDetailsPage = ({
+  detailsHTML,
+  tourData,
+  parsedData,
+  docUrl,
+  setShowEnquiryModal,
+}) => {
+
+  
+  
+
   return (
     <TourDetailsScreen
       tour={tourData}
       detailsHTML={detailsHTML}
       parsedData={parsedData}
       docUrl={docUrl}
+      setShowEnquiryModal={setShowEnquiryModal}
     />
   );
 };
