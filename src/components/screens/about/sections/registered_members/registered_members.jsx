@@ -6,12 +6,12 @@ import styles from "./registered_members.module.scss";
 import { Image } from "react-bootstrap";
 
 const logos = [
-    { src: "/images/about us/registered_members_logo/IATA.png", alt: "IATA" },
-    { src: "/images/about us/registered_members_logo/TAFI.png", alt: "TAFI" },
-    { src: "/images/about us/registered_members_logo/IAAI.png", alt: "IAAI" },
-    { src: "/images/about us/registered_members_logo/OTOAI.png", alt: "OTOAI" },
-    { src: "/images/about us/registered_members_logo/Incredible_India.png", alt: "Incredible India" },
-    { src: "/images/about us/registered_members_logo/UTEN.png", alt: "UTEN" },
+    { src: "/images/about_us/registered_members_logo/IATA.png", alt: "IATA" },
+    { src: "/images/about_us/registered_members_logo/TAFI.png", alt: "TAFI" },
+    { src: "/images/about_us/registered_members_logo/IAAI.png", alt: "IAAI" },
+    { src: "/images/about_us/registered_members_logo/OTOAI.png", alt: "OTOAI" },
+    { src: "/images/about_us/registered_members_logo/Incredible_India.png", alt: "Incredible India" },
+    { src: "/images/about_us/registered_members_logo/UTEN.png", alt: "UTEN" },
 ];
 
 const RegisteredMembersSection = () => {

@@ -24,7 +24,12 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
         {curremtImageIndex !== null && (
           <div className={styles.fullScreen}>
             <div>
-              <ChevronLeft className={styles.leftBtn} onClick={() => setCurrentImageIndex(curremtImageIndex - 1)} />
+              {curremtImageIndex !== 0 && (
+                <ChevronLeft
+                  className={styles.leftBtn}
+                  onClick={() => setCurrentImageIndex(curremtImageIndex - 1)}
+                />
+              )}
               <X
                 onClick={() => {
                   setCurrentImageIndex(null);
@@ -32,7 +37,12 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
                 className={styles.closeBtn}
               />
               <Image src={tour?.images?.[curremtImageIndex]} alt="xx" />
-              <ChevronRight className={styles.rightBtn} onClick={() => setCurrentImageIndex(curremtImageIndex + 1)} />
+              {curremtImageIndex !== tour?.images?.length - 1 && (
+                <ChevronRight
+                  className={styles.rightBtn}
+                  onClick={() => setCurrentImageIndex(curremtImageIndex + 1)}
+                />
+              )}
             </div>
           </div>
         )}
@@ -127,7 +137,6 @@ const TourDetailsScreen = ({ tour = {}, detailsHTML, parsedData, docUrl }) => {
               </div>
             </div>
           )}
-
 
           {tour?.images && tour?.images.length > 0 && !isGalleryAtTop && (
             <div className={styles.gallerySection}>
