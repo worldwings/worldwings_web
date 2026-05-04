@@ -12,7 +12,7 @@ const BlogListingPage = () => {
             </Head>
             <PageBanner 
                 title="Our Blog"
-                image="/blog/blog-1.jpg"
+                image="/images/header_images/blog.jpg"
                 label="Travel Stories"
                 subtitle="Read exciting travel stories, expert guides, and helpful tips."
             />

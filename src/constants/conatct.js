@@ -66,12 +66,12 @@ export const BRANCHES = [
       "Convent Rd, Melapudur, ",
       "Trichy- 620 001.",
     ],
-    emails: ["trichy@worldwings.in", "pathinathan@worldwings.in"],
+    emails: ["trichy@worldwings.in", "wwingstt@yahoo.com"],
     phones: [
-      "+91 431 241 0505",
       "+91 81240 81679",
       "+91 94431 26261",
       "+91 86950 39389",
+      "+91 70108 66917",
     ],
   },
 ];

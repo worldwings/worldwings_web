@@ -2,9 +2,7 @@
   {
     "name": "3 Days Kerala Quick Escape",
     "description": "A short trip to Kerala covering backwaters, greenery, and local cultural experiences.",
-    "destinations": [
-      "Kerala"
-    ],
+    "destinations": ["Kerala"],
     "duration": "3 Days",
     "price": "Rs. 10500/-",
     "images": [
@@ -36,9 +34,7 @@
   {
     "name": "3 Days Kodaikanal Getaway",
     "description": "A refreshing hill station getaway to Kodaikanal with lakes, viewpoints, and cool climate.",
-    "destinations": [
-      "Kodaikanal"
-    ],
+    "destinations": ["Kodaikanal"],
     "duration": "3 Days",
     "price": "Rs. 10850/-",
     "images": [
@@ -57,9 +53,7 @@
   {
     "name": "3 Days Wayanad Escape",
     "description": "Explore Wayanad's forests, waterfalls, and wildlife in a short and scenic trip.",
-    "destinations": [
-      "Wayanad"
-    ],
+    "destinations": ["Wayanad"],
     "duration": "3 Days",
     "price": "Rs. 14500/-",
     "images": [
@@ -74,9 +68,7 @@
   {
     "name": "4 Days Kerala Explorer",
     "description": "Experience Kerala with backwaters, beaches, and cultural highlights in a relaxed itinerary.",
-    "destinations": [
-      "Kerala"
-    ],
+    "destinations": ["Kerala"],
     "duration": "4 Days",
     "price": "Rs. 25500/-",
     "images": [
@@ -108,9 +100,7 @@
   {
     "name": "5 Days Kerala Delight",
     "description": "A complete Kerala tour including Alleppey backwaters, Munnar hills, and local experiences.",
-    "destinations": [
-      "Kerala"
-    ],
+    "destinations": ["Kerala"],
     "duration": "5 Days",
     "price": "Rs. 23,000/-",
     "images": [
@@ -142,9 +132,7 @@
   {
     "name": "6 Days Kerala Grand Tour",
     "description": "An extended Kerala trip covering Munnar, Alleppey, Thekkady, and scenic landscapes.",
-    "destinations": [
-      "Kerala"
-    ],
+    "destinations": ["Kerala"],
     "duration": "6 Days",
     "price": "Rs. 28,000/-",
     "images": [
@@ -176,9 +164,7 @@
   {
     "name": "5 Days Lakshadweep Island Escape",
     "description": "A tropical island getaway in Lakshadweep with white sandy beaches and turquoise waters.",
-    "destinations": [
-      "Lakshadweep"
-    ],
+    "destinations": ["Lakshadweep"],
     "duration": "5 Days",
     "price": "Rs. 75,000/-",
     "images": [
@@ -197,9 +183,7 @@
   {
     "name": "3 Days Coorg Escape",
     "description": "A quick escape to Coorg with coffee plantations, waterfalls, and nature spots.",
-    "destinations": [
-      "Coorg"
-    ],
+    "destinations": ["Coorg"],
     "duration": "3 Days",
     "price": "Rs. 24500/-",
     "images": [
@@ -221,10 +205,7 @@
   {
     "name": "4 Days Coorg Mysore Retreat",
     "description": "Explore the combined beauty of Coorg's hills and Mysore's heritage in this 4-day retreat.",
-    "destinations": [
-      "Coorg",
-      "Mysore"
-    ],
+    "destinations": ["Coorg", "Mysore"],
     "duration": "4 Days",
     "price": "Rs. 24500/-",
     "images": [
@@ -246,9 +227,7 @@
   {
     "name": "5 Days Kerala Escape",
     "description": "A wonderful 5-day escape to the serene landscapes and cultural heart of Kerala.",
-    "destinations": [
-      "Kerala"
-    ],
+    "destinations": ["Kerala"],
     "duration": "5 Days",
     "price": "Rs. 25000/-",
     "images": [
@@ -280,10 +259,7 @@
   {
     "name": "5 Days Royal Coorg Trail: Mysore, Coorg",
     "description": "A combined trip covering Mysore’s heritage and Coorg’s natural beauty.",
-    "destinations": [
-      "Mysore",
-      "Coorg"
-    ],
+    "destinations": ["Mysore", "Coorg"],
     "duration": "5 Days",
     "price": "Rs. 32,500/-",
     "images": [
@@ -305,11 +281,7 @@
   {
     "name": "3 Days Coastal Bliss Tour - Kanyakumari, Poovar, Thiruvananthapuram",
     "description": "Explore the southern tip of India with Kanyakumari, Poovar backwaters, and Thiruvananthapuram city.",
-    "destinations": [
-      "Kanyakumari",
-      "Poovar",
-      "Thiruvananthapuram"
-    ],
+    "destinations": ["Kanyakumari", "Poovar", "Thiruvananthapuram"],
     "duration": "3 Days",
     "price": "Rs. 10000/-",
     "images": [
@@ -328,12 +300,7 @@
   {
     "name": "3 Days South Coast Escape - Kanyakumari, Poovar, Kovalam, Thiruvananthapuram",
     "description": "A compact coastal journey covering Kanyakumari, Poovar, Kovalam beaches, and Thiruvananthapuram.",
-    "destinations": [
-      "Kanyakumari",
-      "Poovar",
-      "Kovalam",
-      "Thiruvananthapuram"
-    ],
+    "destinations": ["Kanyakumari", "Poovar", "Kovalam", "Thiruvananthapuram"],
     "duration": "3 Days",
     "price": "Rs. 11000/-",
     "images": [
@@ -352,9 +319,7 @@
   {
     "name": "3 Days Ooty Hills Escape",
     "description": "Enjoy Ooty with its tea gardens, botanical gardens, and scenic hill views.",
-    "destinations": [
-      "Ooty"
-    ],
+    "destinations": ["Ooty"],
     "duration": "3 Days",
     "price": "Rs. 11000/-",
     "images": [
@@ -372,9 +337,7 @@
   {
     "name": "3 Days Hyderabad Highlights",
     "description": "Explore Hyderabad’s historical sites, Charminar, Golconda Fort, and local cuisine.",
-    "destinations": [
-      "Hyderabad"
-    ],
+    "destinations": ["Hyderabad"],
     "duration": "3 Days",
     "price": "Rs. 14700/-",
     "images": [
@@ -390,11 +353,9 @@
     ]
   },
   {
-    "name": "6 Days Kerala Luxury tour",
+    "name": "6 Days Kerala Luxury Tour",
     "description": "Experience the ultimate luxury in Kerala with premium stays and curated cultural experiences.",
-    "destinations": [
-      "Kerala"
-    ],
+    "destinations": ["Kerala"],
     "duration": "6 Days",
     "price": "Rs. 35,000/-",
     "images": [

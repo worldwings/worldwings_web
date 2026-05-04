@@ -7,6 +7,7 @@ import PageBanner from "@/components/common/page_banner/page_banner";
 import styles from "./contact.module.scss";
 import { CONTACT_DETAILS, BRANCHES } from "@/constants/conatct";
 import Link from "next/link";
+import { toast } from "react-toastify";
 
 const faqs = [
   {
@@ -42,6 +43,44 @@ const ContactScreen = () => {
     }
   };
 
+  const initialValues = {
+    name: "",
+    city: "",
+    email: "",
+    phoneNumber: "",
+    type: "Contact",
+    message: "",
+  };
+
+  const [values, setValues] = useState(initialValues);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleSubmit = async (e) => {
+    try {
+      setIsLoading(true);
+      e.preventDefault();
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      const enqRes = await res.json();
+      setIsSuccess(enqRes.success);
+      toast.success("Your query has been submitted successfully!")
+      setValues(initialValues)
+    } catch (error) {
+      console.log(error);
+      toast.error("Something went wrong..");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <>
       <Head>
@@ -66,30 +105,83 @@ const ContactScreen = () => {
                   <div className={styles.leftCol}>
                     <div className={styles.inputGroup}>
                       <label>Full name</label>
-                      <input type="text" placeholder="Enter your full name" />
+                      <input
+                        onChange={(e) => {
+                          setValues((prev) => ({
+                            ...prev,
+                            name: e.target.value,
+                          }));
+                        }}
+                        value={values.name}
+                        type="text"
+                        placeholder="Enter your full name"
+                      />
                     </div>
                     <div className={styles.inputGroup}>
                       <label>Email</label>
-                      <input type="email" placeholder="Your mail address" />
+                      <input
+                        onChange={(e) => {
+                          setValues((prev) => ({
+                            ...prev,
+                            email: e.target.value,
+                          }));
+                        }}
+                        value={values.email}
+                        type="email"
+                        placeholder="Your mail address"
+                      />
                     </div>
                     <div className={styles.inputGroup}>
                       <label>Phone Number</label>
-                      <input type="text" placeholder="Your phone number" />
+                      <input
+                        onChange={(e) => {
+                          setValues((prev) => ({
+                            ...prev,
+                            phoneNumber: e.target.value,
+                          }));
+                        }}
+                        value={values.phoneNumber}
+                        type="text"
+                        placeholder="Your phone number"
+                      />
                     </div>
                     <div className={styles.inputGroup}>
                       <label>City of residence</label>
-                      <input type="text" placeholder="Your city of residence" />
+                      <input
+                        onChange={(e) => {
+                          setValues((prev) => ({
+                            ...prev,
+                            city: e.target.value,
+                          }));
+                        }}
+                        value={values.city}
+                        type="text"
+                        placeholder="Your city of residence"
+                      />
                     </div>
                   </div>
 
                   <div className={styles.rightCol}>
                     <div className={styles.inputGroup}>
                       <label>Your Enquiry*</label>
-                      <textarea placeholder="Enter your message here"></textarea>
+                      <textarea
+                        onChange={(e) => {
+                          setValues((prev) => ({
+                            ...prev,
+                            message: e.target.value,
+                          }));
+                        }}
+                        value={values.message}
+                        placeholder="Enter your message here"
+                      ></textarea>
                     </div>
                     <div className={styles.submitWrap}>
-                      <button type="button" className={styles.submitBtn}>
-                        Get Started
+                      <button
+                        type="button"
+                        className={styles.submitBtn}
+                        onClick={handleSubmit}
+                      >
+                        {isLoading ? "Please Wait..." : "Get Started"}
                       </button>
                     </div>
                   </div>

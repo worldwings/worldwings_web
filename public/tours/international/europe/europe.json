@@ -290,7 +290,7 @@
   {
     "name": "8 Days Glimpses Of United Kingdom",
     "description": "Explore the United Kingdom with visits to London and other iconic destinations.",
-    "destinations": ["United Kingdom"],
+    "destinations": ["United Kingdom", "London"],
     "duration": "8 Days",
     "price": "Rs. 2,94,475/-",
     "images": [
@@ -1360,7 +1360,7 @@
   {
     "name": "14 Days Best of United Kingdom",
     "description": "A comprehensive United Kingdom tour covering major cities and attractions.",
-    "destinations": ["United Kingdom"],
+    "destinations": ["United Kingdom", "London"],
     "duration": "14 Days",
     "price": "Rs. 4,28,000/-",
     "images": [

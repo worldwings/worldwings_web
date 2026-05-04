@@ -53,7 +53,7 @@ const BlogSection = () => {
           noAnimation
         />
 
-        <p>{hasLeft ? "Yes" : "No"}</p>
+        
         <div className={styles.sliderCont}>
           <Slide
             slidesToScroll={1}

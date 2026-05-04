@@ -152,7 +152,7 @@ export const POPULAR_DESTINATIONS = [
     images: [
       "/tours/international/europe/images/Baku Azerbaijan/iltun-huseynli-BzjjoIeu-Ds-unsplash.jpg",
     ],
-    href: "/tours/international/europe?destinations=Azerbaijan",
+    href: "/tours/international/asia?destinations=Azerbaijan",
   },
   {
     name: "Russia",

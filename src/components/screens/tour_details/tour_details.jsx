@@ -88,7 +88,7 @@ const TourDetailsScreen = ({
                   </div>
                 )}
 
-                <p className={styles.price}>{tour.price}</p>
+                <p className={styles.price}>{tour?.price}</p>
               </div>
 
               {detailsHTML && (

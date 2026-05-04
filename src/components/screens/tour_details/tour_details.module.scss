@@ -136,7 +136,7 @@
     h3 {
       font-size: 24px;
       color: $color_1;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       padding-bottom: 15px;
       border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     }
@@ -147,7 +147,8 @@
       color: #444;
 
       p {
-        margin-bottom: 16px;
+        margin: 0;
+        // margin-bottom: 16px;
         // line-height: 22px;
       }
 
@@ -170,7 +171,7 @@
       strong {
         font-size: 20px;
         display: block;
-        margin-top: 16px;
+        margin-top: 12px;
       }
 
       h1,

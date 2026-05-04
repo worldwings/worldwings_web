@@ -62,6 +62,10 @@ const ToursListScreen = ({ tours = [], destination, type }) => {
     middle_east: "/images/header_images/middle_east.jpg",
     africa: "/images/header_images/africa.jpg",
     asia: "/images/header_images/asia.jpg",
+    east_and_west_india: "/images/header_images/east_and_west_india.jpg",
+    north_india: "/images/header_images/north_india.jpg",
+    south_india: "/images/header_images/south_india.png",
+    weekend_getaway: "/images/header_images/weekend_getaway.jpg",
   };
 
   
