@@ -1,9 +1,7 @@
-import fs from "fs";
-import path from "path";
-import { BLOG_POSTS } from "@/constants/constants";
-import { SERVICES } from "@/constants/services";
+const fs = require('fs');
+const path = require('path');
 
-const EXTERNAL_DATA_URL = "https://worldwings.in"; // Adjust this if the domain is different
+const EXTERNAL_DATA_URL = "https://worldwings.in";
 
 function generateSiteMap(urls) {
   const currentDate = new Date().toISOString().split('T')[0];
@@ -26,9 +24,9 @@ function generateSiteMap(urls) {
  `;
 }
 
-export async function getServerSideProps({ res }) {
+function getStaticAndConstantUrls() {
   const urls = [];
-
+  
   // 1. Static Pages
   const staticPages = [
     "",
@@ -43,37 +41,71 @@ export async function getServerSideProps({ res }) {
     urls.push(`${EXTERNAL_DATA_URL}${page}`);
   });
 
-  // 2. Services (Categories and specific services)
-  SERVICES.forEach((service) => {
-    urls.push(`${EXTERNAL_DATA_URL}/services/${service.category}`);
-    urls.push(
-      `${EXTERNAL_DATA_URL}/services/${service.category}/${service.id}`
-    );
-  });
+  // 2. Services (extracted manually or we can scan the constants file)
+  // Let's just read src/constants/services.js and regex it.
+  try {
+    const servicesContent = fs.readFileSync(path.join(__dirname, '../src/constants/services.js'), 'utf-8');
+    const idRegex = /id:\s*["']([^"']+)["']/g;
+    const categoryRegex = /category:\s*["']([^"']+)["']/g;
+    
+    let idMatch;
+    let categoryMatch;
+    const ids = [];
+    const categories = new Set();
+    
+    while ((idMatch = idRegex.exec(servicesContent)) !== null) {
+      ids.push(idMatch[1]);
+    }
+    
+    // Quick and dirty manual matching since the file structure is predictable
+    // Actually, let's just use eval or regex. A simple regex for objects:
+    const blockRegex = /{\s*id:\s*["']([^"']+)["'],\s*category:\s*["']([^"']+)["']/g;
+    let blockMatch;
+    while ((blockMatch = blockRegex.exec(servicesContent)) !== null) {
+      categories.add(blockMatch[2]);
+      urls.push(`${EXTERNAL_DATA_URL}/services/${blockMatch[2]}/${blockMatch[1]}`);
+    }
+    categories.forEach(cat => {
+      urls.push(`${EXTERNAL_DATA_URL}/services/${cat}`);
+    });
+  } catch(e) {
+    console.error("Could not parse services.js", e);
+  }
 
   // 3. Blog Posts
-  BLOG_POSTS.forEach((post) => {
-    urls.push(`${EXTERNAL_DATA_URL}/blog/${post.id}`);
-  });
+  try {
+    const constantsContent = fs.readFileSync(path.join(__dirname, '../src/constants/constants.js'), 'utf-8');
+    const blogBlock = constantsContent.substring(constantsContent.indexOf('export const BLOG_POSTS'));
+    const idRegex = /id:\s*["']([^"']+)["']/g;
+    let idMatch;
+    while ((idMatch = idRegex.exec(blogBlock)) !== null) {
+      urls.push(`${EXTERNAL_DATA_URL}/blog/${idMatch[1]}`);
+    }
+  } catch(e) {
+    console.error("Could not parse constants.js", e);
+  }
+  
+  return urls;
+}
+
+function run() {
+  const urls = getStaticAndConstantUrls();
 
   // 4. Tours (Dynamically read from /public/tours)
-  const toursDir = path.join(process.cwd(), "public", "tours");
+  const toursDir = path.join(__dirname, "../public", "tours");
   if (fs.existsSync(toursDir)) {
     const types = fs.readdirSync(toursDir);
     types.forEach((type) => {
       const typePath = path.join(toursDir, type);
       if (fs.statSync(typePath).isDirectory()) {
-        // Add tour type page (e.g. /tours/domestic)
         urls.push(`${EXTERNAL_DATA_URL}/tours/${type}`);
 
         const destinations = fs.readdirSync(typePath);
         destinations.forEach((destination) => {
           const destPath = path.join(typePath, destination);
           if (fs.statSync(destPath).isDirectory()) {
-            // Add tour destination page (e.g. /tours/domestic/south_india)
             urls.push(`${EXTERNAL_DATA_URL}/tours/${type}/${destination}`);
 
-            // Parse the JSON to add specific tours
             const jsonPath = path.join(destPath, `${destination}.json`);
             if (fs.existsSync(jsonPath)) {
               try {
@@ -100,21 +132,11 @@ export async function getServerSideProps({ res }) {
     });
   }
 
-  // Deduplicate URLs
   const uniqueUrls = [...new Set(urls)];
-
-  // Generate the XML sitemap
   const sitemap = generateSiteMap(uniqueUrls);
 
-  res.setHeader("Content-Type", "text/xml");
-  res.write(sitemap);
-  res.end();
-
-  return {
-    props: {},
-  };
+  fs.writeFileSync(path.join(__dirname, '../public/sitemap.xml'), sitemap);
+  console.log("Sitemap generated successfully at public/sitemap.xml");
 }
 
-export default function SiteMap() {
-  // getServerSideProps will do the heavy lifting
-}
+run();
