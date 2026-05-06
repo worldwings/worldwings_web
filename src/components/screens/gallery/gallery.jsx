@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import Head from 'next/head';
+
 import Image from 'next/image';
 import { ZoomIn, X, ChevronLeft, ChevronRight } from 'react-bootstrap-icons';
 import CustomContainer from '@/components/ui/custom_container/custom_container';
@@ -65,10 +65,7 @@ const GalleryScreen = () => {
 
     return (
         <>
-            <Head>
-                <title>Gallery - World Wings</title>
-                <meta name="description" content="View our stunning collection of tour destinations." />
-            </Head>
+
 
             <PageBanner title="Gallery" image="/images/about_banner.webp" />
 

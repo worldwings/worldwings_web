@@ -1,6 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import TourDestinationsScreen from "@/components/screens/tour_destinations/tour_destinations";
+import SEO from "@/components/common/seo/seo";
 import { PAGES, POPULAR_DESTINATIONS } from "@/constants/constants";
 
 const TourTypePage = ({ type, title, destinations, bannerImage }) => {
@@ -11,12 +12,19 @@ const TourTypePage = ({ type, title, destinations, bannerImage }) => {
   }
 
   return (
-    <TourDestinationsScreen
-      type={type}
-      title={title}
-      destinations={destinations}
-      bannerImage={bannerImage}
-    />
+    <>
+      <SEO 
+        title={`${title} Tours`} 
+        description={`Explore our wide range of ${title} tour destinations and packages.`} 
+        ogImage={bannerImage}
+      />
+      <TourDestinationsScreen
+        type={type}
+        title={title}
+        destinations={destinations}
+        bannerImage={bannerImage}
+      />
+    </>
   );
 };
 

@@ -140,6 +140,8 @@ export async function getServerSideProps(context) {
   };
 }
 
+import SEO from "@/components/common/seo/seo";
+
 const TourDetailsPage = ({
   detailsHTML,
   tourData,
@@ -147,18 +149,25 @@ const TourDetailsPage = ({
   docUrl,
   setShowEnquiryModal,
 }) => {
-
-  
-  
+  const tourTitle = parsedData?.title || tourData?.name || "Tour Details";
+  const tourDescription = parsedData?.overview || `Explore ${tourTitle} with World Wings Tours.`;
+  const tourImage = tourData?.images?.[0] || null;
 
   return (
-    <TourDetailsScreen
-      tour={tourData}
-      detailsHTML={detailsHTML}
-      parsedData={parsedData}
-      docUrl={docUrl}
-      setShowEnquiryModal={setShowEnquiryModal}
-    />
+    <>
+      <SEO 
+        title={tourTitle} 
+        description={tourDescription} 
+        ogImage={tourImage}
+      />
+      <TourDetailsScreen
+        tour={tourData}
+        detailsHTML={detailsHTML}
+        parsedData={parsedData}
+        docUrl={docUrl}
+        setShowEnquiryModal={setShowEnquiryModal}
+      />
+    </>
   );
 };
 

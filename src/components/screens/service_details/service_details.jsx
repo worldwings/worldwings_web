@@ -2,7 +2,7 @@ import CustomContainer from "@/components/ui/custom_container/custom_container";
 import styles from "./service_details.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
+
 import PageBanner from "@/components/common/page_banner/page_banner";
 import { CheckCircleFill } from "react-bootstrap-icons";
 
@@ -24,10 +24,7 @@ const ServiceDetailsScreen = ({ service }) => {
 
     return (
         <>
-            <Head>
-                <title>{service.title} - World Wings</title>
-                <meta name="description" content={service.description} />
-            </Head>
+
 
             <div className={styles.detailsPage}>
                 <PageBanner 

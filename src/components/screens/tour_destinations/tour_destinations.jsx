@@ -4,15 +4,12 @@ import PageBanner from "@/components/common/page_banner/page_banner";
 import styles from "./tour_destinations.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
+
 
 const TourDestinationsScreen = ({ type, destinations, title, bannerImage }) => {
   return (
     <>
-      <Head>
-        <title>{title} - World Wings</title>
-        <meta name="description" content={`Explore our range of ${title} packages.`} />
-      </Head>
+
       <div className={styles.tourDestinationsPage}>
         <PageBanner
           title={title}

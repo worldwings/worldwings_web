@@ -2,7 +2,7 @@ import CustomContainer from "@/components/ui/custom_container/custom_container";
 import styles from "./servicesList.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
+
 import PageBanner from "@/components/common/page_banner/page_banner";
 
 const ServicesListScreen = ({ services, category }) => {
@@ -27,13 +27,7 @@ const ServicesListScreen = ({ services, category }) => {
 
   return (
     <>
-      <Head>
-        <title>{title} - World Wings</title>
-        <meta
-          name="description"
-          content={`Explore our premium ${title} services.`}
-        />
-      </Head>
+
       <div className={styles.servicesPage}>
         <PageBanner title={title} image={getHeaderimage()} />
 

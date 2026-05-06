@@ -1,5 +1,5 @@
 import BlogDetailsScreen from "@/components/screens/blog_details/blog_details";
-import Head from "next/head";
+import SEO from "@/components/common/seo/seo";
 import { BLOG_POSTS } from "@/constants/constants";
 import mammoth from "mammoth";
 import fs from "fs";
@@ -44,10 +44,10 @@ const BlogDetailsPage = ({ id, detailsHTML }) => {
 
   return (
     <>
-      <Head>
-        <title>{post ? post.title : "Blog"} | World Wings</title>
-        <meta name="description" content={post ? post.title : "Read our latest travel stories"} />
-      </Head>
+      <SEO 
+        title={post ? post.title : "Blog"} 
+        description={post ? post.title : "Read our latest travel stories"} 
+      />
       <BlogDetailsScreen id={id} detailsHTML={detailsHTML} />
     </>
   );

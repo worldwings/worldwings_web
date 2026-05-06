@@ -1,11 +1,17 @@
 import ServiceDetailsScreen from "@/components/screens/service_details/service_details";
+import SEO from "@/components/common/seo/seo";
 import { SERVICES } from "@/constants/services";
 import mammoth from "mammoth";
 import fs from "fs";
 import path from "path";
 
 export default function VisasPage({ service }) {
-    return <ServiceDetailsScreen service={service} />;
+    return (
+        <>
+            <SEO title={service?.title || "Visa Services"} description={`Apply for visas with our hassle-free visa assistance. ${service?.title}`} />
+            <ServiceDetailsScreen service={service} />
+        </>
+    );
 }
 
 export async function getServerSideProps() {

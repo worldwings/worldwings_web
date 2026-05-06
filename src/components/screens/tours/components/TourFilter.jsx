@@ -22,12 +22,6 @@ const TourFilter = ({ tours, onFilterChange, destination }) => {
   const [maxDuration, setMaxDuration] = useState(computedMaxDuration);
   const [showAllDestinations, setShowAllDestinations] = useState(false);
 
-  console.log('xxx--->>', selectedDestinations);
-
-
-  // Initialize from query param if present
-
-
   useEffect(() => {
     if (onFilterChange) {
       onFilterChange({ destinations: selectedDestinations, maxDuration });

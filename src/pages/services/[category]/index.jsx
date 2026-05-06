@@ -1,8 +1,15 @@
 import ServicesListScreen from "@/components/screens/services_list/servicesList";
+import SEO from "@/components/common/seo/seo";
 import { SERVICES } from "@/constants/services";
 
 export default function ServicesCategoryPage({ services, category }) {
-    return <ServicesListScreen services={services} category={category} />;
+    const formattedCategory = category ? category.charAt(0).toUpperCase() + category.slice(1).replace(/-/g, ' ') : "Services";
+    return (
+        <>
+            <SEO title={`${formattedCategory} Services`} description={`Explore our ${formattedCategory} services provided by World Wings.`} />
+            <ServicesListScreen services={services} category={category} />
+        </>
+    );
 }
 
 export async function getStaticPaths() {

@@ -1,7 +1,13 @@
 import HomeScreen from "@/components/screens/home/home";
+import SEO from "@/components/common/seo/seo";
 
 const Home = () => {
-  return <HomeScreen />;
+  return (
+    <>
+      <SEO title="Home" />
+      <HomeScreen />
+    </>
+  );
 };
 
 export default Home;

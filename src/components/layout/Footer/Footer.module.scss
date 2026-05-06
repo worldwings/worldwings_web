@@ -283,7 +283,7 @@
   }
 
   .socialFollow {
-    display: block;
+    display: flex;
   }
 
   @include respond-below(md) {

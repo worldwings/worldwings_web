@@ -1,11 +1,21 @@
 import ServiceDetailsScreen from "@/components/screens/service_details/service_details";
+import SEO from "@/components/common/seo/seo";
 import { SERVICES } from "@/constants/services";
 import mammoth from "mammoth";
 import fs from "fs";
 import path from "path";
 
 export default function ServicePage({ service }) {
-    return <ServiceDetailsScreen service={service} />;
+    return (
+        <>
+            <SEO 
+                title={service?.title || "Service Details"} 
+                description={`Explore our ${service?.title || "service"} offerings at World Wings.`} 
+                ogImage={service?.image}
+            />
+            <ServiceDetailsScreen service={service} />
+        </>
+    );
 }
 
 export async function getServerSideProps({ params }) {

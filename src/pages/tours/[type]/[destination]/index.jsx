@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-assign-module-variable */
 import { useRouter } from "next/router";
 import ToursListScreen from "@/components/screens/tours/toursList";
+import SEO from "@/components/common/seo/seo";
 import { useEffect, useState } from "react";
 
 const ToursPage = () => {
@@ -30,12 +31,20 @@ const ToursPage = () => {
     loadTours();
   }, [router.isReady, router.query.destination, type, destination]);
 
+  const formattedDestination = destination ? destination.toString().replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) : "Destination";
+
   return (
-    <ToursListScreen
-      tours={filteredTours}
-      destination={destination}
-      type={type}
-    />
+    <>
+      <SEO 
+        title={`${formattedDestination} Tours`} 
+        description={`Discover amazing tour packages to ${formattedDestination} with World Wings.`} 
+      />
+      <ToursListScreen
+        tours={filteredTours}
+        destination={destination}
+        type={type}
+      />
+    </>
   );
 };
 

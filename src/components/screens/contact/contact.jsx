@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Head from "next/head";
+
 import Image from "next/image";
 import { GeoAlt, Envelope, Telephone, ArrowRight } from "react-bootstrap-icons";
 import CustomContainer from "@/components/ui/custom_container/custom_container";
@@ -83,13 +83,7 @@ const ContactScreen = () => {
 
   return (
     <>
-      <Head>
-        <title>Contact Us - World Wings</title>
-        <meta
-          name="description"
-          content="Get in touch with World Wings for all your travel needs."
-        />
-      </Head>
+
 
       <PageBanner title="Contact Us" image="/images/contact-banner.jpg" />
 

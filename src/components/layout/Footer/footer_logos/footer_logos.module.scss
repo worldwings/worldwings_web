@@ -1,0 +1,21 @@
+.FooterLogos {
+  background-color: #e7e7e7;
+  .wrap {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    padding: 24px 0;
+  }
+
+  @include respond-below(md) {
+    .wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+
+      > div {
+        @include flexCenter;
+      }
+    }
+  }
+}
