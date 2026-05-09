@@ -3,9 +3,7 @@
     "name": "8 Days Spiritual Treasures of the Holy Land",
     "description": "A spiritual journey to the Holy Land covering key biblical sites and religious landmarks.",
     "bannerImg": "/images/holy_land_header.jpg",
-    "destinations": [
-      "Holy Land"
-    ],
+    "destinations": ["Holy Land"],
     "duration": "8 Days",
     "price": "£1,650",
     "images": [
@@ -55,13 +53,12 @@
   {
     "name": "10 Days Divine Holyland Discovery",
     "description": "A spiritual journey through the Holyland covering key pilgrimage destinations.",
-    "destinations": [
-      "Holyland"
-    ],
+    "destinations": ["Holyland"],
     "bannerImg": "/images/holy_land_header.jpg",
     "duration": "10 Days",
     "price": "Rs 1,75,000/-",
     "images": [
+      "/tours/pilgrimage/holyland/images/holyland (10).jpg",
       "/tours/pilgrimage/holyland/images/holyland (1).jpg",
       "/tours/pilgrimage/holyland/images/holyland (2).jpg",
       "/tours/pilgrimage/holyland/images/holyland (3).jpg",
@@ -71,7 +68,7 @@
       "/tours/pilgrimage/holyland/images/holyland (7).jpg",
       "/tours/pilgrimage/holyland/images/holyland (8).jpg",
       "/tours/pilgrimage/holyland/images/holyland (9).jpg",
-      "/tours/pilgrimage/holyland/images/holyland (10).jpg",
+
       "/tours/pilgrimage/holyland/images/holyland (11).jpg",
       "/tours/pilgrimage/holyland/images/holyland (12).jpg",
       "/tours/pilgrimage/holyland/images/holyland (13).jpg",
@@ -86,7 +83,7 @@
       "/tours/pilgrimage/holyland/images/holyland (22).jpg",
       "/tours/pilgrimage/holyland/images/holyland (23).jpg",
       "/tours/pilgrimage/holyland/images/holyland (24).jpg",
-      "/tours/pilgrimage/holyland/images/holyland (25).jpg",
+
       "/tours/pilgrimage/holyland/images/holyland (26).jpg",
       "/tours/pilgrimage/holyland/images/holyland (27).jpg",
       "/tours/pilgrimage/holyland/images/holyland (28).jpg",

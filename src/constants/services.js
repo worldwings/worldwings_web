@@ -57,6 +57,7 @@ export const SERVICES = [
     category: "travel-essentials",
     title: "Eurail",
     images: [
+      "Eurail (10).jpeg",
       "Eurorail (1).jpg",
       "Eurorail (2).jpg",
       "Eurorail (3).jpg",
