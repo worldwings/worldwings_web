@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Modal, Form, Button, InputGroup, Image } from "react-bootstrap";
 import styles from "./enquiry_modal.module.scss";
 import { CaretDownFill, CheckCircleFill } from "react-bootstrap-icons";
@@ -11,7 +11,7 @@ const EnquiryModal = ({ show, setShow }) => {
     city: "",
     email: "",
     phoneNumber: "",
-    destination: show === true ? "" : show,
+    destination: "",
     dateOfTravel: "",
     type: "",
   };

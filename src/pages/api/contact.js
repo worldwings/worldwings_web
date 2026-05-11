@@ -11,16 +11,31 @@ const handler = async (req, res) => {
       },
     });
 
-    const isContact = body.type == "Contact";
+    const isNewsLetter = body.type == "News";
 
-    await transporter.sendMail({
-      from: `"Website Contact" <${process.env.EMAIL_USER}>`,
-      replyTo: body.email, // important fix
-      to: process.env.EMAIL_USER,
-      subject: isContact
-        ? `New contact submission from ${body.name}`
-        : `New enquiry from ${body.name}`,
-      html: `
+    if (isNewsLetter) {
+      await transporter.sendMail({
+        from: `"Subscribed to newsletter" <${process.env.EMAIL_USER}>`,
+        replyTo: body.email, // important fix
+        to: process.env.EMAIL_USER,
+        subject: `New newsletter subscription from ${body.email}`,
+        html: `
+
+        <p><b>Email:</b> ${body.email} Has joined the newsletter</p>
+
+      `,
+      });
+    } else {
+      const isContact = body.type == "Contact";
+
+      await transporter.sendMail({
+        from: `"Website Contact" <${process.env.EMAIL_USER}>`,
+        replyTo: body.email, // important fix
+        to: process.env.EMAIL_USER,
+        subject: isContact
+          ? `New contact submission from ${body.name}`
+          : `New enquiry from ${body.name}`,
+        html: `
         <h2>New Travel Enquiry</h2>
         <p><b>Name:</b> ${body.name}</p>
         <p><b>Email:</b> ${body.email}</p>
@@ -34,11 +49,12 @@ const handler = async (req, res) => {
         }
         <p><b>Type:</b> ${body.type}</p>
       `,
-    });
+      });
+    }
 
     return res.status(200).json({
       success: true,
-      isContact,
+
       body,
     });
   } catch (error) {

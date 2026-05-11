@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import styles from "./Footer.module.scss";
 import Link from "next/link";
@@ -12,6 +12,9 @@ import {
 import { PAGES, POPULAR_DESTINATIONS } from "@/constants/constants";
 import { CONTACT_DETAILS } from "@/constants/conatct";
 import FooterLogos from "./footer_logos/footer_logos";
+import { toast } from "react-toastify";
+import { log } from "firebase/firestore/lite/pipelines";
+import { type } from "firebase/firestore/pipelines";
 
 const XIcon = () => (
   <svg
@@ -26,179 +29,221 @@ const XIcon = () => (
 );
 
 const Footer = () => {
- 
+  const [values, setValues] = useState({
+    email: "",
+    type: "News",
+  });
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+
+    
+
+    try {
+      setIsLoading(true);
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      toast.success("Your query has been submitted successfully!");
+      // setValues({
+      //   email: "",
+      // type : 'News'
+      // });
+    } catch (error) {
+      console.log(error);
+      toast.error("Something went wrong..");
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   return (
-  <>
-  <FooterLogos/>
-    <footer className={styles.footer}>
-      <Container>
-        <Row className={styles.footerRow}>
-          <Col lg={3} md={6} sm={12} className={styles.footerCol}>
-            <div className={styles.logoSection}>
-              <Image
-                src="/logo/white logo.png"
-                alt="TOURIZA Logo"
-                className={styles.logoImage}
-              />
-              <p className={styles.description}>
-                We take care of every detail you can travel with confidence
-                ease.
-              </p>
+    <>
+      <FooterLogos />
+      <footer className={styles.footer}>
+        <Container>
+          <Row className={styles.footerRow}>
+            <Col lg={3} md={6} sm={12} className={styles.footerCol}>
+              <div className={styles.logoSection}>
+                <Image
+                  src="/logo/white logo.png"
+                  alt="TOURIZA Logo"
+                  className={styles.logoImage}
+                />
+                <p className={styles.description}>
+                  We take care of every detail you can travel with confidence
+                  ease.
+                </p>
 
-              <div className={styles.contactInfo}>
-                <div className={styles.iconWrapper}>
-                  <TelephoneFill />
+                <div className={styles.contactInfo}>
+                  <div className={styles.iconWrapper}>
+                    <TelephoneFill />
+                  </div>
+                  <div className={styles.contactDetails}>
+                    <span className={styles.contactLabel}>Call Us 24/7</span>
+                    <div className={styles.numbers}>
+                      <a
+                        href={`tel:+91${CONTACT_DETAILS.phone1.number}`}
+                        className={styles.contactNumber}
+                      >
+                        {CONTACT_DETAILS.phone1.text}
+                      </a>
+                      <a
+                        href={`tel:+91${CONTACT_DETAILS.phone2.number}`}
+                        className={styles.contactNumber}
+                      >
+                        {CONTACT_DETAILS.phone2.text}
+                      </a>
+                      <a
+                        href={`tel:+91${CONTACT_DETAILS.phone3.number}`}
+                        className={styles.contactNumber}
+                      >
+                        {CONTACT_DETAILS.phone3.text}
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div className={styles.contactDetails}>
-                  <span className={styles.contactLabel}>Call Us 24/7</span>
-                  <div className={styles.numbers}>
+
+                <div className={styles.socialFollow}>
+                  <span className={styles.followText}>Follow Us -</span>
+                  <div className={styles.socialIcons}>
                     <a
-                      href={`tel:+91${CONTACT_DETAILS.phone1.number}`}
-                      className={styles.contactNumber}
+                      href={CONTACT_DETAILS.socials.facebook}
+                      target="_blank"
+                      rel="noreferrer"
                     >
-                      {CONTACT_DETAILS.phone1.text}
+                      <Facebook />
                     </a>
                     <a
-                      href={`tel:+91${CONTACT_DETAILS.phone2.number}`}
-                      className={styles.contactNumber}
+                      href={CONTACT_DETAILS.socials.instagram}
+                      target="_blank"
+                      rel="noreferrer"
                     >
-                      {CONTACT_DETAILS.phone2.text}
+                      <Linkedin />
                     </a>
                     <a
-                      href={`tel:+91${CONTACT_DETAILS.phone3.number}`}
-                      className={styles.contactNumber}
+                      href={CONTACT_DETAILS.socials.x}
+                      target="_blank"
+                      rel="noreferrer"
                     >
-                      {CONTACT_DETAILS.phone3.text}
+                      <XIcon />
+                    </a>
+                    <a
+                      href={CONTACT_DETAILS.socials.youtube}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Youtube />
                     </a>
                   </div>
                 </div>
               </div>
+            </Col>
 
-              <div className={styles.socialFollow}>
-                <span className={styles.followText}>Follow Us -</span>
-                <div className={styles.socialIcons}>
-                  <a
-                    href={CONTACT_DETAILS.socials.facebook}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Facebook />
-                  </a>
-                  <a
-                    href={CONTACT_DETAILS.socials.instagram}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Linkedin />
-                  </a>
-                  <a
-                    href={CONTACT_DETAILS.socials.x}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <XIcon />
-                  </a>
-                  <a
-                    href={CONTACT_DETAILS.socials.youtube}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <Youtube />
-                  </a>
-                </div>
+            <Col lg={3} md={6} sm={12} className={styles.footerCol}>
+              <h4 className={styles.widgetTitle}>Quick Links</h4>
+              <ul className={styles.linkList}>
+                {PAGES.map((page) => {
+                  if (page.hideInfooter) return null;
+                  return (
+                    <li key={page.title}>
+                      <Link href={page.href || "#"}>
+                        <CaretRightFill className={styles.bulletIcon} />{" "}
+                        {page.title}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </Col>
+
+            <Col lg={3} md={6} sm={12} className={styles.footerCol}>
+              <h4 className={styles.widgetTitle}>Popular Location</h4>
+              <ul className={styles.linkList}>
+                {POPULAR_DESTINATIONS.map((pd) => {
+                  return (
+                    <li key={pd.name}>
+                      <Link href={pd.href || "#"}>
+                        <CaretRightFill className={styles.bulletIcon} />{" "}
+                        {pd.name}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </Col>
+
+            <Col lg={3} md={6} sm={12} className={styles.footerCol}>
+              <h4 className={styles.widgetTitle}>Newsletter</h4>
+              <p className={styles.newsletterText}>
+                Subscribe to our newsletter
+              </p>
+              <form className={styles.newsletterForm}>
+                <input
+                  type="email"
+                  placeholder="Email address.."
+                  required
+                  className={styles.emailInput}
+                  value={values.email}
+                  onChange={(e) => [
+                    setValues((prev) => ({ ...prev, email: e.target.value })),
+                  ]}
+                />
+                <button
+                  type="submit"
+                  className={styles.subscribeBtn}
+                  onClick={handleSubmit}
+                  disabled={isLoading}
+                >
+                  {isLoading ? "Please wait..." : "Subscribe"}
+                </button>
+              </form>
+            </Col>
+          </Row>
+
+          <div className={styles.bottom}>
+            <div className={styles.socialFollow}>
+              <span className={styles.followText}>Follow Us -</span>
+              <div className={styles.socialIcons}>
+                <a
+                  href={CONTACT_DETAILS.socials.facebook}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Facebook />
+                </a>
+                <a
+                  href={CONTACT_DETAILS.socials.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Linkedin />
+                </a>
+                <a
+                  href={CONTACT_DETAILS.socials.x}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <XIcon />
+                </a>
+                <a
+                  href={CONTACT_DETAILS.socials.youtube}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Youtube />
+                </a>
               </div>
             </div>
-          </Col>
-
-          <Col lg={3} md={6} sm={12} className={styles.footerCol}>
-            <h4 className={styles.widgetTitle}>Quick Links</h4>
-            <ul className={styles.linkList}>
-              {PAGES.map((page) => {
-                if (page.hideInfooter) return null;
-                return (
-                  <li key={page.title}>
-                    <Link href={page.href || "#"}>
-                      <CaretRightFill className={styles.bulletIcon} />{" "}
-                      {page.title}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </Col>
-
-          <Col lg={3} md={6} sm={12} className={styles.footerCol}>
-            <h4 className={styles.widgetTitle}>Popular Location</h4>
-            <ul className={styles.linkList}>
-              {POPULAR_DESTINATIONS.map((pd) => {
-                return (
-                  <li key={pd.name}>
-                    <Link href={pd.href || "#"}>
-                      <CaretRightFill className={styles.bulletIcon} /> {pd.name}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </Col>
-
-          <Col lg={3} md={6} sm={12} className={styles.footerCol}>
-            <h4 className={styles.widgetTitle}>Newsletter</h4>
-            <p className={styles.newsletterText}>Subscribe to our newsletter</p>
-            <form className={styles.newsletterForm}>
-              <input
-                type="email"
-                placeholder="Email address.."
-                required
-                className={styles.emailInput}
-              />
-              <button type="submit" className={styles.subscribeBtn}>
-                Subscribe
-              </button>
-            </form>
-          </Col>
-        </Row>
-
-        <div className={styles.bottom}>
-          <div className={styles.socialFollow}>
-            <span className={styles.followText}>Follow Us -</span>
-            <div className={styles.socialIcons}>
-              <a
-                href={CONTACT_DETAILS.socials.facebook}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Facebook />
-              </a>
-              <a
-                href={CONTACT_DETAILS.socials.instagram}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Linkedin />
-              </a>
-              <a
-                href={CONTACT_DETAILS.socials.x}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <XIcon />
-              </a>
-              <a
-                href={CONTACT_DETAILS.socials.youtube}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Youtube />
-              </a>
-            </div>
           </div>
-      
-        </div>
-      </Container>
-    </footer>
-  </>
+        </Container>
+      </footer>
+    </>
   );
 };
 
