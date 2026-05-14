@@ -48,14 +48,14 @@ const BannerSection = () => {
                         data-aos-delay={1500 + 0}
 
                       >
-                        Find
+                        Your
                       </span>
                       <span
                         className={styles.w2}
                         data-aos="fade-up"
                         data-aos-delay={1500 + 100}
                       >
-                        Your
+                        Next
                       </span>
                       <span
                         className={styles.w3}
@@ -63,7 +63,7 @@ const BannerSection = () => {
                         data-aos-delay={1500 + 200}
 
                       >
-                        Next
+                        Journey
                       </span>
                       <span
                         className={styles.w4}
@@ -71,7 +71,7 @@ const BannerSection = () => {
                         data-aos-delay={1500 + 300}
 
                       >
-                        Stay
+                        Begins
                       </span>
                     </h1>
                   </div>

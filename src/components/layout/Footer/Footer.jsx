@@ -8,13 +8,13 @@ import {
   Linkedin,
   Youtube,
   CaretRightFill,
+  Instagram,
 } from "react-bootstrap-icons";
-import { PAGES, POPULAR_DESTINATIONS } from "@/constants/constants";
+import { PAGES, POPULAR_DESTINATIONS, LEGAL_PAGES } from "@/constants/constants";
 import { CONTACT_DETAILS } from "@/constants/conatct";
 import FooterLogos from "./footer_logos/footer_logos";
 import { toast } from "react-toastify";
-import { log } from "firebase/firestore/lite/pipelines";
-import { type } from "firebase/firestore/pipelines";
+
 
 const XIcon = () => (
   <svg
@@ -37,7 +37,7 @@ const Footer = () => {
 
   const handleSubmit = async (e) => {
 
-    
+
 
     try {
       setIsLoading(true);
@@ -112,34 +112,21 @@ const Footer = () => {
                 <div className={styles.socialFollow}>
                   <span className={styles.followText}>Follow Us -</span>
                   <div className={styles.socialIcons}>
-                    <a
+                    <Link
                       href={CONTACT_DETAILS.socials.facebook}
                       target="_blank"
                       rel="noreferrer"
                     >
                       <Facebook />
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href={CONTACT_DETAILS.socials.instagram}
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <Linkedin />
-                    </a>
-                    <a
-                      href={CONTACT_DETAILS.socials.x}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <XIcon />
-                    </a>
-                    <a
-                      href={CONTACT_DETAILS.socials.youtube}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Youtube />
-                    </a>
+                      <Instagram />
+                    </Link>
+
                   </div>
                 </div>
               </div>
@@ -203,43 +190,35 @@ const Footer = () => {
                   {isLoading ? "Please wait..." : "Subscribe"}
                 </button>
               </form>
+              <div className={styles.paymentSection}>
+                <h4 className={styles.widgetTitle}>Payments</h4>
+                <Image
+                  src="/images/payments.png"
+                  alt="Payment Methods"
+                  className={styles.paymentImage}
+                />
+              </div>
             </Col>
           </Row>
 
           <div className={styles.bottom}>
-            <div className={styles.socialFollow}>
-              <span className={styles.followText}>Follow Us -</span>
-              <div className={styles.socialIcons}>
-                <a
-                  href={CONTACT_DETAILS.socials.facebook}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Facebook />
-                </a>
-                <a
-                  href={CONTACT_DETAILS.socials.instagram}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Linkedin />
-                </a>
-                <a
-                  href={CONTACT_DETAILS.socials.x}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <XIcon />
-                </a>
-                <a
-                  href={CONTACT_DETAILS.socials.youtube}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Youtube />
-                </a>
-              </div>
+            <div className={styles.copyright}>
+              <p>
+                © {new Date().getFullYear()} World Wings Tours and Travels. All
+                Rights Reserved.
+              </p>
             </div>
+            <div className={styles.legalLinks}>
+              {LEGAL_PAGES.map((page, index) => (
+                <React.Fragment key={page.title}>
+                  <Link href={page.href}>{page.title}</Link>
+                  {index < LEGAL_PAGES.length - 1 && (
+                    <span className={styles.separator}>|</span>
+                  )}
+                </React.Fragment>
+              ))}
+            </div>
+
           </div>
         </Container>
       </footer>

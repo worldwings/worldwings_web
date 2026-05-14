@@ -188,7 +188,9 @@
 .socialFollow {
   display: flex;
   align-items: center;
-  display: none;
+  margin-top: 20px;
+
+  // display: none;
 
   .followText {
     color: $color_text_grey2;
@@ -225,6 +227,7 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-top: 30px;
 
   .logosGrid {
     display: flex;
@@ -285,17 +288,67 @@
 
   .socialFollow {
     display: flex;
+    margin-top: 20px;
+  }
+
+  .copyright {
+    p {
+      color: $color_text_grey2;
+      font-size: 13px;
+      margin: 0;
+    }
+  }
+
+  .legalLinks {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    a {
+      color: $color_text_grey2;
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color_1;
+      }
+    }
+
+    .separator {
+      color: $color_text_grey2;
+      font-size: 12px;
+      opacity: 0.5;
+    }
   }
 
   @include respond-below(md) {
     flex-direction: column;
+    gap: 20px;
+    text-align: center;
 
-    .logosGrid {
-      margin-top: 50px;
+    .legalLinks {
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
     .socialFollow {
       display: none;
     }
+  }
+}
+
+.paymentSection {
+  margin-top: 30px;
+
+  .paymentImage {
+    max-width: 250px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    display: block;
+    transition: all 0.3s ease;
+
   }
 }

@@ -141,6 +141,12 @@ export const PAGES = [
   { title: "Contact", href: "/contact" },
 ];
 
+export const LEGAL_PAGES = [
+  { title: "Terms and Conditions", href: "/terms-and-conditions" },
+  { title: "Privacy Policy", href: "/privacy-policy" },
+  { title: "Refund Policy", href: "/refund-policy" },
+];
+
 export const POPULAR_DESTINATIONS = [
   {
     name: "Almaty",
@@ -170,6 +176,11 @@ export const POPULAR_DESTINATIONS = [
     name: "Bali",
     images: ["/tours/international/asia/images/Bali/Bali (1).jpg"],
     href: "/tours/international/asia?destinations=Bali",
+  },
+  {
+    name: "Turkey",
+    images: ["/tours/international/asia/images/Turkey/Turkey (1).jpg"],
+    href: "/tours/international/asia?destinations=Turkey",
   },
   {
     name: "Dubai",

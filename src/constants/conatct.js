@@ -31,7 +31,7 @@ export const CONTACT_DETAILS = {
   ],
   socials: {
     facebook: "https://www.facebook.com/WorldWingstt/",
-    instagram: "#",
+    instagram: "https://www.instagram.com/worldwingstt/",
     youtube: "#",
     x: "#",
   },
