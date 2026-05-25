@@ -2,10 +2,7 @@
   {
     "name": "10 Days Serengeti & Manyara Wildlife Odyssey",
     "description": "An exciting wildlife safari covering Serengeti National Park and Lake Manyara with game drives and scenic landscapes.",
-    "destinations": [
-      "Serengeti",
-      "Lake Manyara"
-    ],
+    "destinations": ["Serengeti", "Lake Manyara"],
     "duration": "10 Days",
     "price": "Rs. 2,60,000/-",
     "images": [
@@ -35,9 +32,7 @@
   {
     "name": "4 Days Uganda Gorilla Trekking Expedition",
     "description": "Experience the thrill of gorilla trekking in Uganda's lush forests with expert guides and breathtaking wildlife encounters.",
-    "destinations": [
-      "Uganda"
-    ],
+    "destinations": ["Uganda"],
     "duration": "4 Days",
     "price": "Rs. 2,40,000/-",
     "images": [
@@ -67,9 +62,7 @@
   {
     "name": "5 Days Kenya Safari",
     "description": "Discover Kenya's iconic wildlife and landscapes with game drives and scenic tours.",
-    "destinations": [
-      "Kenya"
-    ],
+    "destinations": ["Kenya"],
     "duration": "5 Days",
     "price": "Rs. 1,40,000/-",
     "images": [
@@ -99,9 +92,7 @@
   {
     "name": "5 Days Tanzania Safari",
     "description": "Explore Tanzania's famous national parks and wildlife with guided safari experiences.",
-    "destinations": [
-      "Tanzania"
-    ],
+    "destinations": ["Tanzania"],
     "duration": "5 Days",
     "price": "Rs. 2,40,000/-",
     "images": [
@@ -131,9 +122,7 @@
   {
     "name": "7 Days Kenya Safari",
     "description": "An extended Kenya safari covering major national parks and diverse wildlife habitats.",
-    "destinations": [
-      "Kenya"
-    ],
+    "destinations": ["Kenya"],
     "duration": "7 Days",
     "price": "Rs. 2,00,000/-",
     "images": [
@@ -163,9 +152,7 @@
   {
     "name": "7 Days Tanzania Safari",
     "description": "A comprehensive Tanzania journey exploring rich wildlife, landscapes, and cultural heritage.",
-    "destinations": [
-      "Tanzania"
-    ],
+    "destinations": ["Tanzania"],
     "duration": "7 Days",
     "price": "Rs. 2,80,000/-",
     "images": [
@@ -195,9 +182,7 @@
   {
     "name": "6 Days Rwanda Primates Safari",
     "description": "A unique Rwanda adventure focusing on primate encounters and lush volcanic landscapes.",
-    "destinations": [
-      "Rwanda"
-    ],
+    "destinations": ["Rwanda"],
     "duration": "6 Days",
     "price": "Rs. 4,45,000/-",
     "images": [
@@ -227,9 +212,7 @@
   {
     "name": "4 Days Maasai Mara Safari with Wellness Experience",
     "description": "Combine the excitement of a Maasai Mara safari with relaxing wellness and rejuvenation activities.",
-    "destinations": [
-      "Maasai Mara"
-    ],
+    "destinations": ["Maasai Mara"],
     "duration": "4 Days",
     "price": "Rs. 1,85,000/-",
     "images": [
@@ -259,10 +242,7 @@
   {
     "name": "7 Days Kenya Safari & Mombasa Beach Retreat",
     "description": "A perfect blend of wildlife adventure in Kenya's parks and relaxation on the beautiful Mombasa beaches.",
-    "destinations": [
-      "Kenya",
-      "Mombasa"
-    ],
+    "destinations": ["Kenya", "Mombasa"],
     "duration": "7 Days",
     "price": "Rs. 2,70,000/-",
     "images": [
@@ -292,9 +272,7 @@
   {
     "name": "7 Days Great Kenya Wildlife Expedition",
     "description": "An in-depth wildlife expedition exploring Kenya's most renowned safari destinations.",
-    "destinations": [
-      "Kenya"
-    ],
+    "destinations": ["Kenya"],
     "duration": "7 Days",
     "price": "Rs. 2,40,000/-",
     "images": [
@@ -319,6 +297,240 @@
       "/tours/international/africa/images/africa (7).jpg",
       "/tours/international/africa/images/africa (8).jpg",
       "/tours/international/africa/images/africa (9).jpg"
+    ]
+  },
+
+  {
+    "name": "7 Days Mystical Egypt Adventure",
+    "description": "Discover the timeless wonders of Egypt with guided tours through ancient temples, pyramids, bustling bazaars, and unforgettable Nile experiences.",
+    "destinations": ["Egypt"],
+    "duration": "7 Days",
+    "price": "Rs. 1,95,000/-",
+    "images": [
+      "/tours/international/africa/images/egypt/Egypt (1).jpg",
+      "/tours/international/africa/images/egypt/Egypt (2).jpg",
+      "/tours/international/africa/images/egypt/Egypt (3).jpg",
+      "/tours/international/africa/images/egypt/Egypt (4).jpg",
+      "/tours/international/africa/images/egypt/Egypt (5).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (8).jpg",
+      "/tours/international/africa/images/egypt/Egypt (9).jpg",
+      "/tours/international/africa/images/egypt/Egypt (10).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (12).jpg",
+      "/tours/international/africa/images/egypt/Egypt (13).jpg",
+      "/tours/international/africa/images/egypt/Egypt (14).jpg",
+      "/tours/international/africa/images/egypt/Egypt (15).jpg",
+      "/tours/international/africa/images/egypt/Egypt (16).jpg",
+      "/tours/international/africa/images/egypt/Egypt (17).jpg",
+      "/tours/international/africa/images/egypt/Egypt (18).jpg",
+      "/tours/international/africa/images/egypt/Egypt (19).jpg",
+      "/tours/international/africa/images/egypt/Egypt (20).jpg",
+      "/tours/international/africa/images/egypt/Egypt (21).jpg",
+      "/tours/international/africa/images/egypt/Egypt (22).jpg",
+      "/tours/international/africa/images/egypt/Egypt (23).jpg",
+      "/tours/international/africa/images/egypt/Egypt (24).jpg",
+      "/tours/international/africa/images/egypt/Egypt (25).jpg"
+    ]
+  },
+  {
+    "name": "7 Days Treasures of Egypt",
+    "description": "Explore the rich heritage of Egypt with visits to iconic landmarks including the Pyramids of Giza, Valley of the Kings, and ancient temples.",
+    "destinations": ["Egypt"],
+    "duration": "7 Days",
+    "price": "Rs. 2,10,000/-",
+    "images": [
+      "/tours/international/africa/images/egypt/Egypt (2).jpg",
+      "/tours/international/africa/images/egypt/Egypt (1).jpg",
+      "/tours/international/africa/images/egypt/Egypt (3).jpg",
+      "/tours/international/africa/images/egypt/Egypt (4).jpg",
+      "/tours/international/africa/images/egypt/Egypt (5).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (8).jpg",
+      "/tours/international/africa/images/egypt/Egypt (9).jpg",
+      "/tours/international/africa/images/egypt/Egypt (10).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (12).jpg",
+      "/tours/international/africa/images/egypt/Egypt (13).jpg",
+      "/tours/international/africa/images/egypt/Egypt (14).jpg",
+      "/tours/international/africa/images/egypt/Egypt (15).jpg",
+      "/tours/international/africa/images/egypt/Egypt (16).jpg",
+      "/tours/international/africa/images/egypt/Egypt (17).jpg",
+      "/tours/international/africa/images/egypt/Egypt (18).jpg",
+      "/tours/international/africa/images/egypt/Egypt (19).jpg",
+      "/tours/international/africa/images/egypt/Egypt (20).jpg",
+      "/tours/international/africa/images/egypt/Egypt (21).jpg",
+      "/tours/international/africa/images/egypt/Egypt (22).jpg",
+      "/tours/international/africa/images/egypt/Egypt (23).jpg",
+      "/tours/international/africa/images/egypt/Egypt (24).jpg",
+      "/tours/international/africa/images/egypt/Egypt (25).jpg"
+    ]
+  },
+  {
+    "name": "8 Days Wonders of the Nile",
+    "description": "Experience the beauty of the Nile River with luxury cruises, historical sightseeing, and immersive Egyptian cultural experiences.",
+    "destinations": ["Egypt"],
+    "duration": "8 Days",
+    "price": "Rs. 2,45,000/-",
+    "images": [
+      "/tours/international/africa/images/egypt/Egypt (3).jpg",
+      "/tours/international/africa/images/egypt/Egypt (1).jpg",
+      "/tours/international/africa/images/egypt/Egypt (2).jpg",
+      "/tours/international/africa/images/egypt/Egypt (4).jpg",
+      "/tours/international/africa/images/egypt/Egypt (5).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (8).jpg",
+      "/tours/international/africa/images/egypt/Egypt (9).jpg",
+      "/tours/international/africa/images/egypt/Egypt (10).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (12).jpg",
+      "/tours/international/africa/images/egypt/Egypt (13).jpg",
+      "/tours/international/africa/images/egypt/Egypt (14).jpg",
+      "/tours/international/africa/images/egypt/Egypt (15).jpg",
+      "/tours/international/africa/images/egypt/Egypt (16).jpg",
+      "/tours/international/africa/images/egypt/Egypt (17).jpg",
+      "/tours/international/africa/images/egypt/Egypt (18).jpg",
+      "/tours/international/africa/images/egypt/Egypt (19).jpg",
+      "/tours/international/africa/images/egypt/Egypt (20).jpg",
+      "/tours/international/africa/images/egypt/Egypt (21).jpg",
+      "/tours/international/africa/images/egypt/Egypt (22).jpg",
+      "/tours/international/africa/images/egypt/Egypt (23).jpg",
+      "/tours/international/africa/images/egypt/Egypt (24).jpg",
+      "/tours/international/africa/images/egypt/Egypt (25).jpg"
+    ]
+  },
+  {
+    "name": "5 Days Cairo & Alexandria Heritage Tour",
+    "description": "Uncover the fascinating history of Egypt through guided tours of Cairo’s ancient monuments and Alexandria’s coastal heritage attractions.",
+    "destinations": ["Egypt"],
+    "duration": "5 Days",
+    "price": "Rs. 1,40,000/-",
+    "images": [
+      "/tours/international/africa/images/egypt/Egypt (4).jpg",
+      "/tours/international/africa/images/egypt/Egypt (1).jpg",
+      "/tours/international/africa/images/egypt/Egypt (2).jpg",
+      "/tours/international/africa/images/egypt/Egypt (3).jpg",
+      "/tours/international/africa/images/egypt/Egypt (5).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (8).jpg",
+      "/tours/international/africa/images/egypt/Egypt (9).jpg",
+      "/tours/international/africa/images/egypt/Egypt (10).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (12).jpg",
+      "/tours/international/africa/images/egypt/Egypt (13).jpg",
+      "/tours/international/africa/images/egypt/Egypt (14).jpg",
+      "/tours/international/africa/images/egypt/Egypt (15).jpg",
+      "/tours/international/africa/images/egypt/Egypt (16).jpg",
+      "/tours/international/africa/images/egypt/Egypt (17).jpg",
+      "/tours/international/africa/images/egypt/Egypt (18).jpg",
+      "/tours/international/africa/images/egypt/Egypt (19).jpg",
+      "/tours/international/africa/images/egypt/Egypt (20).jpg",
+      "/tours/international/africa/images/egypt/Egypt (21).jpg",
+      "/tours/international/africa/images/egypt/Egypt (22).jpg",
+      "/tours/international/africa/images/egypt/Egypt (23).jpg",
+      "/tours/international/africa/images/egypt/Egypt (24).jpg",
+      "/tours/international/africa/images/egypt/Egypt (25).jpg"
+    ]
+  },
+  {
+    "name": "4 Days Cairo City Explorer",
+    "description": "A short yet immersive city tour covering Cairo’s pyramids, museums, local markets, and vibrant cultural hotspots.",
+    "destinations": ["Egypt"],
+    "duration": "4 Days",
+    "price": "Rs. 1,10,000/-",
+    "images": [
+      "/tours/international/africa/images/egypt/Egypt (5).jpg",
+      "/tours/international/africa/images/egypt/Egypt (1).jpg",
+      "/tours/international/africa/images/egypt/Egypt (2).jpg",
+      "/tours/international/africa/images/egypt/Egypt (3).jpg",
+      "/tours/international/africa/images/egypt/Egypt (4).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (8).jpg",
+      "/tours/international/africa/images/egypt/Egypt (9).jpg",
+      "/tours/international/africa/images/egypt/Egypt (10).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (12).jpg",
+      "/tours/international/africa/images/egypt/Egypt (13).jpg",
+      "/tours/international/africa/images/egypt/Egypt (14).jpg",
+      "/tours/international/africa/images/egypt/Egypt (15).jpg",
+      "/tours/international/africa/images/egypt/Egypt (16).jpg",
+      "/tours/international/africa/images/egypt/Egypt (17).jpg",
+      "/tours/international/africa/images/egypt/Egypt (18).jpg",
+      "/tours/international/africa/images/egypt/Egypt (19).jpg",
+      "/tours/international/africa/images/egypt/Egypt (20).jpg",
+      "/tours/international/africa/images/egypt/Egypt (21).jpg",
+      "/tours/international/africa/images/egypt/Egypt (22).jpg",
+      "/tours/international/africa/images/egypt/Egypt (23).jpg",
+      "/tours/international/africa/images/egypt/Egypt (24).jpg",
+      "/tours/international/africa/images/egypt/Egypt (25).jpg"
+    ]
+  },
+  {
+    "name": "9 Days Egypt Discovery for Families",
+    "description": "A family-friendly Egyptian adventure with interactive sightseeing, Nile experiences, and memorable cultural excursions for all ages.",
+    "destinations": ["Egypt"],
+    "duration": "9 Days",
+    "price": "Rs. 2,75,000/-",
+    "images": [
+      "/tours/international/africa/images/egypt/Egypt (8).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (1).jpg",
+      "/tours/international/africa/images/egypt/Egypt (2).jpg",
+      "/tours/international/africa/images/egypt/Egypt (3).jpg",
+      "/tours/international/africa/images/egypt/Egypt (4).jpg",
+      "/tours/international/africa/images/egypt/Egypt (5).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (9).jpg",
+      "/tours/international/africa/images/egypt/Egypt (10).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (12).jpg",
+      "/tours/international/africa/images/egypt/Egypt (13).jpg",
+      "/tours/international/africa/images/egypt/Egypt (14).jpg",
+      "/tours/international/africa/images/egypt/Egypt (15).jpg",
+      "/tours/international/africa/images/egypt/Egypt (16).jpg",
+      "/tours/international/africa/images/egypt/Egypt (17).jpg",
+      "/tours/international/africa/images/egypt/Egypt (18).jpg",
+      "/tours/international/africa/images/egypt/Egypt (19).jpg",
+      "/tours/international/africa/images/egypt/Egypt (20).jpg",
+      "/tours/international/africa/images/egypt/Egypt (21).jpg",
+      "/tours/international/africa/images/egypt/Egypt (22).jpg",
+      "/tours/international/africa/images/egypt/Egypt (23).jpg",
+      "/tours/international/africa/images/egypt/Egypt (24).jpg",
+      "/tours/international/africa/images/egypt/Egypt (25).jpg"
+    ]
+  },
+  {
+    "name": "8 Days Majestic Egypt Discovery Tour",
+    "description": "Journey through Egypt’s most majestic attractions featuring pyramids, temples, desert landscapes, and scenic Nile cruises.",
+    "destinations": ["Egypt"],
+    "duration": "8 Days",
+    "price": "Rs. 2,50,000/-",
+    "images": [
+      "/tours/international/africa/images/egypt/Egypt (10).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (1).jpg",
+      "/tours/international/africa/images/egypt/Egypt (2).jpg",
+      "/tours/international/africa/images/egypt/Egypt (3).jpg",
+      "/tours/international/africa/images/egypt/Egypt (4).jpg",
+      "/tours/international/africa/images/egypt/Egypt (5).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (8).jpg",
+      "/tours/international/africa/images/egypt/Egypt (9).jpg",
+
+      "/tours/international/africa/images/egypt/Egypt (12).jpg",
+      "/tours/international/africa/images/egypt/Egypt (13).jpg",
+      "/tours/international/africa/images/egypt/Egypt (14).jpg",
+      "/tours/international/africa/images/egypt/Egypt (15).jpg",
+      "/tours/international/africa/images/egypt/Egypt (16).jpg",
+      "/tours/international/africa/images/egypt/Egypt (17).jpg",
+      "/tours/international/africa/images/egypt/Egypt (18).jpg",
+      "/tours/international/africa/images/egypt/Egypt (19).jpg",
+      "/tours/international/africa/images/egypt/Egypt (20).jpg",
+      "/tours/international/africa/images/egypt/Egypt (21).jpg",
+      "/tours/international/africa/images/egypt/Egypt (22).jpg",
+      "/tours/international/africa/images/egypt/Egypt (23).jpg",
+      "/tours/international/africa/images/egypt/Egypt (24).jpg",
+      "/tours/international/africa/images/egypt/Egypt (25).jpg"
     ]
   }
 ]
