@@ -1,2 +1,24 @@
 .CoupleLogo {
+  //   background-color: red;
+  max-width: 230px;
+
+  img {
+    width: 220px;
+  }
+
+  p {
+    font-size: 9px;
+    text-align: right;
+    margin-top: -8px;
+  }
+
+  @include respond-below(md) {
+    img {
+      width: 200px;
+    }
+
+    p {
+      font-size: 8px;
+    }
+  }
 }

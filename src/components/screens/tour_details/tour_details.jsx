@@ -8,6 +8,7 @@ import Link from "next/link";
 import PageBanner from "@/components/common/page_banner/page_banner";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "react-bootstrap-icons";
+import { useRouter } from "next/router";
 
 const TourDetailsScreen = ({
   tour = {},
@@ -22,10 +23,27 @@ const TourDetailsScreen = ({
 
   const isGalleryAtTop = false;
 
+
+  const router = useRouter();
+
+ 
+  const listUrl = `/tours/${router.query.type}/${router.query.destination}`
+  const destinationName = router.query.destination.replaceAll('_', ' ')
+  
+
+  
+
   return (
     <>
       <div className={styles.detailsPage}>
-        <PageBanner title={tour?.name} image={coverImage} />
+        <PageBanner
+          title={tour?.name}
+          image={coverImage}
+          second={{
+            text: destinationName,
+            href: listUrl,
+          }}
+        />
 
         {curremtImageIndex !== null && (
           <div className={styles.fullScreen}>
@@ -83,8 +101,6 @@ const TourDetailsScreen = ({
                         {dest}
                       </span>
                     ))}
-              
-               
                   </div>
                 )}
 

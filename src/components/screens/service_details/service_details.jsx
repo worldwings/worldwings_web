@@ -7,115 +7,122 @@ import PageBanner from "@/components/common/page_banner/page_banner";
 import { CheckCircleFill } from "react-bootstrap-icons";
 
 const ServiceDetailsScreen = ({ service }) => {
-    if (!service) {
-        return (
-            <div className={styles.notFound}>
-                <CustomContainer>
-                    <h1>Service Not Found</h1>
-                    <Link href="/" className={styles.btn}>Return to Home</Link>
-                </CustomContainer>
-            </div>
-        );
-    }
-
-    const coverImage = service.images && service.images.length > 0
-        ? `/${service.folderName}/${service.images[0]}`
-        : "/blog/blog-1.jpg";
-
+  if (!service) {
     return (
-        <>
-
-
-            <div className={styles.detailsPage}>
-                <PageBanner 
-                    title={service.title} 
-                    label={service.label}
-                    saveText={service.saveText}
-                    subtitle={service.subtitle}
-                    buttonText={service.buttonText}
-                    image={coverImage} 
-                />
-
-                <CustomContainer>
-                    <div className={styles.contentWrap}>
-                        <div className={styles.mainInfo}>
-                            {(!service.overviewHtml) && (
-                                <>
-                                    <h2>About {service.title}</h2>
-                                    <p className={styles.description}>{service.description}</p>
-                                </>
-                            )}
-
-                            {service.highlights && service.highlights.length > 0 && (
-                                <div className={styles.highlights}>
-                                    <h3>Highlights</h3>
-                                    <ul>
-                                        {service.highlights.map((hlt, idx) => (
-                                            <li key={idx}><CheckCircleFill /> {hlt}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            )}
-
-                            {service.overviewHtml && (
-                                <div className={styles.htmlContentSection}>
-                                    <div className={styles.htmlContent} dangerouslySetInnerHTML={{ __html: service.overviewHtml }} />
-                                </div>
-                            )}
-
-
-                        </div>
-
-                        <div className={styles.bookingCard}>
-                            <h3>Need this service?</h3>
-                            <p>Contact our experts to get personalized assistance for your specific requirements.</p>
-                            <Link href="/contact" className={styles.bookBtn}>
-                                Enquire Now
-                            </Link>
-                        </div>
-                    </div>
-
-                    {service.airlineLogos && service.airlineLogos.length > 0 && (
-                        <div className={styles.airlineLogosSection}>
-                            <h3>Airlines we work with</h3>
-                            <div className={styles.airlineLogosGrid}>
-                                {service.airlineLogos.map((logo, index) => (
-                                    <div key={index} className={styles.logoWrap}>
-                                        <Image
-                                            src={`/${service.logosFolder}/${logo}`}
-                                            alt="airline logo"
-                                            width={120}
-                                            height={60}
-                                            className={styles.airlineLogo}
-                                            
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    )}
-
-                    {service.images && service.images.length > 1 && (
-                        <div className={styles.gallerySection}>
-                            <h2>Gallery</h2>
-                            <div className={styles.galleryGrid}>
-                                {service.images.map((img, index) => (
-                                    <div key={index} className={styles.galleryImageWrap}>
-                                        <Image
-                                            src={`/${service.folderName}/${img}`}
-                                            alt={`${service.title} photo ${index + 1}`}
-                                            fill
-                                            className={styles.galleryImage}
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    )}
-                </CustomContainer>
-            </div>
-        </>
+      <div className={styles.notFound}>
+        <CustomContainer>
+          <h1>Service Not Found</h1>
+          <Link href="/" className={styles.btn}>
+            Return to Home
+          </Link>
+        </CustomContainer>
+      </div>
     );
+  }
+
+  const coverImage =
+    service.images && service.images.length > 0
+      ? `/${service.folderName}/${service.images[0]}`
+      : "/blog/blog-1.jpg";
+
+  return (
+    <>
+      <div className={styles.detailsPage}>
+        <PageBanner
+          title={service.title}
+          label={service.label}
+          saveText={service.saveText}
+          subtitle={service.subtitle}
+          buttonText={service.buttonText}
+          image={coverImage}
+     
+        />
+
+        <CustomContainer>
+          <div className={styles.contentWrap}>
+            <div className={styles.mainInfo}>
+              {!service.overviewHtml && (
+                <>
+                  <h2>About {service.title}</h2>
+                  <p className={styles.description}>{service.description}</p>
+                </>
+              )}
+
+              {service.highlights && service.highlights.length > 0 && (
+                <div className={styles.highlights}>
+                  <h3>Highlights</h3>
+                  <ul>
+                    {service.highlights.map((hlt, idx) => (
+                      <li key={idx}>
+                        <CheckCircleFill /> {hlt}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {service.overviewHtml && (
+                <div className={styles.htmlContentSection}>
+                  <div
+                    className={styles.htmlContent}
+                    dangerouslySetInnerHTML={{ __html: service.overviewHtml }}
+                  />
+                </div>
+              )}
+            </div>
+
+            <div className={styles.bookingCard}>
+              <h3>Need this service?</h3>
+              <p>
+                Contact our experts to get personalized assistance for your
+                specific requirements.
+              </p>
+              <Link href="/contact" className={styles.bookBtn}>
+                Enquire Now
+              </Link>
+            </div>
+          </div>
+
+          {service.airlineLogos && service.airlineLogos.length > 0 && (
+            <div className={styles.airlineLogosSection}>
+              <h3>Airlines we work with</h3>
+              <div className={styles.airlineLogosGrid}>
+                {service.airlineLogos.map((logo, index) => (
+                  <div key={index} className={styles.logoWrap}>
+                    <Image
+                      src={`/${service.logosFolder}/${logo}`}
+                      alt="airline logo"
+                      width={120}
+                      height={60}
+                      className={styles.airlineLogo}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {service.images && service.images.length > 1 && (
+            <div className={styles.gallerySection}>
+              <h2>Gallery</h2>
+              <div className={styles.galleryGrid}>
+                {service.images.map((img, index) => (
+                  <div key={index} className={styles.galleryImageWrap}>
+                    <Image
+                      src={`/${service.folderName}/${img}`}
+                      alt={`${service.title} photo ${index + 1}`}
+                      fill
+                      className={styles.galleryImage}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+        </CustomContainer>
+      </div>
+    </>
+  );
 };
 
 export default ServiceDetailsScreen;

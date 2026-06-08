@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { ChevronDown, List, Telephone, TelephoneFill } from "react-bootstrap-icons";
+import {
+  ChevronDown,
+  Facebook,
+  Instagram,
+  List,
+  
+  TelephoneFill,
+} from "react-bootstrap-icons";
 import styles from "./menu_button.module.scss";
 import { Offcanvas } from "react-bootstrap";
 import Logo from "@/components/common/couple_logo/couple_logo";
@@ -16,9 +23,15 @@ const NavItem = ({ item, setShowDrawer }) => {
           onClick={() => {
             setShowDropDown((prev) => !prev);
           }}
-          className={showDropDown ? styles.activeDropdownParent : ''}
+          className={showDropDown ? styles.activeDropdownParent : ""}
         >
-          {item.title} <ChevronDown style={{ transform: showDropDown ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }} />
+          {item.title}{" "}
+          <ChevronDown
+            style={{
+              transform: showDropDown ? "rotate(180deg)" : "rotate(0deg)",
+              transition: "transform 0.3s ease",
+            }}
+          />
         </p>
 
         {showDropDown && (
@@ -40,11 +53,14 @@ const NavItem = ({ item, setShowDrawer }) => {
 
   return (
     <div>
-      <Link href={item.href || "#"}
+      <Link
+        href={item.href || "#"}
         onClick={() => {
           setShowDrawer(false);
         }}
-      >{item.title}</Link>
+      >
+        {item.title}
+      </Link>
     </div>
   );
 };
@@ -54,7 +70,16 @@ const RightMenu = ({ pages, setShowModal }) => {
 
   return (
     <div className={styles.RightMenu}>
-      <Link href={`tel:+${CONTACT_DETAILS.whatsapp1.number}`}
+      <div className={styles.soc}>
+        <Link href={CONTACT_DETAILS.socials.facebook} target="_blank">
+          <Facebook />
+        </Link>
+        <Link href={CONTACT_DETAILS.socials.instagram} target="_blank">
+          <Instagram />
+        </Link>
+      </div>
+      <Link
+        href={`tel:+${CONTACT_DETAILS.whatsapp1.number}`}
         className={styles.callBtn}
       >
         <TelephoneFill /> <span>{CONTACT_DETAILS.phone1.text}</span>
@@ -98,7 +123,6 @@ const RightMenu = ({ pages, setShowModal }) => {
           </Offcanvas.Body>
         </Offcanvas>
       </div>
-
     </div>
   );
 };
