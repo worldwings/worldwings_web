@@ -7,8 +7,8 @@ import FONTS from "@/styles/fonts";
 const Logo = ({ isWhite = true }) => {
   return (
     <Link href="/" className={styles.CoupleLogo}>
-      <Image src={isWhite ? "/logo/white logo.png" : "/logo/logo.png"} width={220} alt="logo" />
-      <p className={FONTS.font1}>Approved by Ministry of Tourism, Government of India</p>
+      <Image src={isWhite ? "/logo/white logo.png" : "/logo/logo.png"} width={200} alt="logo" />
+      
     </Link>
   );
 };
