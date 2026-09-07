@@ -13,7 +13,7 @@ const SEO = ({ title, description, ogTitle, ogDescription, ogImage }) => {
   const finalDescription = description || defaultDescription;
   const finalOgTitle = ogTitle || finalTitle;
   const finalOgDescription = ogDescription || finalDescription;
-  const finalOgImage = ogImage || "/logo/logo.png";
+  const finalOgImage =   "https://worldwings.in//og.jpeg";
 
   return (
     <Head>
